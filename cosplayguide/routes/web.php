@@ -11,6 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@home');
+Route::get('home', 'PagesController@home');
+
+Route::get('about-cosplay', 'PagesController@about');
+
+Route::get('tips-and-tricks', 'PagesController@tips');
+Route::get('tips-and-tricks/worbla-and-foam', 'PagesController@worbla');
+Route::get('tips-and-tricks/10-beginner-tips', 'PagesController@beginnertips');
+Route::get('tips-and-tricks/cosplayplanner', 'PagesController@cosplayplanner');
+
+Route::get('contact', 'PagesController@contact');
+
+Route::get('profile-{username}/create-cosplay', 'CosplayController@create');
+Route::get('profile-{username}', 'CosplayController@index');
