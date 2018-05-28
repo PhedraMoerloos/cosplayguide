@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \App\User;
 
 class CosplayController extends Controller
 {
@@ -19,6 +20,8 @@ class CosplayController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
     public function index()
     {
 
@@ -42,6 +45,8 @@ class CosplayController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+
     public function store(Request $request)
     {
         //
@@ -53,10 +58,25 @@ class CosplayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
+
+
+
+
+     public function show_progress($id)
+     {
+       // code...
+     }
+
+
+
+
+     public function show($id)
+     {
+         //
+     }
+
+
+  
 
     /**
      * Show the form for editing the specified resource.

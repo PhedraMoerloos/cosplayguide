@@ -10,8 +10,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-              <li><a class="nav-link" href="/about-cosplay">About cosplay</a></li>
-              <li><a class="nav-link" href="/tips-and-tricks">Tips & Tricks</a></li>
+              <li><a class="nav-link" href="/over-cosplay">Over cosplay</a></li>
+              <li><a class="nav-link" href="/tips-en-tricks">Tips & Tricks</a></li>
               <li><a class="nav-link" href="/contact">Contact</a></li>
             </ul>
 
