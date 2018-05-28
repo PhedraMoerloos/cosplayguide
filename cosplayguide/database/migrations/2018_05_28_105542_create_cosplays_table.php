@@ -17,6 +17,7 @@ class CreateCosplaysTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('name_serie');
+            $table->string('slug')->nullable();
             $table->string('status')->default('shoppen');
             $table->timestamps();
 
