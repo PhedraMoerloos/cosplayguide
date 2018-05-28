@@ -3,6 +3,6 @@
 
 @section('content')
 
-<h1>"Phedra Moerloos"</h1>
+<h1>Phedra Moerloos</h1>
 
 @endsection

@@ -15,7 +15,11 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'username',
+        'email',
+        'password',
+        'description',
+        'profile_picture_url'
     ];
 
     /**
@@ -24,6 +28,16 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token', 'level'
     ];
+
+
+    //user heeft meerdere cosplays, relatie
+    public function cosplays()
+    {
+
+      //article has many comments
+      return $this->hasMany('App\Cosplay');
+
+    }
 }

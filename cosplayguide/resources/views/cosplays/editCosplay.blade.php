@@ -3,6 +3,6 @@
 
 @section('content')
 
-<h1>"Almost done"</h1>
+<h1>Almost done</h1>
 
 @endsection
