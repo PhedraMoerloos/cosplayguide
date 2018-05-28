@@ -11,6 +11,8 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/', 'PagesController@home');
 Route::get('home', 'PagesController@home');
 
@@ -23,5 +25,5 @@ Route::get('tips-and-tricks/cosplayplanner', 'PagesController@cosplayplanner');
 
 Route::get('contact', 'PagesController@contact');
 
-Route::get('profile-{username}/create-cosplay', 'CosplayController@create');
-Route::get('profile-{username}', 'CosplayController@index');
+Route::get('your-profile', 'CosplayController@index');
+Route::get('your-profile/create-cosplay', 'CosplayController@create');
