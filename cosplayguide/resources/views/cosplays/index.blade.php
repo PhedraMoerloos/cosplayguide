@@ -37,6 +37,8 @@
 
     @endforeach
 
+    <a href="/profiel/nieuwe-cosplay">Nieuwe cosplay</a>
+
 
 
 @endsection

@@ -19,11 +19,11 @@ class CreateCosplaysTable extends Migration
             $table->string('name_serie');
             $table->string('slug')->nullable();
             $table->string('status')->default('shoppen');
+            $table->string('thumbnail_url');
             $table->timestamps();
 
             //deze info wordt pas ingevuld eens de cosplay af is, niet bij het creëren.
-            $table->string('thumbnail_url')->nullable();
-            $table->enum('difficulty', ['easy', 'medium', 'hard'])->nullable();
+            $table->enum('difficulty', ['Gemakkelijk', 'Gemiddeld', 'Moeilijk'])->nullable();
             $table->integer('independence_percentage')->nullable();
             $table->integer('months_spent')->nullable();
             $table->integer('euros_spent')->nullable();
