@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use \App\User;
+use \App\Cosplay;
 
 class CosplayController extends Controller
 {
@@ -11,7 +12,7 @@ class CosplayController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => 'show']);
     }
 
 
@@ -26,7 +27,11 @@ class CosplayController extends Controller
     {
 
         $user = \Auth::user();
-        return view('cosplays.index', compact('user'));
+
+        $user_id = $user->id;
+        $cosplays = Cosplay::where('user_id', $user_id)->get();
+
+        return view('cosplays.index', compact('user', 'cosplays'));
     }
 
     /**
@@ -64,7 +69,10 @@ class CosplayController extends Controller
 
      public function show_progress($id)
      {
-       // code...
+
+       
+
+
      }
 
 
@@ -72,11 +80,17 @@ class CosplayController extends Controller
 
      public function show($id)
      {
-         //
+
+        $cosplay = Cosplay::findOrFail($id);
+        $cosplay_creator_id = $cosplay->user_id;
+        $cosplay_creator = User::findOrFail($cosplay_creator_id);
+
+        return view('cosplays.showCosplay', compact('cosplay', 'cosplay_creator'));
+
      }
 
 
-  
+
 
     /**
      * Show the form for editing the specified resource.

@@ -3,25 +3,31 @@
 
 @section('content')
 
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-                    <h1>{{ $user->username }}</h1>
+    <img src="{{ $user->profile_picture_url }}" alt="profile picture {{ $user->username }}">
 
-                    You are logged in!
-                </div>
-            </div>
+    <h1>{{ $user->username }}</h1>
+
+    You are logged in!
+
+    @foreach ($cosplays as $cosplay)
+
+      @if ($cosplay->status == "completed")
+        <div>
+          <h2><a href={{"/profiel/cosplays/". $cosplay->id}}>{{ $cosplay->name }} completed</a></h2>
+          <p>From: {{ $cosplay->name_serie }}</p>
         </div>
-    </div>
-</div>
+
+
+      @else
+      <div>
+        <h2><a href={{"profiel/cosplay-overzicht/". $cosplay->id}}>{{ $cosplay->name }}</a></h2>
+        <p>From: {{ $cosplay->name_serie }}</p>
+      </div>
+      @endif
+
+    @endforeach
+
+
 
 @endsection
