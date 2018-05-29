@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \App\User;
 use \App\Cosplay;
+use \App\Cosplayphoto;
 
 class CosplayController extends Controller
 {
@@ -70,7 +71,8 @@ class CosplayController extends Controller
      public function show_progress($id)
      {
 
-       
+
+        
 
 
      }
@@ -82,10 +84,11 @@ class CosplayController extends Controller
      {
 
         $cosplay = Cosplay::findOrFail($id);
+        $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->get();
         $cosplay_creator_id = $cosplay->user_id;
         $cosplay_creator = User::findOrFail($cosplay_creator_id);
 
-        return view('cosplays.showCosplay', compact('cosplay', 'cosplay_creator'));
+        return view('cosplays.showCosplay', compact('cosplay', 'cosplay_creator', 'cosplayphotos'));
 
      }
 

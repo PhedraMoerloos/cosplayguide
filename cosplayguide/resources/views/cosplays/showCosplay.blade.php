@@ -12,5 +12,10 @@
     <p>From: {{ $cosplay->name_serie }}</p>
   </div>
 
+  @foreach ($cosplayphotos as $cosplayphoto)
+      <img src="{{ $cosplayphoto->photo_url }}" alt="{{ $cosplay->name }} cosplay">
+  @endforeach
+
+
 
 @endsection
