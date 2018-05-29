@@ -25,6 +25,7 @@ Route::get('tips-en-tricks/cosplayplanner', 'PagesController@cosplayplanner');
 Route::get('contact', 'PagesController@contact');
 
 Route::get('profiel', 'CosplayController@index');
+Route::get('profiel/edit', 'UserController@edit');
 Route::get('profiel/nieuwe-cosplay', 'CosplayController@create');
 Route::get('profiel/cosplay-overzicht/grime', 'PagesController@grime');
 Route::get('profiel/cosplay-overzicht/lenzen', 'PagesController@lenzen');

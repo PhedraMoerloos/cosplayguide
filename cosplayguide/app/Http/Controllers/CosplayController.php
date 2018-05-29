@@ -32,7 +32,33 @@ class CosplayController extends Controller
         $user_id = $user->id;
         $cosplays = Cosplay::where('user_id', $user_id)->get();
 
-        return view('cosplays.index', compact('user', 'cosplays'));
+        $total_number_of_cosplays = $cosplays->count();
+        $number_of_completed_cosplays = $cosplays->where('status', 'completed')->count();
+        $number_of_cosplays_in_progress = $total_number_of_cosplays - $number_of_completed_cosplays;
+
+
+        if ( $number_of_completed_cosplays == 1 ) {
+
+            $user->level = "Youngling";
+
+        }
+
+        else if ( $number_of_completed_cosplays > 1 && $number_of_completed_cosplays <= 3 ) {
+
+            $user->level = "Padawan";
+
+        }
+
+        else if( $number_of_completed_cosplays > 3) {
+
+            $user->level = "Master";
+
+        }
+
+        $user->save();
+
+
+        return view('cosplays.index', compact('user', 'cosplays', 'number_of_completed_cosplays', 'number_of_cosplays_in_progress'));
     }
 
     /**
@@ -71,9 +97,9 @@ class CosplayController extends Controller
      public function show_progress($id)
      {
 
-
-        
-
+        $cosplay = Cosplay::findOrFail($id);
+        $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->get();
+        return view('cosplays.cosplayProgress', compact('cosplay', 'cosplayphotos'));
 
      }
 
