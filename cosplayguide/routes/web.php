@@ -39,5 +39,5 @@ Route::get('/profiel/cosplay-overzicht/{id}', 'CosplayController@show_progress')
 
 
 Route::get('/profiel/cosplay-info/{id}', 'CosplayController@edit');
-Route::get('/profiel/cosplays/{cosplay_id}', 'CosplayController@show');
-Route::get('/cosplays/{cosplay_id}', 'CosplayController@show');
+Route::get('/profiel/cosplays/{id}', 'CosplayController@show');
+Route::get('/cosplays/{id}', 'CosplayController@show');

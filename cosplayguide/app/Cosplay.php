@@ -7,16 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Cosplay extends Model
 {
 
-    /*
+
     public static function boot()
     {
         parent::boot();
 
-        static::saving(function ($this) {
-            $this->slug = str_slug($this->name."-by-".$this->user->username);
+        static::saving(function ($cosplay) {
+            $cosplay->slug = str_slug($cosplay->name . "-by-" . $cosplay->user->username);
         });
-    }*/
-
+    }
 
     protected $fillable = [
         'name',
