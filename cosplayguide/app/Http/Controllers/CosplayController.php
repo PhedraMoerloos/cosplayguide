@@ -105,6 +105,19 @@ class CosplayController extends Controller
 
 
 
+     public function change_status($id, $status)
+     {
+
+       $cosplay = Cosplay::findOrFail($id);
+       $cosplay->update(['status'=> $status]);
+
+       return redirect('profiel/cosplay-overzicht/' . $cosplay->id);
+
+
+     }
+
+
+
 
      public function show($id)
      {

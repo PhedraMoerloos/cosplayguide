@@ -30,23 +30,23 @@
     <ul>
       <li @if ($cosplay->status == "lancering")
         class="font-weight-bold"
-      @endif><a href="#">lancering</a></li>
+      @endif><a href="{{ action('CosplayController@change_status', [$cosplay->id, "lancering"]) }}">lancering</a></li>
 
       <li @if ($cosplay->status == "shoppen")
         class="font-weight-bold"
-      @endif><a href="#">shoppen</a></li>
+      @endif><a href="{{ action('CosplayController@change_status', [$cosplay->id, "shoppen"]) }}">shoppen</a></li>
 
       <li @if ($cosplay->status == "knutselen")
         class="font-weight-bold"
-      @endif><a href="#">knutselen</a></li>
+      @endif><a href="{{ action('CosplayController@change_status', [$cosplay->id, "knutselen"]) }}">knutselen</a></li>
 
       <li @if ($cosplay->status == "verven")
         class="font-weight-bold"
-      @endif><a href="#">verven</a></li>
+      @endif><a href="{{ action('CosplayController@change_status', [$cosplay->id, "verven"]) }}">verven</a></li>
 
       <li @if ($cosplay->status == "media")
         class="font-weight-bold"
-      @endif><a href="#">media</a></li>
+      @endif><a href="{{ action('CosplayController@change_status', [$cosplay->id, "media"]) }}">media</a></li>
     </ul>
 
 

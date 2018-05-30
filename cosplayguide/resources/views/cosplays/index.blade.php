@@ -4,7 +4,27 @@
 @section('content')
 
 
-    <a href="profiel/edit">edit</a>
+    <!--<a href="profiel/edit">edit</a>-->
+
+    <div>
+        <a id="navbarDropdown" class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+            . . .
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/profiel/edit">Edit profiel</a>
+            <a class="dropdown-item" href="{{ route('logout') }}"
+               onclick="event.preventDefault();
+                             document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+            </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+        </div>
+    </div>
+
 
     <img src="{{ $user->profile_picture_url }}" alt="profile picture {{ $user->username }}">
 
@@ -30,7 +50,7 @@
 
       @else
       <div>
-        <h2><a href={{"profiel/cosplay-overzicht/". $cosplay->id}}>{{ $cosplay->name }}</a></h2>
+        <h2><a href={{"/profiel/cosplay-overzicht/". $cosplay->id}}>{{ $cosplay->name }}</a></h2>
         <img src="{{ $cosplay->thumbnail_url }}" alt="thumbnail {{ $cosplay->name }} ">
       </div>
       @endif
