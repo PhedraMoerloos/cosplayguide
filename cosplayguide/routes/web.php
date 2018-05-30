@@ -26,9 +26,10 @@ Route::get('/contact', 'PagesController@contact');
 
 Route::get('/profiel', 'CosplayController@index');
 Route::get('/profiel/edit', 'UserController@edit');
+Route::post('/profiel', 'UserController@update');
 
 Route::get('/profiel/nieuwe-cosplay', 'CosplayController@create');
-Route::post('/profiel', 'CosplayController@store');
+Route::post('/profiel/cosplay-overzicht', 'CosplayController@store');
 
 Route::get('/profiel/cosplay-overzicht/grime', 'PagesController@grime');
 Route::get('/profiel/cosplay-overzicht/lenzen', 'PagesController@lenzen');

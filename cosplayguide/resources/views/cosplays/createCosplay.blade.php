@@ -5,7 +5,7 @@
 
     <h1>New cosplay</h1>
 
-    <form method="post" action="/profiel" enctype="multipart/form-data">
+    <form method="post" action="/profiel/cosplay-overzicht" enctype="multipart/form-data">
 
         {{ csrf_field() }}
 

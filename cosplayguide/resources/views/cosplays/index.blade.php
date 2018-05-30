@@ -26,7 +26,7 @@
     </div>
 
 
-    <img src="{{ $user->profile_picture_url }}" alt="profile picture {{ $user->username }}">
+    <img src="{{ asset('/storage/images/' . $user->profile_picture_url) }}" alt="profile picture {{ $user->username }}">
 
     <h1>{{ $user->username }}</h1>
 
