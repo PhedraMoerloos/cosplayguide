@@ -23,7 +23,7 @@
                     <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
                 @else
                     <li class="nav-item dropdown">
-                        <a href="/profiel/">{{ Auth::user()->username }}</a>
+                        <a href="/profiel">{{ Auth::user()->username }}</a>
 
                         <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="{{ route('logout') }}"

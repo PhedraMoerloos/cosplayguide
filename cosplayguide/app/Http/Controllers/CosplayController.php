@@ -158,7 +158,7 @@ class CosplayController extends Controller
      {
 
         $cosplay = Cosplay::findOrFail($id);
-        $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->get();
+        $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->where('is_shown', 1)->get();
         return view('cosplays.cosplayProgress', compact('cosplay', 'cosplayphotos'));
 
      }

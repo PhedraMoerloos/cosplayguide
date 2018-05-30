@@ -6,7 +6,40 @@
 
     @foreach ($cosplayphotos as $cosplayphoto)
         <img src="{{ asset('public/storage/images/' . $cosplayphoto->photo_url) }}" alt="{{ $cosplay->name }} cosplay">
+        <a href="{{ action('CosplayphotoController@delete', [$cosplayphoto->id]) }}">Delete</a>
     @endforeach
+
+
+    <!--<form method="post" action="/profiel/cosplay-overzicht" enctype="multipart/form-data">
+
+        {{ csrf_field() }}
+
+        <div class="form-group">
+            <input type="file" name="photo_url" accept="image/*" required>
+        </div>
+
+
+        <button type="submit" name="create" class="btn btn-primary">Creëer nieuwe foto</button>
+
+
+
+        @if( $errors->any() )
+
+
+            <ul class="alert alert-danger">
+
+              @foreach( $errors->all() as $error )
+                  <li>{{ $error }}</li>
+              @endforeach
+
+            </ul>
+
+
+        @endif
+
+    </form>-->
+
+
 
     <div>
       <a href="/profiel/cosplay-overzicht/grime">Grime</a>

@@ -29,7 +29,8 @@ Route::get('/profiel/edit', 'UserController@edit');
 Route::post('/profiel', 'UserController@update');
 
 Route::get('/profiel/nieuwe-cosplay', 'CosplayController@create');
-Route::post('/profiel/cosplay-overzicht', 'CosplayController@store');
+Route::post('/profiel/nieuwe-cosplay', 'CosplayController@store');
+Route::post('/profiel/cosplay-overzicht', 'CosplayController@update');
 
 Route::get('/profiel/cosplay-overzicht/grime', 'PagesController@grime');
 Route::get('/profiel/cosplay-overzicht/lenzen', 'PagesController@lenzen');
@@ -39,6 +40,7 @@ Route::get('/profiel/cosplay-overzicht/voorwerpen', 'PagesController@voorwerpen'
 Route::get('/profiel/cosplay-overzicht/stoffen', 'PagesController@stoffen');
 Route::get('/profiel/cosplay-overzicht/change-status/{id}/{status}', 'CosplayController@change_status');
 Route::get('/profiel/cosplay-overzicht/{id}', 'CosplayController@show_progress');
+Route::get('/profiel/delete/{id}', 'CosplayphotoController@delete');
 
 
 
