@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use \App\User;
 use \App\Cosplay;
 use \App\Cosplayphoto;
+use \App\Http\Requests;
+use Image;
 
 class CosplayController extends Controller
 {
@@ -79,9 +81,55 @@ class CosplayController extends Controller
      */
 
 
-    public function store(Request $request)
+    public function store(Requests\CreateCosplayRequest $request)
     {
-        //
+
+        $cosplay = new Cosplay;
+
+        $user_id = \Auth::user()->id;
+        $cosplay->user_id = $user_id;
+        $cosplay->name = $request->get('name');
+        $cosplay->name_serie = $request->get('name_serie');
+        //tijdelijk, cosplay heeft cosplayphoto nodig en omgekeerd
+        $cosplay->thumbnail_url = "/img/cosplayphotos/". $user_id ."/thumbnails/Yui.jpg";
+
+        $cosplay->save();
+
+
+        $cosplay_id = $cosplay->id;
+        //$cosplay_id = 8;
+
+
+        $cosplayphoto = new Cosplayphoto;
+
+
+        $cosplayphoto->cosplay_id = $cosplay_id;
+
+
+
+
+        if($request->hasFile('photo_url')){
+
+          //php artisan storage:link eerst, om een symbolic link te hebben tussen storage/app/public/images en de public/storage/images
+          $request->file('photo_url')->store('public/images');
+
+          // allemaal een andere naam, cosplay foto's vinden door cosplay_id, thumbnail naam wordt opgeslagen in cosplay zelf
+          $filename = $request->file('photo_url')->hashName();
+          $cosplayphoto->photo_url = $filename;
+
+
+
+        };
+
+        $cosplayphoto->save();
+
+
+
+
+
+        return redirect('/profiel/');
+
+
     }
 
     /**

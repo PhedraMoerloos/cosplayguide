@@ -4,7 +4,7 @@
 @section('content')
 
 
-    <!--<a href="profiel/edit">edit</a>-->
+
 
     <div>
         <a id="navbarDropdown" class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

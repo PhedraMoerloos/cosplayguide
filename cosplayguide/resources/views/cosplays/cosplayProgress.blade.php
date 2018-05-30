@@ -5,7 +5,7 @@
 
 
     @foreach ($cosplayphotos as $cosplayphoto)
-        <img src="{{ $cosplayphoto->photo_url }}" alt="{{ $cosplay->name }} cosplay">
+        <img src="{{ asset('public/storage/images/' . $cosplayphoto->photo_url) }}" alt="{{ $cosplay->name }} cosplay">
     @endforeach
 
     <div>
