@@ -110,24 +110,36 @@ class CosplayController extends Controller
 
         if($request->hasFile('photo_url')){
 
+
           //php artisan storage:link eerst, om een symbolic link te hebben tussen storage/app/public/images en de public/storage/images
-          $request->file('photo_url')->store('public/images');
+          $image = $request->file('photo_url');
 
+          //database:
           // allemaal een andere naam, cosplay foto's vinden door cosplay_id, thumbnail naam wordt opgeslagen in cosplay zelf
-          $filename = $request->file('photo_url')->hashName();
+          $filename = $image->hashName();
           $cosplayphoto->photo_url = $filename;
+          $cosplay->thumbnail_url =  'thumbnail' . $filename;
 
+          //resizen en opslaan
+          //cosplayphoto
+          Image::make($image)->resize(430, null, function ($constraint) {
+              $constraint->aspectRatio();
+          })->save( storage_path('app/public/images/' . $filename ) );
+
+          //thumbnail
+          Image::make($image)->resize(171, null, function ($constraint) {
+              $constraint->aspectRatio();
+          })->crop(171, 171)->save( storage_path('app/public/images/' . 'thumbnail' . $filename ) );
 
 
         };
 
+
+
         $cosplayphoto->save();
+        $cosplay->save();
 
-
-
-
-
-        return redirect('/profiel/');
+        return redirect('/profiel/cosplay-overzicht/' . $cosplay->id);
 
 
     }
