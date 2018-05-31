@@ -171,6 +171,7 @@ class CosplayController extends Controller
        $cosplay = Cosplay::findOrFail($id);
        $cosplay->update(['status'=> $status]);
 
+       //extra safety net
        if ($status == "completed") {
 
          return redirect('profiel/cosplay-info/' . $cosplay->id);
@@ -214,7 +215,10 @@ class CosplayController extends Controller
     public function edit($id)
     {
 
-        
+      $cosplay = Cosplay::findOrFail($id);
+      $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->where('is_shown', 1)->get();
+
+      return view('cosplays.editCosplay', compact('cosplay', 'cosplayphotos'));
 
     }
 
@@ -225,9 +229,26 @@ class CosplayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Requests\UpdateCosplayRequest $request, $id)
     {
-        //
+        $cosplay = Cosplay::findOrFail($id);
+
+
+        $cosplay->name = $request->get('name');
+        $cosplay->name_serie  =  $request->get('name_serie');
+        //$cosplay->thumbnail_url =  $request->('thumbnail_url');
+        $cosplay->difficulty = $request->get('difficulty');
+        $cosplay->independence_percentage = $request->get('independence_percentage');
+        $cosplay->months_spent = $request->get('months_spent');
+        $cosplay->euros_spent             = $request->get('euros_spent');
+        $cosplay->project_description     = $request->get('project_description');
+        $cosplay->published_at            = \Carbon\Carbon::now();
+        $cosplay->status                  = 'completed';
+
+        $cosplay->save();
+
+
+        return redirect('profiel/cosplays/' . $cosplay->id);
     }
 
     /**
