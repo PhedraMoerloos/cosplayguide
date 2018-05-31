@@ -83,7 +83,7 @@
     </ul>
 
 
-    <button type="submit" name="cosplay_completed">Klaar!</button>
+    <a href="{{"/profiel/cosplay-info/". $cosplay->id}}" class="btn btn-primary">Klaar!</a>
 
 
 

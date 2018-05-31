@@ -4,7 +4,20 @@
 @section('content')
 
 
-  <img src="{{ $cosplay_creator->profile_picture_url }}" alt="profile picture {{ $cosplay_creator->username }}">
+  @if ($user_logged_in)
+
+    @if ($cosplay->status == "completed")
+      <a href="{{"/profiel/cosplay-info/". $cosplay->id}}">edit</a>
+
+    @else
+      <a href="{{"/profiel/cosplay-overzicht/". $cosplay->id}}">edit</a>
+
+    @endif
+
+  @endif
+
+
+  <img src="{{ asset('/storage/images/' . $cosplay_creator->profile_picture_url) }}" alt="profile picture {{ $cosplay_creator->username }}">
   <h1>{{ $cosplay_creator->username }}</h1>
 
   <div>
@@ -41,7 +54,7 @@
 
   </div>
 
-  <img src="{{ $cosplay_creator->profile_picture_url }}" alt="profile picture {{ $cosplay_creator->username }}">
+  <img src="{{ asset('/storage/images/' . $cosplay_creator->profile_picture_url) }}" alt="profile picture {{ $cosplay_creator->username }}">
   <h1>{{ $cosplay_creator->username }}</h1>
   <p>{{ \Carbon\Carbon::createFromTimeStamp(strtotime($cosplay->published_at))->format('d/m/Y') }}</p>
 
@@ -49,7 +62,7 @@
 @endif
 
   @foreach ($cosplayphotos as $cosplayphoto)
-      <img src="{{ $cosplayphoto->photo_url }}" alt="{{ $cosplay->name }} cosplay">
+      <img src="{{ asset('/storage/images/' . $cosplayphoto->photo_url) }}" alt="{{ $cosplay->name }} cosplay">
   @endforeach
 
 

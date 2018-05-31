@@ -171,7 +171,16 @@ class CosplayController extends Controller
        $cosplay = Cosplay::findOrFail($id);
        $cosplay->update(['status'=> $status]);
 
-       return redirect('profiel/cosplay-overzicht/' . $cosplay->id);
+       if ($status == "completed") {
+
+         return redirect('profiel/cosplay-info/' . $cosplay->id);
+
+       }
+
+       else {
+         return redirect('profiel/cosplays/' . $cosplay->id);
+       }
+
 
 
      }
@@ -182,12 +191,14 @@ class CosplayController extends Controller
      public function show($id)
      {
 
+        $user_logged_in = \Auth::user();
+
         $cosplay = Cosplay::findOrFail($id);
         $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->get();
         $cosplay_creator_id = $cosplay->user_id;
         $cosplay_creator = User::findOrFail($cosplay_creator_id);
 
-        return view('cosplays.showCosplay', compact('cosplay', 'cosplay_creator', 'cosplayphotos'));
+        return view('cosplays.showCosplay', compact('cosplay', 'cosplay_creator', 'cosplayphotos', 'user_logged_in'));
 
      }
 
@@ -202,7 +213,9 @@ class CosplayController extends Controller
      */
     public function edit($id)
     {
-        //
+
+        
+
     }
 
     /**
@@ -225,6 +238,13 @@ class CosplayController extends Controller
      */
     public function destroy($id)
     {
-        //
+
+        /*$cosplay = Cosplay::findOrFail($id);
+        $cosplay->is_shown = false;
+
+        $cosplay->save();
+
+        return redirect('/profiel');*/
+
     }
 }
