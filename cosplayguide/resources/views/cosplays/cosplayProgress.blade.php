@@ -10,16 +10,16 @@
     @endforeach
 
 
-    <!--<form method="post" action="/profiel/cosplay-overzicht" enctype="multipart/form-data">
-
-        {{ csrf_field() }}
+    <form method="post" action="/profiel/cosplay-overzicht/{{ $cosplay->id }}" enctype="multipart/form-data">
 
         <div class="form-group">
-            <input type="file" name="photo_url" accept="image/*" required>
+            <input type="file" name="photo_url[]" id="cosplayphoto" multiple />
         </div>
 
 
-        <button type="submit" name="create" class="btn btn-primary">Creëer nieuwe foto</button>
+        {{ csrf_field() }}
+
+        <button type="submit" class="btn btn-primary">Creëer nieuwe foto's</button>
 
 
 
@@ -37,7 +37,7 @@
 
         @endif
 
-    </form>-->
+    </form>
 
 
 

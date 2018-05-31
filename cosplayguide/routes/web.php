@@ -30,7 +30,7 @@ Route::post('/profiel', 'UserController@update');
 
 Route::get('/profiel/nieuwe-cosplay', 'CosplayController@create');
 Route::post('/profiel/nieuwe-cosplay', 'CosplayController@store');
-Route::post('/profiel/cosplay-overzicht', 'CosplayController@update');
+Route::post('/profiel/cosplay-overzicht/{id}', 'CosplayphotoController@store');
 
 Route::get('/profiel/cosplay-overzicht/grime', 'PagesController@grime');
 Route::get('/profiel/cosplay-overzicht/lenzen', 'PagesController@lenzen');
