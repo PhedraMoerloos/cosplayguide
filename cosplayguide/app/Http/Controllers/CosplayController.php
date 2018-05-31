@@ -97,7 +97,6 @@ class CosplayController extends Controller
 
 
         $cosplay_id = $cosplay->id;
-        //$cosplay_id = 8;
 
 
         $cosplayphoto = new Cosplayphoto;
@@ -195,7 +194,7 @@ class CosplayController extends Controller
         $user_logged_in = \Auth::user();
 
         $cosplay = Cosplay::findOrFail($id);
-        $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->get();
+        $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->where('is_shown', 1)->get();
         $cosplay_creator_id = $cosplay->user_id;
         $cosplay_creator = User::findOrFail($cosplay_creator_id);
 
@@ -243,7 +242,38 @@ class CosplayController extends Controller
         $cosplay->euros_spent             = $request->get('euros_spent');
         $cosplay->project_description     = $request->get('project_description');
         $cosplay->published_at            = \Carbon\Carbon::now();
-        $cosplay->status                  = 'completed';
+
+
+        //thumbnail
+
+        if($request->hasFile('thumbnail_url')){
+
+
+          //php artisan storage:link eerst, om een symbolic link te hebben tussen storage/app/public/images en de public/storage/images
+          $image = $request->file('thumbnail_url');
+
+          //database:
+          // allemaal een andere naam, cosplay foto's vinden door cosplay_id, thumbnail naam wordt opgeslagen in cosplay zelf
+          $filename = $image->hashName();
+          $cosplay->thumbnail_url =  'thumbnail' . $filename;
+
+          //resizen en opslaan
+          //thumbnail
+          Image::make($image)->resize(171, null, function ($constraint) {
+              $constraint->aspectRatio();
+          })->crop(171, 171)->save( storage_path('app/public/images/' . 'thumbnail' . $filename ) );
+
+
+        };
+
+
+
+        if ($cosplay->status != "completed") {
+
+          $cosplay->status                = 'completed';
+
+        }
+
 
         $cosplay->save();
 

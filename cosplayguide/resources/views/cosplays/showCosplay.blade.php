@@ -54,6 +54,11 @@
 
   </div>
 
+
+  @foreach ($cosplayphotos as $cosplayphoto)
+      <img src="{{ asset('/storage/images/' . $cosplayphoto->photo_url) }}" alt="{{ $cosplay->name }} cosplay">
+  @endforeach
+
   <img src="{{ asset('/storage/images/' . $cosplay_creator->profile_picture_url) }}" alt="profile picture {{ $cosplay_creator->username }}">
   <h1>{{ $cosplay_creator->username }}</h1>
   <p>{{ \Carbon\Carbon::createFromTimeStamp(strtotime($cosplay->published_at))->format('d/m/Y') }}</p>
@@ -61,9 +66,7 @@
   <p>{{ $cosplay->project_description }}</p>
 @endif
 
-  @foreach ($cosplayphotos as $cosplayphoto)
-      <img src="{{ asset('/storage/images/' . $cosplayphoto->photo_url) }}" alt="{{ $cosplay->name }} cosplay">
-  @endforeach
+
 
 
 

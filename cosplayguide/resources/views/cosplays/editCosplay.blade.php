@@ -35,13 +35,9 @@
       <img src="{{ asset('/storage/images/' . $cosplay->thumbnail_url) }}" alt="thumbnail {{ $cosplay->name }} ">
     </div>
 
-    <!--<div class="form-group">
-        <input type="file" name="thumbnail_url" required>
-    </div>-->
-
-    <!--<div class="form-group">
+    <div class="form-group">
         <input type="file" name="thumbnail_url">
-    </div>-->
+    </div>
 
     <div class="form-group">
         <label for="difficulty">Moeilijkheidsgraad</label>
