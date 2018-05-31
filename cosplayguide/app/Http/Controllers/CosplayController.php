@@ -245,7 +245,6 @@ class CosplayController extends Controller
 
 
         //thumbnail
-
         if($request->hasFile('thumbnail_url')){
 
 
@@ -264,6 +263,31 @@ class CosplayController extends Controller
           })->crop(171, 171)->save( storage_path('app/public/images/' . 'thumbnail' . $filename ) );
 
 
+        };
+
+
+        //toegevoegde cosplayphotos
+        if($request->hasFile('photo_url')){
+
+            foreach(($request->file('photo_url')) as $image){
+
+              $cosplayphoto = new Cosplayphoto;
+              $cosplayphoto->cosplay_id = $cosplay->id;
+
+
+              //database:
+              // allemaal een andere naam, cosplay foto's vinden door cosplay_id, thumbnail naam wordt opgeslagen in cosplay zelf
+              $filename = $image->hashName();
+              $cosplayphoto->photo_url = $filename;
+
+              //resizen en opslaan
+              Image::make($image)->resize(430, null, function ($constraint) {
+                  $constraint->aspectRatio();
+              })->save( storage_path('app/public/images/' . $filename ) );
+
+              $cosplayphoto->save();
+
+            }
         };
 
 

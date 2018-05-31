@@ -13,9 +13,9 @@
 
 <form method="post" action="/profiel/cosplay-info/update/{{ $cosplay->id }}" enctype="multipart/form-data">
 
-    <!--<div class="form-group">
+    <div class="form-group">
         <input type="file" name="photo_url[]" id="cosplayphoto" multiple />
-    </div>-->
+    </div>
 
 
     {{ csrf_field() }}

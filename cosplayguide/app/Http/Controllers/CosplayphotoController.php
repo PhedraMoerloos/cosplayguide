@@ -19,7 +19,7 @@ class CosplayphotoController extends Controller
 
         $cosplayphoto->save();
 
-        return redirect('/profiel/cosplay-overzicht/'. $cosplayphoto->cosplay_id);
+        return back()->withInput();
 
     }
 

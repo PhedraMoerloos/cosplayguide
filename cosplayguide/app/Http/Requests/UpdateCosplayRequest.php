@@ -32,6 +32,7 @@ class UpdateCosplayRequest extends FormRequest
             'months_spent'            => 'required|integer|min:1',
             'euros_spent'             => 'required|integer|min:0',
             'project_description'     => 'required|min:30',
+            'photo_url.*'             => 'image|mimes:jpeg,png,jpg,svg|max:2048',
 
         ];
     }
@@ -60,6 +61,9 @@ class UpdateCosplayRequest extends FormRequest
             'independence_percentage.max'   => "Je zelfstandigheidspercentage kan niet boven 100% liggen.",
             'thumbnail_url.max'             => "Je foto mag niet groter zijn dan 2048 bytes.",
             'thumbnail_url.mimes'           => "Je bestand is niet van het type .jpeg, .jpg, .png of .svg",
+            'photo_url.*.image'             => "Één van je bestanden is geen foto.",
+            'photo_url.*.mimes'             => "Één van je bestanden is niet van het type .jpeg, .jpg, .png of .svg",
+            'photo_url.*.max'               => "Één van je foto's is groter dan 2048 bytes.",
 
         ];
     }
