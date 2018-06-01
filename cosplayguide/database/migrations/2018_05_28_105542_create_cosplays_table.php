@@ -20,6 +20,7 @@ class CreateCosplaysTable extends Migration
             $table->string('slug')->nullable();
             $table->string('status')->default('shoppen');
             $table->string('thumbnail_url');
+            $table->boolean('is_shown')->default(true);
             $table->timestamps();
 
             //deze info wordt pas ingevuld eens de cosplay af is, niet bij het creëren.

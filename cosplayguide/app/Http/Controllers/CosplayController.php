@@ -32,7 +32,7 @@ class CosplayController extends Controller
         $user = \Auth::user();
 
         $user_id = $user->id;
-        $cosplays = Cosplay::where('user_id', $user_id)->get();
+        $cosplays = Cosplay::where('user_id', $user_id)->where('is_shown', 1)->get();
 
         $total_number_of_cosplays = $cosplays->count();
         $number_of_completed_cosplays = $cosplays->where('status', 'completed')->count();
@@ -173,12 +173,13 @@ class CosplayController extends Controller
        //extra safety net
        if ($status == "completed") {
 
-         return redirect('profiel/cosplay-info/' . $cosplay->id);
+
+         return redirect('profiel/cosplays/' . $cosplay->id);
 
        }
 
        else {
-         return redirect('profiel/cosplays/' . $cosplay->id);
+         return redirect('profiel/cosplay-overzicht/' . $cosplay->id);
        }
 
 
@@ -314,12 +315,12 @@ class CosplayController extends Controller
     public function destroy($id)
     {
 
-        /*$cosplay = Cosplay::findOrFail($id);
+        $cosplay = Cosplay::findOrFail($id);
         $cosplay->is_shown = false;
 
         $cosplay->save();
 
-        return redirect('/profiel');*/
+        return redirect('/profiel');
 
     }
 }

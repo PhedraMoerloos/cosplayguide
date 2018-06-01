@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('description')->default('example: Student in Multimedia');
             $table->string('level')->default('Youngling');
-            $table->string('profile_picture_url')->default('/img/default_profile.jpg');
+            $table->string('profile_picture_url')->default('default_profile.jpg');
             $table->rememberToken();
             $table->timestamps();
         });
