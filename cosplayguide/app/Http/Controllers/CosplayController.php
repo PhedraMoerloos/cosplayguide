@@ -34,24 +34,33 @@ class CosplayController extends Controller
         $user_id = $user->id;
         $cosplays = Cosplay::where('user_id', $user_id)->where('is_shown', 1)->get();
 
-        $total_number_of_cosplays = $cosplays->count();
+        $total_number_of_cosplays = $cosplays->where('is_shown', 1)->count();
         $number_of_completed_cosplays = $cosplays->where('status', 'completed')->count();
         $number_of_cosplays_in_progress = $total_number_of_cosplays - $number_of_completed_cosplays;
 
-
-        if ( $number_of_completed_cosplays == 1 ) {
+        //0
+        if ( $number_of_completed_cosplays == 0) {
 
             $user->level = "Youngling";
 
         }
 
-        else if ( $number_of_completed_cosplays > 1 && $number_of_completed_cosplays <= 3 ) {
+        //1 en 2
+        else if ( $number_of_completed_cosplays > 0 && $number_of_completed_cosplays <= 2) {
 
             $user->level = "Padawan";
 
         }
 
-        else if( $number_of_completed_cosplays > 3) {
+        //3 en 4
+        else if( $number_of_completed_cosplays == 3 || $number_of_completed_cosplays == 4) {
+
+            $user->level = "Knight";
+
+        }
+
+        //vanaf 5
+        else if( $number_of_completed_cosplays >= 5) {
 
             $user->level = "Master";
 
