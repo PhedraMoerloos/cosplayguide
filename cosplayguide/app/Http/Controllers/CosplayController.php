@@ -207,8 +207,9 @@ class CosplayController extends Controller
         $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->where('is_shown', 1)->get();
         $cosplay_creator_id = $cosplay->user_id;
         $cosplay_creator = User::findOrFail($cosplay_creator_id);
+        $photo_number = 1;
 
-        return view('cosplays.showCosplay', compact('cosplay', 'cosplay_creator', 'cosplayphotos', 'user_logged_in'));
+        return view('cosplays.showCosplay', compact('cosplay', 'cosplay_creator', 'cosplayphotos', 'user_logged_in', 'photo_number'));
 
      }
 

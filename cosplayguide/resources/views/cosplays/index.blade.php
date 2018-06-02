@@ -37,6 +37,11 @@
     <p>number of cosplays in progress: {{ $number_of_cosplays_in_progress }}</p>
     <p>level: {{ $user->level }}</p>
 
+    <img src="/img/level/level-basis-cirkel.png" alt="level cirkel">
+    <img src={{"/img/level/level-" . $user->level . ".png"}} alt="level {{ $user->level }}">
+
+
+
 
 
     @foreach ($cosplays as $cosplay)

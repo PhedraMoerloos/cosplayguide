@@ -56,8 +56,11 @@
 
 
   @foreach ($cosplayphotos as $cosplayphoto)
-      <img src="{{ asset('/storage/images/' . $cosplayphoto->photo_url) }}" alt="{{ $cosplay->name }} cosplay">
+      <p>{{ $photo_number }} of {{ count($cosplayphotos) }}</p>
+      <img src="{{ asset('/storage/images/' . $cosplayphoto->photo_url) }}" alt="Foto {{ $cosplay->name }} cosplay {{ $photo_number++ }}">
   @endforeach
+
+
 
   <img src="{{ asset('/storage/images/' . $cosplay_creator->profile_picture_url) }}" alt="profile picture {{ $cosplay_creator->username }}">
   <h1>{{ $cosplay_creator->username }}</h1>
