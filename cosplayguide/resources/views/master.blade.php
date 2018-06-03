@@ -19,7 +19,7 @@
     <!--<link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>-->
 
     <!-- CSS -->
-    <!--<link rel="stylesheet" href="/css/master.css">-->
+    <link rel="stylesheet" href="/css/style.css">
     <script src="{{ asset('js/app.js') }}" defer></script>
 
   </head>

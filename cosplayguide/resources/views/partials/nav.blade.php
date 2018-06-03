@@ -1,44 +1,24 @@
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-    <div class="container">
+    <div class="container padding-top-1-5em">
         <a class="navbar-brand" href="{{ url('/') }}">
-            {{ config('app.name', 'Laravel') }}
+            <img class="logo-kleur" src="/img/logo-kleur.png" alt="logo {{ config('app.name', 'Laravel') }}">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Left Side Of Navbar -->
-            <ul class="navbar-nav mr-auto">
-              <li><a class="nav-link" href="/over-cosplay">Over cosplay</a></li>
-              <li><a class="nav-link" href="/tips-en-tricks">Tips & Tricks</a></li>
-              <li><a class="nav-link" href="/contact">Contact</a></li>
+            <ul class="navbar-nav mr-auto navbar-top">
+              <li><a class="nav-link" href="/over-cosplay">OVER COSPLAY</a></li>
+              <li><a class="nav-link" href="/tips-en-tricks">TIPS & TRICKS</a></li>
+              <li><a class="nav-link" href="/contact">CONTACT</a></li>
+          @guest
+              <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
+          @else
+              <li class="profile-link"><a class="nav-link" href="/profiel"><img class="profile-picture" src="{{ asset('/storage/images/' . Auth::user()->profile_picture_url) }}" alt="profiel foto {{ Auth::user()->username }}"></a></li>
+          @endguest
             </ul>
 
-            <!-- Right Side Of Navbar -->
-            <ul class="navbar-nav ml-auto">
-                <!-- Authentication Links -->
-                @guest
-                    <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                    <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
-                @else
-                    <li class="nav-item dropdown">
-                        <a href="/profiel"><img src="{{ asset('/storage/images/' . Auth::user()->profile_picture_url) }}" alt="profiel foto {{ Auth::user()->username }}"></a>
-
-                        <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('logout') }}"
-                               onclick="event.preventDefault();
-                                             document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
-                            </a>
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
-                            </form>
-                        </div>-->
-                    </li>
-                @endguest
-            </ul>
         </div>
     </div>
 </nav>

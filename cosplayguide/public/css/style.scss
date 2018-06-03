@@ -1,0 +1,74 @@
+@import "partials/profile";
+
+
+$font:'Open Sans', sans-serif;
+$donker-secondary-color: #3e297b;
+$licht-secondary-color: #8263d9;
+$primary-color: #ffad01;
+
+$heel-donker-grijs: #2e2e2e;
+$medium-donker-grijs: #787878;
+$medium-grijs: #8c8c8c;
+$licht-grijs: #bcbbbb;
+$heel-licht-grijs: #e5e5e5;
+
+$font-small: 0.71em;
+
+
+/* NAVIGATIE */
+
+.navbar-top {
+  margin-top: 1.55em;
+}
+
+.profile-link a {
+
+  padding: 0;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+
+  .profile-picture {
+    width: 45px;
+    border-radius: 50%;
+    margin-top: -0.5em;
+  }
+
+}
+
+
+.navbar-brand {
+  margin-right: 0.5em;
+
+}
+
+.logo-kleur {
+  width: 50px;
+
+}
+
+.navbar-nav {
+
+  font-family: $font;
+  font-weight: 700;
+  font-size: $font-small;
+
+  li .nav-link {
+      color: #b2b2b2 !important;
+  }
+}
+
+
+
+/* ALGEMEEN */
+.padding-top-1-5em {
+  padding-top: 1.5em;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 768px){
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1.2rem;
+  }
+
+}

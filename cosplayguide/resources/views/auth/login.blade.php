@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('master')
 
 @section('content')
 <div class="container">
@@ -43,7 +43,7 @@
                             <div class="col-md-6 offset-md-4">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Remember Me') }}
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Onthoud mij') }}
                                     </label>
                                 </div>
                             </div>
@@ -56,7 +56,11 @@
                                 </button>
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
+                                    {{ __('Je wachtwoord vergeten?') }}
+                                </a>
+
+                                <a class="btn btn-link" href="{{ route('register') }}">
+                                  Nog geen account? {{ __('Registreer hier') }}
                                 </a>
                             </div>
                         </div>
