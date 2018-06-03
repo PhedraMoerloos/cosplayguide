@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'failed' => 'These credentials do not match our records.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+    //'failed' => 'These credentials do not match our records.',
+    'failed' => 'Deze gegevens zijn niet terug te vinden.',
+    //'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+    'throttle' => 'Te vaak proberen inloggen. Probeer het alstublief opnieuw in :seconds seconden.',
 
 ];
