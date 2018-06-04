@@ -39,13 +39,13 @@ Route::get('/profiel/cosplay-overzicht/armor', 'PagesController@armor');
 Route::get('/profiel/cosplay-overzicht/voorwerpen', 'PagesController@voorwerpen');
 Route::get('/profiel/cosplay-overzicht/stoffen', 'PagesController@stoffen');
 Route::get('/profiel/cosplay-overzicht/change-status/{id}/{status}', 'CosplayController@change_status');
-Route::get('/profiel/cosplay-overzicht/{id}', 'CosplayController@show_progress');
+Route::get('/profiel/cosplay-overzicht/{id}/{slug?}', 'CosplayController@show_progress')->name('show_progress');
 Route::get('/profiel/delete/{id}', 'CosplayphotoController@delete');
 
 
 
-Route::get('/profiel/cosplay-info/{id}', 'CosplayController@edit');
+Route::get('/profiel/cosplay-info/{id}/{slug?}', 'CosplayController@edit')->name('cosplay_edit');
 Route::post('/profiel/cosplay-info/update/{id}', 'CosplayController@update');
-Route::get('/profiel/cosplays/{id}/{slug?}', 'CosplayController@show')->name('show_profiel');
-Route::get('/cosplays/{id}', 'CosplayController@show');
+Route::get('/profiel/cosplays/{id}/{slug?}', 'CosplayController@show')->name('show_cosplay');
+Route::get('/cosplays/{id}/{slug?}', 'CosplayController@show');
 Route::get('/profiel/cosplays/delete/{id}', 'CosplayController@destroy');

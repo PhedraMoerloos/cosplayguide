@@ -83,7 +83,7 @@
     </ul>
 
 
-    <a href="{{"/profiel/cosplay-info/". $cosplay->id}}" class="btn btn-primary">Klaar!</a>
+    <a href="{{ route('cosplay_edit', [$cosplay->id, $cosplay->slug])}} " class="btn btn-primary">Klaar!</a>
 
 
 

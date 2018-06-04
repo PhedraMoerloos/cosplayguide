@@ -162,7 +162,7 @@ class CosplayController extends Controller
 
 
 
-     public function show_progress($id)
+     public function show_progress($id, $slug = null)
      {
 
         $cosplay = Cosplay::findOrFail($id);
@@ -222,7 +222,7 @@ class CosplayController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id, $slug = null)
     {
 
       $cosplay = Cosplay::findOrFail($id);

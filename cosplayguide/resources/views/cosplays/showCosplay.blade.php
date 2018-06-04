@@ -7,10 +7,10 @@
   @if ($user_logged_in)
 
     @if ($cosplay->status == "completed")
-      <a href="{{"/profiel/cosplay-info/". $cosplay->id}}">edit</a>
+      <a href="{{ route('cosplay_edit', [$cosplay->id, $cosplay->slug]) }}">edit</a>
 
     @else
-      <a href="{{"/profiel/cosplay-overzicht/". $cosplay->id}}">edit</a>
+      <a href="{{ route('show_progress', [$cosplay->id, $cosplay->slug]) }}">edit</a>
 
     @endif
 
