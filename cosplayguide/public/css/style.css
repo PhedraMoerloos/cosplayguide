@@ -1,6 +1,6 @@
 /* NAVIGATIE */
 .navbar-top {
-  margin-top: 1.55em; }
+  margin-top: 0.75em; }
 
 .profile-link a {
   padding: 0;
@@ -20,17 +20,32 @@
 .navbar-nav {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 0.71em; }
-  .navbar-nav li .nav-link {
-    color: #b2b2b2 !important; }
+  font-size: 0.7em; }
+  .navbar-nav li {
+    margin-top: 0.5em; }
+    .navbar-nav li .nav-link {
+      color: #bcbbbb !important; }
+      .navbar-nav li .nav-link:hover {
+        color: #aaa9a9 !important; }
+  .navbar-nav li:last-child {
+    margin-top: 0; }
 
 /* ALGEMEEN */
 .padding-top-1-5em {
   padding-top: 1.5em; }
 
 /* MEDIA QUERIES */
+@media (min-width: 576px) {
+  .profile-link a .profile-picture {
+    margin-top: 1.2em; }
+
+  .navbar-top {
+    margin-top: 1.5em; } }
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-left: 1.2rem; } }
+    padding-left: 1.2rem; }
+
+  .profile-link a .profile-picture {
+    margin-top: 0em; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,13 +12,13 @@ $medium-grijs: #8c8c8c;
 $licht-grijs: #bcbbbb;
 $heel-licht-grijs: #e5e5e5;
 
-$font-small: 0.71em;
+$font-small: 0.70em;
 
 
 /* NAVIGATIE */
 
 .navbar-top {
-  margin-top: 1.55em;
+  margin-top: 0.75em;
 }
 
 .profile-link a {
@@ -52,9 +52,23 @@ $font-small: 0.71em;
   font-weight: 700;
   font-size: $font-small;
 
-  li .nav-link {
-      color: #b2b2b2 !important;
+  li {
+    margin-top: 0.5em;
+
+    .nav-link {
+      color: $licht-grijs !important;
+
+      &:hover {
+        color: #aaa9a9 !important;
+      }
+
+    }
   }
+
+  li:last-child {
+    margin-top: 0;
+  }
+
 }
 
 
@@ -65,10 +79,28 @@ $font-small: 0.71em;
 }
 
 /* MEDIA QUERIES */
+
+@media (min-width: 576px){
+
+  .profile-link a .profile-picture {
+    margin-top: 1.2em;
+  }
+
+  .navbar-top {
+    margin-top: 1.5em;
+  }
+
+}
+
+
 @media (min-width: 768px){
 
   .navbar-expand-md .navbar-nav .nav-link {
     padding-left: 1.2rem;
+  }
+
+  .profile-link a .profile-picture {
+    margin-top: 0em;
   }
 
 }
