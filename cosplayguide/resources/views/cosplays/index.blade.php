@@ -48,7 +48,7 @@
 
       @if ($cosplay->status == "completed")
         <div>
-          <h2><a href="{{"/profiel/cosplays/". $cosplay->id}}">{{ $cosplay->name }}</a></h2>
+          <h2><a href="{{ route('show_profiel', [$cosplay->id, $cosplay->slug]) }}">{{ $cosplay->name }}</a></h2>
           <img src="{{ asset('/storage/images/' . $cosplay->thumbnail_url) }}" alt="thumbnail {{ $cosplay->name }} ">
           <a href="{{"/profiel/cosplay-info/". $cosplay->id}}">Edit</a>
           <a href="{{ action('CosplayController@destroy', [$cosplay->id]) }}">Delete</a>

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-    <div class="container padding-top-1-5em">
+    <div class="container padding-top-1-5em" @guest style="padding-top: 2.25em" @endguest>
         <a class="navbar-brand" href="{{ url('/') }}">
             <img class="logo-kleur" src="/img/logo-kleur.png" alt="logo {{ config('app.name', 'Laravel') }}">
         </a>
@@ -8,7 +8,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto navbar-top">
+            <ul class="navbar-nav mr-auto navbar-top" @guest style="margin-top: 0" @endguest>
               <li><a class="nav-link" href="/over-cosplay">OVER COSPLAY</a></li>
               <li><a class="nav-link" href="/tips-en-tricks">TIPS & TRICKS</a></li>
               <li><a class="nav-link" href="/contact">CONTACT</a></li>

@@ -198,7 +198,7 @@ class CosplayController extends Controller
 
 
 
-     public function show($id)
+     public function show($id, $slug = null)
      {
 
         $user_logged_in = \Auth::user();

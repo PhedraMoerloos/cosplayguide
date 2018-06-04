@@ -53,7 +53,7 @@ $font-small: 0.70em;
   font-size: $font-small;
 
   li {
-    margin-top: 0.5em;
+    margin-top: 0.4em;
 
     .nav-link {
       color: $licht-grijs !important;
@@ -65,7 +65,7 @@ $font-small: 0.70em;
     }
   }
 
-  li:last-child {
+  li.profile-link {
     margin-top: 0;
   }
 
@@ -100,7 +100,7 @@ $font-small: 0.70em;
   }
 
   .profile-link a .profile-picture {
-    margin-top: 0em;
+    margin-top: -0.3em;
   }
 
 }

@@ -22,12 +22,12 @@
   font-weight: 700;
   font-size: 0.7em; }
   .navbar-nav li {
-    margin-top: 0.5em; }
+    margin-top: 0.4em; }
     .navbar-nav li .nav-link {
       color: #bcbbbb !important; }
       .navbar-nav li .nav-link:hover {
         color: #aaa9a9 !important; }
-  .navbar-nav li:last-child {
+  .navbar-nav li.profile-link {
     margin-top: 0; }
 
 /* ALGEMEEN */
@@ -46,6 +46,6 @@
     padding-left: 1.2rem; }
 
   .profile-link a .profile-picture {
-    margin-top: 0em; } }
+    margin-top: -0.3em; } }
 
 /*# sourceMappingURL=style.css.map */
