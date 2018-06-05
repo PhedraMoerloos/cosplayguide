@@ -1,8 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
-aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <title>Facebook</title>
-  <desc>A solid styled icon from Orion Icon Library.</desc>
-  <path data-name="layer1"
-  d="M39.8 12.2H48V0h-9.7C26.6.5 24.2 7.1 24 14v6.1h-8V32h8v32h12V32h9.9l1.9-11.9H36v-3.7a3.962 3.962 0 0 1 3.8-4.2z"
-  fill="#e5e5e5"></path>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="537.054px" height="560px" viewBox="-118.957 0 537.054 560" enable-background="new -118.957 0 537.054 560"
+	 xml:space="preserve">
+<g id="Laag_1" display="none">
+	<title>Facebook</title>
+	<desc>A line styled icon from Orion Icon Library.</desc>
+	
+		<path display="inline" fill="none" stroke="#B2B2B2" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M212.979,118.574h67.271V18.5h-79.572C104.708,22.604,85.02,76.74,83.375,133.344v50.041H17.75V281h65.625v262.5h98.438V281h81.209
+		l15.582-97.615h-96.791v-30.354c-1.098-17.915,12.537-33.325,30.451-34.422C212.503,118.595,212.741,118.583,212.979,118.574z"/>
+</g>
+<g id="Laag_2">
+	<path fill="#B2B2B2" d="M211.979,116.574h67.271V16.5h-79.572C103.708,20.604,84.02,74.74,82.375,131.344v50.041H16.75V279h65.625
+		v262.5h98.438V279h81.209l15.582-97.615h-96.791v-30.354c-1.098-17.915,12.537-33.325,30.451-34.422
+		C211.503,116.595,211.741,116.583,211.979,116.574z"/>
+</g>
 </svg>

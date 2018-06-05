@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-    <div class="container padding-top-1-5em" @guest style="padding-top: 2.25em" @endguest>
+    <div class="container padding-top-1-5em" @guest style="padding-top: 1.75em" @endguest>
         <a class="navbar-brand" href="{{ url('/') }}">
             <img class="logo-kleur" src="/img/logo-kleur.png" alt="logo {{ config('app.name', 'Laravel') }}">
         </a>

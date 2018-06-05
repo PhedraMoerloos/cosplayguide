@@ -48,11 +48,13 @@ $font-big: 1em;
 
 }
 
-.navbar-nav {
-
+.navbar-nav, .nav-footer {
   font-family: $font;
   font-weight: 700;
   font-size: $font-small;
+}
+
+.navbar-nav {
 
   li {
     margin-top: 0.4em;
@@ -98,9 +100,107 @@ $font-big: 1em;
 footer {
 
     background-color: #302e2e;
+    text-align: center;
 
    .logo-zw {
      width: 100px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto
+   }
+
+
+   .social-footer, .nav-footer {
+     list-style: none;
+     padding:0;
+
+     li {
+       margin-right: 5em;
+       display: inline;
+     }
+
+     li:last-child {
+       margin-right: 0;
+     }
+   }
+
+
+   .social-footer {
+     margin-top: 4em;
+     margin-bottom: 4em;
+
+
+     li a img {
+       height: 30px;
+       width: 30px;
+     }
+
+
+     /*Facebook*/
+     li a img.social-facebook {
+       background:url('/img/iconen/facebook.svg') no-repeat;
+       background-size: contain;
+
+       &:hover {
+         background:url('/img/iconen/facebook-full.svg') no-repeat;
+         background-size: contain;
+       }
+     }
+
+
+     /*Instagram*/
+     li a img.social-instagram {
+       background:url('/img/iconen/instagram.svg') no-repeat;
+       background-size: contain;
+
+       &:hover {
+         background:url('/img/iconen/instagram-full.svg') no-repeat;
+         background-size: contain;
+       }
+     }
+
+
+     /*Pinterest*/
+     li a img.social-pinterest {
+       background:url('/img/iconen/pinterest.svg') no-repeat;
+       background-size: contain;
+
+       &:hover {
+         background:url('/img/iconen/pinterest-full.svg') no-repeat;
+         background-size: contain;
+       }
+     }
+
+   }
+
+   .nav-footer {
+     margin-bottom: 8em;
+
+     li {
+
+       margin-right: 7em;
+
+
+       a {
+         text-decoration: none;
+         color: $licht-grijs;
+
+         &:hover {
+           color: $heel-licht-grijs;
+         }
+
+       }
+    }
+
+
+   }
+
+
+   p {
+     font-size: $font-small;
+     margin-bottom:0;
+     padding-bottom: 1em;
+     color: $licht-grijs;
    }
 
 
