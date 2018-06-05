@@ -34,7 +34,8 @@ class CosplayController extends Controller
         $user_id = $user->id;
         $cosplays = Cosplay::where('user_id', $user_id)->where('is_shown', 1)->get();
 
-        $total_number_of_cosplays = $cosplays->where('is_shown', 1)->count();
+        /* -1 voor de standaard new cosplay */
+        $total_number_of_cosplays = $cosplays->where('is_shown', 1)->count()-1;
         $number_of_completed_cosplays = $cosplays->where('status', 'completed')->count();
         $number_of_cosplays_in_progress = $total_number_of_cosplays - $number_of_completed_cosplays;
 

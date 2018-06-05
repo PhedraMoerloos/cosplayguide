@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use \App\Cosplay;
 
 class RegisterController extends Controller
 {
@@ -63,10 +64,22 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+
+        $user = User::create([
             'username' => $data['username'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        $new_cosplay = new Cosplay;
+        $new_cosplay->status = "new";
+        /*maakt niet uit, is enkel om aan te kunnen maken*/
+        $new_cosplay->user_id = $user->id;
+        $new_cosplay->name = "nieuw";
+        $new_cosplay->name_serie = "nieuw";
+        $new_cosplay->thumbnail_url = "/img/default_profile.jpg";
+        $new_cosplay->save();
+
+        return $user;
     }
 }
