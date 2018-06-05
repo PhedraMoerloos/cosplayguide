@@ -12,7 +12,9 @@ $medium-grijs: #8c8c8c;
 $licht-grijs: #bcbbbb;
 $heel-licht-grijs: #e5e5e5;
 
-$font-small: 0.70em;
+$font-small: 0.7em;
+$font-medium: 0.85em;
+$font-big: 1em;
 
 
 /* NAVIGATIE */
@@ -30,7 +32,7 @@ $font-small: 0.70em;
   .profile-picture {
     width: 45px;
     border-radius: 50%;
-    margin-top: -0.5em;
+    margin-top: -0.3em;
   }
 
 }
@@ -57,6 +59,7 @@ $font-small: 0.70em;
 
     .nav-link {
       color: $licht-grijs !important;
+      padding-left: 1.2rem !important;
 
       &:hover {
         color: #aaa9a9 !important;
@@ -72,15 +75,43 @@ $font-small: 0.70em;
 }
 
 
+/* hamburger */
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,0);
+    border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+
+
+/* FOOTER */
+
+
 
 /* ALGEMEEN */
 .padding-top-1-5em {
   padding-top: 1.5em;
 }
 
+
+
 /* MEDIA QUERIES */
 
-@media (min-width: 576px){
+/*mobile*/
+@media (max-width: 576px){
+
+
+}
+
+/*tablet*/
+@media (max-width: 768px){
+  .navbar-nav li a {
+    text-align: center;
+
+  }
 
   .profile-link a .profile-picture {
     margin-top: 1.2em;
@@ -90,17 +121,20 @@ $font-small: 0.70em;
     margin-top: 1.5em;
   }
 
+
+  .logo-kleur {
+    width: 60px;
+
+  }
+
+  .navbar-nav {
+    font-size: $font-medium;
+  }
+
+
+
 }
 
 
-@media (min-width: 768px){
-
-  .navbar-expand-md .navbar-nav .nav-link {
-    padding-left: 1.2rem;
-  }
-
-  .profile-link a .profile-picture {
-    margin-top: -0.3em;
-  }
-
-}
+//testen op einde op groot scherm
+// @media (min-width: 1350px) {}

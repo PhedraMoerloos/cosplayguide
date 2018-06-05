@@ -9,7 +9,7 @@
   .profile-link a .profile-picture {
     width: 45px;
     border-radius: 50%;
-    margin-top: -0.5em; }
+    margin-top: -0.3em; }
 
 .navbar-brand {
   margin-right: 0.5em; }
@@ -24,28 +24,43 @@
   .navbar-nav li {
     margin-top: 0.4em; }
     .navbar-nav li .nav-link {
-      color: #bcbbbb !important; }
+      color: #bcbbbb !important;
+      padding-left: 1.2rem !important; }
       .navbar-nav li .nav-link:hover {
         color: #aaa9a9 !important; }
   .navbar-nav li.profile-link {
     margin-top: 0; }
 
+/* hamburger */
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0);
+  border: none; }
+
+.navbar-toggler:focus {
+  outline: none; }
+
+/* FOOTER */
 /* ALGEMEEN */
 .padding-top-1-5em {
   padding-top: 1.5em; }
 
 /* MEDIA QUERIES */
-@media (min-width: 576px) {
+/*mobile*/
+/*tablet*/
+@media (max-width: 768px) {
+  .navbar-nav li a {
+    text-align: center; }
+
   .profile-link a .profile-picture {
     margin-top: 1.2em; }
 
   .navbar-top {
-    margin-top: 1.5em; } }
-@media (min-width: 768px) {
-  .navbar-expand-md .navbar-nav .nav-link {
-    padding-left: 1.2rem; }
+    margin-top: 1.5em; }
 
-  .profile-link a .profile-picture {
-    margin-top: -0.3em; } }
+  .logo-kleur {
+    width: 60px; }
+
+  .navbar-nav {
+    font-size: 0.85em; } }
 
 /*# sourceMappingURL=style.css.map */
