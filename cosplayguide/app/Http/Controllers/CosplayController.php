@@ -42,28 +42,28 @@ class CosplayController extends Controller
         //0
         if ( $number_of_completed_cosplays == 0) {
 
-            $user->level = "Youngling";
+            $user->level = "YOUNGLING";
 
         }
 
         //1 en 2
         else if ( $number_of_completed_cosplays > 0 && $number_of_completed_cosplays <= 2) {
 
-            $user->level = "Padawan";
+            $user->level = "PADAWAN";
 
         }
 
         //3 en 4
         else if( $number_of_completed_cosplays == 3 || $number_of_completed_cosplays == 4) {
 
-            $user->level = "Knight";
+            $user->level = "KNIGHT";
 
         }
 
         //vanaf 5
         else if( $number_of_completed_cosplays >= 5) {
 
-            $user->level = "Master";
+            $user->level = "MASTER";
 
         }
 
@@ -131,14 +131,14 @@ class CosplayController extends Controller
 
           //resizen en opslaan
           //cosplayphoto
-          Image::make($image)->resize(430, null, function ($constraint) {
+          Image::make($image)->resize(700, null, function ($constraint) {
               $constraint->aspectRatio();
           })->save( storage_path('app/public/images/' . $filename ) );
 
           //thumbnail
-          Image::make($image)->resize(171, null, function ($constraint) {
+          Image::make($image)->resize(500, null, function ($constraint) {
               $constraint->aspectRatio();
-          })->crop(171, 171)->save( storage_path('app/public/images/' . 'thumbnail' . $filename ) );
+          })->crop(500, 500)->save( storage_path('app/public/images/' . 'thumbnail' . $filename ) );
 
 
         };
@@ -270,9 +270,9 @@ class CosplayController extends Controller
 
           //resizen en opslaan
           //thumbnail
-          Image::make($image)->resize(171, null, function ($constraint) {
+          Image::make($image)->resize(500, null, function ($constraint) {
               $constraint->aspectRatio();
-          })->crop(171, 171)->save( storage_path('app/public/images/' . 'thumbnail' . $filename ) );
+          })->crop(500, 500)->save( storage_path('app/public/images/' . 'thumbnail' . $filename ) );
 
 
         };
@@ -293,7 +293,7 @@ class CosplayController extends Controller
               $cosplayphoto->photo_url = $filename;
 
               //resizen en opslaan
-              Image::make($image)->resize(430, null, function ($constraint) {
+              Image::make($image)->resize(700, null, function ($constraint) {
                   $constraint->aspectRatio();
               })->save( storage_path('app/public/images/' . $filename ) );
 

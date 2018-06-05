@@ -36,10 +36,15 @@
 
       <p>number of completed cosplays: {{ $number_of_completed_cosplays }}</p>
       <p>number of cosplays in progress: {{ $number_of_cosplays_in_progress }}</p>
-      <p>level: {{ $user->level }}</p>
 
-      <img src="/img/level/level-basis-cirkel.png" alt="level cirkel">
-      <img src={{"/img/level/level-" . $user->level . ".png"}} alt="level {{ $user->level }}">
+      <div class="level">
+        <div class="background-circle"></div>
+        <div class="level-circle"></div>
+        <!--<img class="background-circle" src="/img/level/level-basis-cirkel.png" alt="level cirkel">-->
+        <img class="level-circle" src={{"/img/level/level-" . $user->level . ".png"}} alt="level {{ $user->level }}">
+        <p class="level-title">{{ $user->level }}</p>
+      </div>
+
 
     </div>
 
@@ -55,11 +60,11 @@
             @foreach ($chunk as $cosplay)
 
               @if ($cosplay->status == "completed")
-                <div class="col-4">
-                  <h2><a href="{{ route('show_cosplay', [$cosplay->id, $cosplay->slug]) }}">{{ $cosplay->name }}</a></h2>
-                  <img src="{{ asset('/storage/images/' . $cosplay->thumbnail_url) }}" alt="thumbnail {{ $cosplay->name }} ">
-                  <a href="{{ route('cosplay_edit', [$cosplay->id, $cosplay->slug]) }}">Edit</a>
-                  <a href="{{ action('CosplayController@destroy', [$cosplay->id]) }}">Delete</a>
+                <div class="col-4 cosplay">
+                  <img class="img-fluid" src="{{ asset('/storage/images/' . $cosplay->thumbnail_url) }}" alt="thumbnail {{ $cosplay->name }} ">
+                  <h4><a href="{{ route('show_cosplay', [$cosplay->id, $cosplay->slug]) }}">{{ $cosplay->name }}</a></h4>
+                  <a class="edit" href="{{ route('cosplay_edit', [$cosplay->id, $cosplay->slug]) }}">Edit</a>
+                  <a class="delete" href="{{ action('CosplayController@destroy', [$cosplay->id]) }}">Delete</a>
                 </div>
 
 
@@ -70,11 +75,11 @@
 
 
               @else
-              <div class="col-4">
-                <h2><a href="{{ route('show_progress', [$cosplay->id, $cosplay->slug])}}">{{ $cosplay->name }} IN PROGRESS</a></h2>
-                <img src="{{ asset('/storage/images/' . $cosplay->thumbnail_url) }}" alt="thumbnail {{ $cosplay->name }} ">
-                <a href="{{ route('show_progress', [$cosplay->id, $cosplay->slug])}}">Edit</a>
-                <a href="{{ action('CosplayController@destroy', [$cosplay->id]) }}">Delete</a>
+              <div class="col-4 cosplay">
+                <img class="img-fluid" src="{{ asset('/storage/images/' . $cosplay->thumbnail_url) }}" alt="thumbnail {{ $cosplay->name }} ">
+                <h4><a href="{{ route('show_progress', [$cosplay->id, $cosplay->slug])}}">{{ $cosplay->name }} IN PROGRESS</a></h4>
+                <a class="edit" href="{{ route('show_progress', [$cosplay->id, $cosplay->slug])}}">Edit</a>
+                <a class="delete" href="{{ action('CosplayController@destroy', [$cosplay->id]) }}">Delete</a>
               </div>
               @endif
 

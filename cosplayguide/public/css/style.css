@@ -1,3 +1,40 @@
+.level {
+  position: relative;
+  width: 128px;
+  margin: 0 auto; }
+  .level .background-circle {
+    position: relative;
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    border: 4px solid #3e297b; }
+  .level .level-circle {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .level .level-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.cosplay {
+  position: relative; }
+  .cosplay img {
+    position: relative; }
+  .cosplay h4 a, .cosplay a {
+    position: absolute; }
+  .cosplay h4 a {
+    left: 10%;
+    bottom: 10%;
+    max-width: 100%; }
+  .cosplay a.edit {
+    top: 10%;
+    right: 10%; }
+  .cosplay a.delete {
+    top: 10%;
+    left: 10%; }
+
 /* NAVIGATIE */
 .navbar {
   margin-bottom: 3em; }
