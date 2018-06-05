@@ -40,6 +40,15 @@
   outline: none; }
 
 /* FOOTER */
+.footer-background {
+  width: 100%;
+  position: relative; }
+
+footer {
+  background-color: #302e2e; }
+  footer .logo-zw {
+    width: 100px; }
+
 /* ALGEMEEN */
 .padding-top-1-5em {
   padding-top: 1.5em; }

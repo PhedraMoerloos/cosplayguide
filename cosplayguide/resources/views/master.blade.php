@@ -33,6 +33,8 @@
         @yield('content')
     </div>
 
+    <img class="footer-background" src="/img/footer.jpg" alt="Achtergrond bergen">
+
     @include('partials.footer')
 
   </body>

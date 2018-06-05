@@ -1,2 +1,6 @@
-<!-- inhoud footer: logo, nav static pages, copyright-->
-<p>this is the footer</p>
+<footer>
+
+  <img class="logo-zw" src="/img/logo-zw.png" alt="logo Cosplayguide in zwart wit">
+
+
+</footer>
