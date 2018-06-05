@@ -62,8 +62,8 @@ footer {
     footer .social-footer li:last-child, footer .nav-footer li:last-child {
       margin-right: 0; }
   footer .social-footer {
-    margin-top: 4em;
-    margin-bottom: 4em;
+    margin-top: 3em;
+    margin-bottom: 3em;
     /*Facebook*/
     /*Instagram*/
     /*Pinterest*/ }
@@ -89,7 +89,7 @@ footer {
         background: url("/img/iconen/pinterest-full.svg") no-repeat;
         background-size: contain; }
   footer .nav-footer {
-    margin-bottom: 8em; }
+    margin-bottom: 7em; }
     footer .nav-footer li {
       margin-right: 7em; }
       footer .nav-footer li a {
@@ -104,8 +104,8 @@ footer {
     color: #bcbbbb; }
 
 /* ALGEMEEN */
-.padding-top-1-5em {
-  padding-top: 1.5em; }
+.padding-top-3em {
+  padding-top: 3em; }
 
 /* MEDIA QUERIES */
 /*mobile*/
