@@ -228,11 +228,9 @@ footer {
 
 /* MEDIA QUERIES */
 
-/*mobile*/
-@media (max-width: 576px){
+//testen op einde op groot scherm
+// @media (min-width: 1350px) {}
 
-
-}
 
 /*tablet*/
 @media (max-width: 768px){
@@ -263,6 +261,8 @@ footer {
 
 }
 
+/*mobile*/
+@media (max-width: 576px){
 
-//testen op einde op groot scherm
-// @media (min-width: 1350px) {}
+
+}

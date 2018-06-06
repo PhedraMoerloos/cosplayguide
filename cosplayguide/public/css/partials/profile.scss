@@ -193,6 +193,11 @@
 }
 
 
+
+
+
+
+
 @media (max-width: 992px) {
   .col-4.cosplay {
     flex: 0 0 50%;
@@ -250,3 +255,56 @@
 
 
 }//einde media query
+
+
+
+@media (max-width: 768px){
+
+  .cosplay-profiel .col-9 {
+    flex: 0 0 60%;
+    max-width: 60%;
+
+    .col-4.cosplay {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-right: 0 !important;
+      padding-left: 7.5% !important;
+    }
+
+    .col-4.cosplay:nth-child(odd) .cosplay-hover img,
+    .col-4.cosplay:nth-child(even) .cosplay-hover img {
+      left: 7.5%;
+      right: 0;
+    }
+
+    .col-4.cosplay:nth-child(odd) .cosplay-hover a.thumbnail-title,
+    .col-4.cosplay:nth-child(odd) .cosplay-hover a.delete-link,
+    .col-4.cosplay:nth-child(even) .cosplay-hover a.thumbnail-title,
+    .col-4.cosplay:nth-child(even) .cosplay-hover a.delete-link{
+        left: 13%;
+    }
+
+    .col-4.cosplay:nth-child(even) .cosplay-hover a.edit-link,
+    .col-4.cosplay:nth-child(odd) .cosplay-hover a.edit-link {
+        right: 7.5%;
+    }
+
+    .col-4.cosplay:nth-child(even) a.new-cosplay,
+    .col-4.cosplay:nth-child(odd) a.new-cosplay {
+      left: 53%;
+    }
+
+
+
+
+  }
+
+  .cosplay-profiel .col-3 {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+
+
+
+
+}
