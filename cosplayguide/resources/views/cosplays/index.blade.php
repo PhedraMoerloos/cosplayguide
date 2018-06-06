@@ -9,7 +9,7 @@
 
       <div>
           <a id="navbarDropdown" class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-              . . .
+              . . .<!--<img class="social-facebook" src="/img/social-icon.png" alt="Facebook icoon">-->
           </a>
 
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -62,15 +62,20 @@
               @if ($cosplay->status == "completed")
                 <div class="col-4 cosplay">
                   <img class="img-fluid" src="{{ asset('/storage/images/' . $cosplay->thumbnail_url) }}" alt="thumbnail {{ $cosplay->name }} ">
-                  <h6><a href="{{ route('show_cosplay', [$cosplay->id, $cosplay->slug]) }}">{{ $cosplay->name }}</a></h6>
-                  <a class="edit-link" href="{{ route('cosplay_edit', [$cosplay->id, $cosplay->slug]) }}"><img class="edit-picture" src="/img/iconen/edit-full.svg" alt="Pas aan"></a>
-                  <a class="delete-link" href="{{ action('CosplayController@destroy', [$cosplay->id]) }}"><img class="delete-picture" src="/img/iconen/trash-full.svg" alt="Verwijder"></a>
+
+                  <div class="cosplay-hover">
+                    <img class="cosplay-overlay" src="/img/cosplay-overlay.png">
+                    <a class="thumbnail-title" href="{{ route('show_cosplay', [$cosplay->id, $cosplay->slug]) }}">{{ $cosplay->name }}</a>
+                    <a class="edit-link" href="{{ route('cosplay_edit', [$cosplay->id, $cosplay->slug]) }}"><img class="edit-picture" src="/img/iconen/edit-full.svg" alt="Pas aan"></a>
+                    <a class="delete-link" href="{{ action('CosplayController@destroy', [$cosplay->id]) }}"><img class="delete-picture" src="/img/iconen/trash-full.svg" alt="Verwijder"></a>
+                  </div>
+
                 </div>
 
 
               @elseif ($cosplay->status == "new")
                 <div class="col-4 cosplay">
-                  <img class="img-fluid" src="/img/new-cosplay.png" alt="thumbnail nieuwe cosplay">
+                  <img class="img-fluid" src="/img/new-cosplay.png">
                   <a class="new-cosplay" href="/profiel/nieuwe-cosplay">Nieuwe cosplay</a>
                 </div>
 
@@ -78,8 +83,13 @@
               @else
               <div class="col-4 cosplay">
                 <img class="img-fluid desaturate" src="{{ asset('/storage/images/' . $cosplay->thumbnail_url) }}" alt="thumbnail {{ $cosplay->name }} ">
-                <h6><a href="{{ route('show_progress', [$cosplay->id, $cosplay->slug])}}">IN PROGRESS</a></h6>
-                <a class="delete-link" href="{{ action('CosplayController@destroy', [$cosplay->id]) }}"><img class="delete-picture" src="/img/iconen/trash-full.svg" alt="Verwijder"></a>
+
+                <div class="cosplay-hover">
+                  <img class="cosplay-overlay" src="/img/cosplay-overlay.png">
+                  <a class="thumbnail-title" href="{{ route('show_progress', [$cosplay->id, $cosplay->slug])}}">IN PROGRESS</a>
+                  <a class="delete-link" href="{{ action('CosplayController@destroy', [$cosplay->id]) }}"><img class="delete-picture" src="/img/iconen/trash-full.svg" alt="Verwijder"></a>
+                </div>
+
               </div>
               @endif
 

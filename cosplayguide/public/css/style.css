@@ -1,3 +1,6 @@
+.cosplay-profiel .col-9, .cosplay-profiel .col-3 {
+  padding-top: 1.5em; }
+
 /* PROFIEL INFO */
 .level {
   position: relative;
@@ -34,23 +37,38 @@
     /* Nieuwe cosplay button */ }
     .cosplay-profiel .col-9 .cosplay img {
       position: relative; }
-    .cosplay-profiel .col-9 .cosplay h6 a, .cosplay-profiel .col-9 .cosplay a {
+    .cosplay-profiel .col-9 .cosplay .cosplay-hover a, .cosplay-profiel .col-9 .cosplay .cosplay-hover img.cosplay-overlay {
       position: absolute; }
-    .cosplay-profiel .col-9 .cosplay h6 a {
+    .cosplay-profiel .col-9 .cosplay .cosplay-hover img.cosplay-overlay {
+      top: 0;
+      left: 11%;
+      max-width: 100%;
+      max-height: 100%; }
+    .cosplay-profiel .col-9 .cosplay .cosplay-hover a.thumbnail-title {
       left: 17%;
-      bottom: 11%;
+      bottom: 5.5%;
       max-width: 100%;
       text-transform: uppercase;
       text-decoration: underline;
       color: #f6f6f6;
-      font-size: 1.1rem; }
-    .cosplay-profiel .col-9 .cosplay a.edit-link {
+      font-size: 1.1rem;
+      font-weight: 600; }
+      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.thumbnail-title:hover {
+        text-decoration: none; }
+    .cosplay-profiel .col-9 .cosplay .cosplay-hover a.edit-link {
       top: 5.5%;
       right: 19%;
       padding: 0; }
-      .cosplay-profiel .col-9 .cosplay a.edit-link .edit-picture {
+      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.edit-link .edit-picture {
         width: 17.5px; }
+    .cosplay-profiel .col-9 .cosplay .cosplay-hover a.delete-link {
+      top: 5.5%;
+      left: 17%;
+      padding: 0; }
+      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.delete-link .delete-picture {
+        width: 15px; }
     .cosplay-profiel .col-9 .cosplay a.new-cosplay {
+      position: absolute;
       text-transform: uppercase;
       text-decoration: none;
       padding: 10px;
@@ -64,31 +82,49 @@
       transform: translate(-50%, -50%); }
       .cosplay-profiel .col-9 .cosplay a.new-cosplay:hover {
         background-color: #ffb824; }
-    .cosplay-profiel .col-9 .cosplay a.delete-link {
-      top: 5.5%;
-      left: 17%;
-      padding: 0; }
-      .cosplay-profiel .col-9 .cosplay a.delete-link .delete-picture {
-        width: 15px; }
-  .cosplay-profiel .col-9 .cosplay:first-child {
-    padding-right: 7.5%;
-    padding-left: 0; }
-    .cosplay-profiel .col-9 .cosplay:first-child h6 a {
-      left: 6%; }
-    .cosplay-profiel .col-9 .cosplay:first-child a.edit-link {
-      right: 30%; }
-    .cosplay-profiel .col-9 .cosplay:first-child a.delete-link {
-      left: 6%; }
   .cosplay-profiel .col-9 .cosplay:last-child {
     padding-right: 0;
     padding-left: 7.5%; }
-    .cosplay-profiel .col-9 .cosplay:last-child h6 a {
+    .cosplay-profiel .col-9 .cosplay:last-child .cosplay-hover img {
+      left: 22.5%; }
+    .cosplay-profiel .col-9 .cosplay:last-child .cosplay-hover a.thumbnail-title {
       left: 28.25%; }
-    .cosplay-profiel .col-9 .cosplay:last-child a.edit-link {
+    .cosplay-profiel .col-9 .cosplay:last-child .cosplay-hover a.edit-link {
       right: 7.5%; }
-    .cosplay-profiel .col-9 .cosplay:last-child a.delete-link {
+    .cosplay-profiel .col-9 .cosplay:last-child .cosplay-hover a.delete-link {
       left: 28.25%; }
+    .cosplay-profiel .col-9 .cosplay:last-child a.new-cosplay {
+      left: 60.5%; }
+  .cosplay-profiel .col-9 .cosplay:first-child {
+    padding-right: 7.5%;
+    padding-left: 0; }
+    .cosplay-profiel .col-9 .cosplay:first-child .cosplay-hover img {
+      top: 0;
+      left: 0; }
+    .cosplay-profiel .col-9 .cosplay:first-child .cosplay-hover a.thumbnail-title {
+      left: 6%; }
+    .cosplay-profiel .col-9 .cosplay:first-child .cosplay-hover a.edit-link {
+      right: 30%; }
+    .cosplay-profiel .col-9 .cosplay:first-child .cosplay-hover a.delete-link {
+      left: 6%; }
+    .cosplay-profiel .col-9 .cosplay:first-child a.new-cosplay {
+      left: 38.5%; }
 
+@media (max-width: 992px) {
+  /*.col-4.cosplay {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .cosplay-profiel .col-9 .row:nth-child(even) {
+    .col-4.cosplay:nth-child(2) {
+
+    }
+  }
+
+  .cosplay-profiel .col-9 .row:nth-child(odd) {
+
+  }*/ }
 /* NAVIGATIE */
 .navbar {
   margin-bottom: 3em; }

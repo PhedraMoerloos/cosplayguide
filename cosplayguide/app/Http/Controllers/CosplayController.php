@@ -34,11 +34,7 @@ class CosplayController extends Controller
         $user = \Auth::user();
 
         $user_id = $user->id;
-        $cosplays = Cosplay::where('user_id', $user_id)->where('is_shown', 1)->get();
-
-        /* de nieuwe cosplay steeds laatst in de collectie plaatsen */
-        //moveOtherToEnd($cosplays);
-
+        $cosplays = Cosplay::where('user_id', $user_id)->where('is_shown', 1)->orderBy('id', 'desc')->get();
 
 
         /* -1 voor de standaard new cosplay */
@@ -80,17 +76,6 @@ class CosplayController extends Controller
         return view('cosplays.index', compact('user', 'cosplays', 'number_of_completed_cosplays', 'number_of_cosplays_in_progress'));
     }
 
-
-    /*public function moveOtherToEnd($collection){
-
-        return $collection->reject(function($value){
-            return $value['status'] =='new';
-        })
-        ->merge($collection->filter(function($value){
-            return $value['status'] =='new';
-            })
-        );
-    }*/
 
 
     /**
