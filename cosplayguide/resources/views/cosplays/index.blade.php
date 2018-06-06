@@ -54,13 +54,13 @@
           <div class="col-4">
             <div class="progress-circle"></div>
             <p>IN PROGRESS</p>
-            <p>{{ $number_of_cosplays_in_progress }}</p>
+            <p class="progress-number">{{ $number_of_cosplays_in_progress }}</p>
           </div>
 
           <div class="col-4">
             <div class="completed-circle"></div>
             <p>COMPLETED</p>
-            <p>{{ $number_of_completed_cosplays }}</p>
+            <p class="progress-number">{{ $number_of_completed_cosplays }}</p>
           </div>
 
         </div>

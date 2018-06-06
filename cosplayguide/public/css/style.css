@@ -34,14 +34,25 @@
 .level-info {
   padding-top: 2em; }
   .level-info .progress-circle, .level-info .completed-circle {
-    height: 15px;
-    width: 15px;
+    height: 13px;
+    width: 13px;
     border-radius: 50%;
     margin: 0 auto; }
   .level-info .progress-circle {
     border: 2px solid #3e297b; }
   .level-info .completed-circle {
     border: 2px solid #ffad01; }
+  .level-info .col-4 p {
+    font-size: 0.6em;
+    color: #8c8c8c;
+    margin-top: 0.75em;
+    margin-bottom: 0.5em; }
+  .level-info .col-4 .progress-number {
+    font-size: 1.2em;
+    color: #3f3e3e;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2em; }
 
 .level {
   position: relative;
@@ -163,6 +174,10 @@
   .cosplay-profiel .col-3 {
     flex: 0 0 30%;
     max-width: 30%; }
+
+  .level-info .col-4 {
+    flex: 0 0 40%;
+    max-width: 40%; }
 
   .col-4.cosplay {
     flex: 0 0 50%;

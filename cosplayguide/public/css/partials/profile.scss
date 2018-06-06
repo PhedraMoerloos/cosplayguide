@@ -55,8 +55,8 @@
   padding-top: 2em;
 
   .progress-circle, .completed-circle {
-    height: 15px;
-    width: 15px;
+    height: 13px;
+    width: 13px;
     border-radius: 50%;
     margin: 0 auto;
   }
@@ -67,6 +67,21 @@
 
   .completed-circle {
     border: 2px solid $primary-color;
+  }
+
+  .col-4 p {
+    font-size: $font-very-small;
+    color: $medium-grijs;
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+  }
+
+  .col-4 .progress-number {
+    font-size: $font-big;
+    color: $heel-donker-grijs;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2em;
   }
 
 
@@ -186,7 +201,7 @@
       text-decoration: none;
       padding: 10px;
       background-color: $primary-color;
-      color: $heel-donker-grijs;
+      color: $bijna-zwart;
       font-size: $font-medium;
       font-weight: 600;
       top: 50%;
@@ -281,6 +296,14 @@
     flex: 0 0 30%;
     max-width: 30%;
   }
+
+
+  .level-info .col-4 {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+
+
 
   .col-4.cosplay {
     flex: 0 0 50%;
