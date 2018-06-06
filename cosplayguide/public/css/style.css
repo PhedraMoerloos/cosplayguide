@@ -1,3 +1,4 @@
+/* PROFIEL INFO */
 .level {
   position: relative;
   width: 128px;
@@ -18,22 +19,75 @@
     left: 50%;
     transform: translate(-50%, -50%); }
 
-.cosplay {
-  position: relative; }
-  .cosplay img {
-    position: relative; }
-  .cosplay h4 a, .cosplay a {
-    position: absolute; }
-  .cosplay h4 a {
-    left: 10%;
-    bottom: 10%;
-    max-width: 100%; }
-  .cosplay a.edit {
-    top: 10%;
-    right: 10%; }
-  .cosplay a.delete {
-    top: 10%;
-    left: 10%; }
+/* COSPLAYS OVERZICHT */
+.cosplay-profiel .col-9 {
+  border-left: 1px solid #e5e5e5;
+  max-width: 70%;
+  padding-left: 5%;
+  /* Enkele cosplay */ }
+  .cosplay-profiel .col-9 .row {
+    margin-bottom: 9%; }
+  .cosplay-profiel .col-9 .cosplay {
+    position: relative;
+    padding-right: 3.75%;
+    padding-left: 3.75%;
+    /* Nieuwe cosplay button */ }
+    .cosplay-profiel .col-9 .cosplay img {
+      position: relative; }
+    .cosplay-profiel .col-9 .cosplay h6 a, .cosplay-profiel .col-9 .cosplay a {
+      position: absolute; }
+    .cosplay-profiel .col-9 .cosplay h6 a {
+      left: 17%;
+      bottom: 11%;
+      max-width: 100%;
+      text-transform: uppercase;
+      text-decoration: underline;
+      color: #f6f6f6;
+      font-size: 1.1rem; }
+    .cosplay-profiel .col-9 .cosplay a.edit-link {
+      top: 5.5%;
+      right: 19%;
+      padding: 0; }
+      .cosplay-profiel .col-9 .cosplay a.edit-link .edit-picture {
+        width: 17.5px; }
+    .cosplay-profiel .col-9 .cosplay a.new-cosplay {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px;
+      background-color: #ffad01;
+      color: #2e2e2e;
+      font-size: 0.85em;
+      font-weight: 600;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%); }
+      .cosplay-profiel .col-9 .cosplay a.new-cosplay:hover {
+        background-color: #ffb824; }
+    .cosplay-profiel .col-9 .cosplay a.delete-link {
+      top: 5.5%;
+      left: 17%;
+      padding: 0; }
+      .cosplay-profiel .col-9 .cosplay a.delete-link .delete-picture {
+        width: 15px; }
+  .cosplay-profiel .col-9 .cosplay:first-child {
+    padding-right: 7.5%;
+    padding-left: 0; }
+    .cosplay-profiel .col-9 .cosplay:first-child h6 a {
+      left: 6%; }
+    .cosplay-profiel .col-9 .cosplay:first-child a.edit-link {
+      right: 30%; }
+    .cosplay-profiel .col-9 .cosplay:first-child a.delete-link {
+      left: 6%; }
+  .cosplay-profiel .col-9 .cosplay:last-child {
+    padding-right: 0;
+    padding-left: 7.5%; }
+    .cosplay-profiel .col-9 .cosplay:last-child h6 a {
+      left: 28.25%; }
+    .cosplay-profiel .col-9 .cosplay:last-child a.edit-link {
+      right: 7.5%; }
+    .cosplay-profiel .col-9 .cosplay:last-child a.delete-link {
+      left: 28.25%; }
 
 /* NAVIGATIE */
 .navbar {
@@ -146,6 +200,9 @@ footer {
 /* ALGEMEEN */
 .padding-top-3em {
   padding-top: 3em; }
+
+.desaturate {
+  filter: grayscale(100%); }
 
 /* MEDIA QUERIES */
 /*mobile*/

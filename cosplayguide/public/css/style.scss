@@ -1,20 +1,22 @@
-@import "partials/profile";
-
-
 $font:'Open Sans', sans-serif;
 $donker-secondary-color: #3e297b;
 $licht-secondary-color: #8263d9;
 $primary-color: #ffad01;
+$primary-color-light: #ffb824;
 
 $heel-donker-grijs: #2e2e2e;
 $medium-donker-grijs: #787878;
 $medium-grijs: #8c8c8c;
 $licht-grijs: #bcbbbb;
 $heel-licht-grijs: #e5e5e5;
+$bijna-wit: #f6f6f6;
 
 $font-small: 0.7em;
 $font-medium: 0.85em;
 $font-big: 1em;
+
+
+@import "partials/profile";
 
 
 /* NAVIGATIE */
@@ -215,6 +217,11 @@ footer {
 /* ALGEMEEN */
 .padding-top-3em {
   padding-top: 3em;
+}
+
+
+.desaturate {
+  filter: grayscale(100%);
 }
 
 

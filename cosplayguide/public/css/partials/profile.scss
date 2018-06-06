@@ -1,3 +1,5 @@
+/* PROFIEL INFO */
+
 .level {
   position: relative;
   width: 128px;
@@ -27,31 +29,120 @@
 
 
 
+/* COSPLAYS OVERZICHT */
 
-.cosplay {
-  position: relative;
+.cosplay-profiel .col-9 {
+  border-left: 1px solid $heel-licht-grijs;
+  max-width: 70%;
+  padding-left: 5%;
 
-  img {
+  .row {
+    margin-bottom: 9%;
+
+  }
+
+  /* Enkele cosplay */
+  .cosplay {
     position: relative;
+    padding-right: 3.75%;
+    padding-left: 3.75%;
+
+    img {
+      position: relative;
+    }
+
+    h6 a, a {
+      position: absolute;
+    }
+
+    h6 a {
+      left:17%;
+      bottom: 11%;
+      max-width: 100%;
+      text-transform: uppercase;
+      text-decoration: underline;
+      color: $bijna-wit;
+      font-size: 1.1rem;
+    }
+
+    a.edit-link {
+      top: 5.5%;
+      right: 19%;
+      padding: 0;
+
+      .edit-picture {
+        width: 17.5px;
+      }
+
+
+    }
+
+
+    /* Nieuwe cosplay button */
+    a.new-cosplay {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px;
+      background-color: $primary-color;
+      color: $heel-donker-grijs;
+      font-size: $font-medium;
+      font-weight: 600;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+
+      &:hover {
+        background-color: $primary-color-light;
+      }
+    }
+
+
+    a.delete-link {
+      top: 5.5%;
+      left: 17%;
+      padding: 0;
+
+      .delete-picture {
+        width: 15px;
+      }
+
+    }
   }
 
-  h4 a, a {
-    position: absolute;
+  .cosplay:first-child {
+    padding-right: 7.5%;
+    padding-left: 0;
+
+    h6 a {
+      left:6%;
+    }
+
+    a.edit-link {
+      right: 30%;
+    }
+
+    a.delete-link {
+      left: 6%;
+    }
+
   }
 
-  h4 a {
-    left:10%;
-    bottom: 10%;
-    max-width: 100%;
+  .cosplay:last-child {
+    padding-right: 0;
+    padding-left: 7.5%;
+
+    h6 a {
+      left:28.25%;
+    }
+
+    a.edit-link {
+      right: 7.5%;
+    }
+
+    a.delete-link {
+      left: 28.25%;
+    }
   }
 
-  a.edit {
-    top: 10%;
-    right: 10%;
-  }
-
-  a.delete {
-    top: 10%;
-    left: 10%;
-  }
 }
