@@ -199,13 +199,25 @@
 
 
 @media (max-width: 992px) {
+
+  .cosplay-profiel .col-9 {
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding-left: 7.5%;
+  }
+
+  .cosplay-profiel .col-3 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
   .col-4.cosplay {
     flex: 0 0 50%;
     max-width: 50%;
   }
 
 
-    //foto 1 is altijd ok
+
     .cosplay-profiel .col-9 .col-4.cosplay:nth-child(even) {
       padding-right: 0;
       padding-left: 7.5%;
@@ -258,7 +270,7 @@
 
 
 
-@media (max-width: 768px){
+@media (max-width: 767px){
 
   .cosplay-profiel .col-9 {
     flex: 0 0 60%;
