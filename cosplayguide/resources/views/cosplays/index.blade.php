@@ -54,9 +54,9 @@
 
     <div class="col-9">
 
-
+      <div class="row">
       @foreach ($cosplays->chunk(3) as $chunk)
-        <div class="row">
+
             @foreach ($chunk as $cosplay)
 
               @if ($cosplay->status == "completed")
@@ -95,10 +95,10 @@
 
             @endforeach
 
-        </div>
+
 
       @endforeach
-
+      </div>
 
 
 

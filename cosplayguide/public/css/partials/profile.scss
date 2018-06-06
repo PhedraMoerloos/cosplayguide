@@ -37,19 +37,16 @@
 
 .cosplay-profiel .col-9 {
   border-left: 1px solid $heel-licht-grijs;
-  max-width: 70%;
+  //max-width: 70%;
   padding-left: 5%;
 
-  .row {
-    margin-bottom: 9%;
-
-  }
 
   /* Enkele cosplay */
   .cosplay {
     position: relative;
     padding-right: 3.75%;
     padding-left: 3.75%;
+    margin-bottom: 10%;
 
     img {
       position: relative;
@@ -135,7 +132,7 @@
   }
 
 
-  .cosplay:last-child {
+  .cosplay:nth-child(3n+3) {
     padding-right: 0;
     padding-left: 7.5%;
 
@@ -164,7 +161,7 @@
 
   }
 
-  .cosplay:first-child {
+  .cosplay:nth-child(3n+1) {
     padding-right: 7.5%;
     padding-left: 0;
 
@@ -197,18 +194,59 @@
 
 
 @media (max-width: 992px) {
-  /*.col-4.cosplay {
+  .col-4.cosplay {
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  .cosplay-profiel .col-9 .row:nth-child(even) {
-    .col-4.cosplay:nth-child(2) {
 
-    }
-  }
+    //foto 1 is altijd ok
+    .cosplay-profiel .col-9 .col-4.cosplay:nth-child(even) {
+      padding-right: 0;
+      padding-left: 7.5%;
 
-  .cosplay-profiel .col-9 .row:nth-child(odd) {
+      .cosplay-hover {
+        img {
+          left: 15%;
+        }
 
-  }*/
-}
+        a.thumbnail-title, a.delete-link {
+          left: 21%;
+        }
+
+        a.edit-link {
+          right: 7.5%;
+        }
+      }
+
+      a.new-cosplay {
+        left: 57%;
+      }
+
+    }//einde even children
+
+    .cosplay-profiel .col-9 .col-4.cosplay:nth-child(odd) {
+      padding-right: 7.5%;
+      padding-left: 0;
+
+      .cosplay-hover {
+        img {
+          left: 0;
+        }
+
+        a.thumbnail-title, a.delete-link {
+          left: 6%;
+        }
+
+        a.edit-link {
+          right: 23%;
+        }
+      }
+
+      a.new-cosplay {
+        left: 42%;
+      }
+    }//einde odd children
+
+
+}//einde media query
