@@ -4,6 +4,73 @@
 
 /* PROFIEL INFO */
 
+.profiel-info {
+  text-align: center;
+  padding-right: 0;
+  padding-left: 0;
+
+  .profiel {
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid $heel-licht-grijs;
+  }
+
+
+  .profile-picture-large {
+    border-radius: 50%;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: $font-big;
+    margin-top: 0.5em;
+    margin-bottom: 2px;
+  }
+
+  .profile-title {
+    font-size: $font-very-small;
+    font-weight: 600;
+    margin-top: 1em;
+  }
+
+  .profile-description {
+    font-size: $font-medium-small;
+    font-style: italic;
+    color: $medium-grijs;
+  }
+
+}
+
+
+#navbarDropdown {
+  margin-top: -1em;
+
+  .more-icon {
+    width: 20px;
+  }
+}
+
+
+/* PROFIEL LEVEL */
+.level-info {
+  padding-top: 2em;
+
+  .progress-circle, .completed-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .progress-circle {
+    border: 2px solid $donker-secondary-color;
+  }
+
+  .completed-circle {
+    border: 2px solid $primary-color;
+  }
+
+
+}
 .level {
   position: relative;
   width: 128px;
@@ -37,7 +104,6 @@
 
 .cosplay-profiel .col-9 {
   border-left: 1px solid $heel-licht-grijs;
-  //max-width: 70%;
   padding-left: 5%;
 
 
@@ -48,12 +114,17 @@
     padding-left: 3.75%;
     margin-bottom: 10%;
 
-    img {
-      position: relative;
+    a img {
+     position: relative;
     }
 
+    /*a.cosplay-hover-link:hover + .cosplay-hover {
+      display: block;
+    }*/
+
+
     .cosplay-hover {
-      //display: none;
+      display:block;
 
       a, img.cosplay-overlay {
       position: absolute;
@@ -75,7 +146,7 @@
         text-transform: uppercase;
         text-decoration: underline;
         color: $bijna-wit;
-        font-size: 1.1rem;
+        font-size: 1.1em;
         font-weight: 600;
 
         &:hover {

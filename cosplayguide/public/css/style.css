@@ -2,6 +2,47 @@
   padding-top: 1.5em; }
 
 /* PROFIEL INFO */
+.profiel-info {
+  text-align: center;
+  padding-right: 0;
+  padding-left: 0; }
+  .profiel-info .profiel {
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #e5e5e5; }
+  .profiel-info .profile-picture-large {
+    border-radius: 50%; }
+  .profiel-info h1 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    margin-bottom: 2px; }
+  .profiel-info .profile-title {
+    font-size: 0.6em;
+    font-weight: 600;
+    margin-top: 1em; }
+  .profiel-info .profile-description {
+    font-size: 0.75em;
+    font-style: italic;
+    color: #8c8c8c; }
+
+#navbarDropdown {
+  margin-top: -1em; }
+  #navbarDropdown .more-icon {
+    width: 20px; }
+
+/* PROFIEL LEVEL */
+.level-info {
+  padding-top: 2em; }
+  .level-info .progress-circle, .level-info .completed-circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0 auto; }
+  .level-info .progress-circle {
+    border: 2px solid #3e297b; }
+  .level-info .completed-circle {
+    border: 2px solid #ffad01; }
+
 .level {
   position: relative;
   width: 128px;
@@ -32,39 +73,44 @@
     padding-right: 3.75%;
     padding-left: 3.75%;
     margin-bottom: 10%;
+    /*a.cosplay-hover-link:hover + .cosplay-hover {
+      display: block;
+    }*/
     /* Nieuwe cosplay button */ }
-    .cosplay-profiel .col-9 .cosplay img {
+    .cosplay-profiel .col-9 .cosplay a img {
       position: relative; }
-    .cosplay-profiel .col-9 .cosplay .cosplay-hover a, .cosplay-profiel .col-9 .cosplay .cosplay-hover img.cosplay-overlay {
-      position: absolute; }
-    .cosplay-profiel .col-9 .cosplay .cosplay-hover img.cosplay-overlay {
-      top: 0;
-      left: 11%;
-      max-width: 100%;
-      max-height: 100%; }
-    .cosplay-profiel .col-9 .cosplay .cosplay-hover a.thumbnail-title {
-      left: 17%;
-      bottom: 5.5%;
-      max-width: 100%;
-      text-transform: uppercase;
-      text-decoration: underline;
-      color: #f6f6f6;
-      font-size: 1.1rem;
-      font-weight: 600; }
-      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.thumbnail-title:hover {
-        text-decoration: none; }
-    .cosplay-profiel .col-9 .cosplay .cosplay-hover a.edit-link {
-      top: 5.5%;
-      right: 19%;
-      padding: 0; }
-      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.edit-link .edit-picture {
-        width: 17.5px; }
-    .cosplay-profiel .col-9 .cosplay .cosplay-hover a.delete-link {
-      top: 5.5%;
-      left: 17%;
-      padding: 0; }
-      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.delete-link .delete-picture {
-        width: 15px; }
+    .cosplay-profiel .col-9 .cosplay .cosplay-hover {
+      display: block; }
+      .cosplay-profiel .col-9 .cosplay .cosplay-hover a, .cosplay-profiel .col-9 .cosplay .cosplay-hover img.cosplay-overlay {
+        position: absolute; }
+      .cosplay-profiel .col-9 .cosplay .cosplay-hover img.cosplay-overlay {
+        top: 0;
+        left: 11%;
+        max-width: 100%;
+        max-height: 100%; }
+      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.thumbnail-title {
+        left: 17%;
+        bottom: 5.5%;
+        max-width: 100%;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: #f6f6f6;
+        font-size: 1.1em;
+        font-weight: 600; }
+        .cosplay-profiel .col-9 .cosplay .cosplay-hover a.thumbnail-title:hover {
+          text-decoration: none; }
+      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.edit-link {
+        top: 5.5%;
+        right: 19%;
+        padding: 0; }
+        .cosplay-profiel .col-9 .cosplay .cosplay-hover a.edit-link .edit-picture {
+          width: 17.5px; }
+      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.delete-link {
+        top: 5.5%;
+        left: 17%;
+        padding: 0; }
+        .cosplay-profiel .col-9 .cosplay .cosplay-hover a.delete-link .delete-picture {
+          width: 15px; }
     .cosplay-profiel .col-9 .cosplay a.new-cosplay {
       position: absolute;
       text-transform: uppercase;
