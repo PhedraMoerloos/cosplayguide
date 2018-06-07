@@ -153,7 +153,7 @@ class CosplayController extends Controller
         $cosplayphoto->save();
         $cosplay->save();
 
-        return redirect('/profiel/cosplay-overzicht/' . $cosplay->id);
+        return redirect(route('show_progress', [$cosplay->id, $cosplay->slug]));
 
 
     }
@@ -189,12 +189,12 @@ class CosplayController extends Controller
        if ($status == "completed") {
 
 
-         return redirect('profiel/cosplays/' . $cosplay->id);
+         return redirect(route('show_cosplay', [$cosplay->id, $cosplay->slug]));
 
        }
 
        else {
-         return redirect('profiel/cosplay-overzicht/' . $cosplay->id);
+         return redirect(route('show_progress', [$cosplay->id, $cosplay->slug]));
        }
 
 
@@ -319,7 +319,7 @@ class CosplayController extends Controller
         $cosplay->save();
 
 
-        return redirect('profiel/cosplays/' . $cosplay->id);
+        return redirect(route('show_cosplay', [$cosplay->id, $cosplay->slug]));
     }
 
     /**
