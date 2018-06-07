@@ -330,7 +330,7 @@ class CosplayController extends Controller
      */
     public function destroy($id)
     {
-      
+
         $cosplay = Cosplay::findOrFail($id);
         $cosplay->is_shown = false;
 

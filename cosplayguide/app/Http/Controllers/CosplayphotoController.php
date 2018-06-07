@@ -45,7 +45,7 @@ class CosplayphotoController extends Controller
               $cosplayphoto->photo_url = $filename;
 
               //resizen en opslaan
-              Image::make($image)->resize(430, null, function ($constraint) {
+              Image::make($image)->resize(700, null, function ($constraint) {
                   $constraint->aspectRatio();
               })->save( storage_path('app/public/images/' . $filename ) );
 

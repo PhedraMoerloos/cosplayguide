@@ -14,6 +14,8 @@
 }
 
 
+
+
 .profile-description {
   padding-left: 0 !important;
 }
@@ -21,7 +23,6 @@
 .cosplay-names {
   margin-top: 1.25rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid $heel-licht-grijs;
 
   h2 {
     text-transform: uppercase;
@@ -63,7 +64,14 @@
   .col-6:last-child {
     border-right: none;
   }
+
 }
+
+
+.cosplay-niveau-rij:first-child {
+  border-top: 1px solid $heel-licht-grijs;
+}
+
 
 
 /* Cosplay share */
@@ -81,13 +89,113 @@
   }
 }
 
-.share {
-  font-size: $font-big;
-  font-weight: 600;
+
+.share-block {
+  margin-top: 2rem;
+
 }
 
 
+.share {
+  font-size: $font-big;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+
+.social-footer.social-cosplay {
+
+  /*Pinterest*/
+  li a img.social-pinterest {
+    background:url('/img/iconen/pinterest-social.svg') no-repeat;
+    background-size: contain;
+
+    &:hover {
+      background:url('/img/iconen/pinterest-social-full.svg') no-repeat;
+      background-size: contain;
+    }
+  }
+
+   /*Twitter*/
+   li a img.social-twitter {
+     background:url('/img/iconen/twitter-social.svg') no-repeat;
+     background-size: contain;
+
+     &:hover {
+       background:url('/img/iconen/twitter-social-full.svg') no-repeat;
+       background-size: contain;
+     }
+   }
+
+   /*Facebook*/
+   li a img.social-facebook {
+     background:url('/img/iconen/facebook-social.svg') no-repeat;
+     background-size: contain;
+
+     &:hover {
+       background:url('/img/iconen/facebook-social-full.svg') no-repeat;
+       background-size: contain;
+     }
+   }
+}
+
+
+
+
+
 /* SLIDER COSPLAYPHOTOS */
+.cosplay-show .col-9 {
+  padding-left: 4%;
+  padding-right: 0;
+}
+
+.cosplay-show .col-3 {
+  padding-right: 2.5%;
+}
+
+
+
+.carousel-item {
+  background-color: $bijna-zwart;
+
+  img {
+    height: 560px;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+.carousel-control-prev, .carousel-control-next {
+  bottom: -50px;
+  top: 590px;
+  width: auto;
+}
+
+.carousel-control-next {
+  right: auto;
+  margin-left: 55px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 32px;
+  height: 10px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("/img/iconen/pijltje-links-grijs.png");
+}
+
+.carousel-control-next-icon {
+    background-image: url("/img/iconen/pijltje-rechts-grijs.png");
+}
+
+
+
+
+.cosplay-show {
+  margin-bottom: 4.75rem;
+}
+
 
 
 /* PROJECT DESCRIPTION */
