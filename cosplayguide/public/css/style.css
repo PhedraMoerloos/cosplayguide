@@ -9,8 +9,6 @@
   .profiel-info .profiel {
     padding-bottom: 1.5em;
     border-bottom: 1px solid #e5e5e5; }
-  .profiel-info .profile-picture-large {
-    border-radius: 50%; }
   .profiel-info h1 {
     text-transform: uppercase;
     font-size: 1.2em;
@@ -20,10 +18,15 @@
     font-size: 0.6em;
     font-weight: 600;
     margin-top: 1em; }
-  .profiel-info .profile-description {
-    font-size: 0.75em;
-    font-style: italic;
-    color: #8c8c8c; }
+
+/* herbruikbaar */
+.profile-picture-large {
+  border-radius: 50%; }
+
+.small-grey-italic {
+  font-size: 0.75em;
+  font-style: italic;
+  color: #adacac; }
 
 #navbarDropdown {
   margin-top: -1em; }
@@ -72,7 +75,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    font-weight: 600; }
 
 /* COSPLAYS OVERZICHT */
 .cosplay-profiel .col-9 {
@@ -85,43 +89,41 @@
     padding-left: 3.75%;
     margin-bottom: 10%;
     /*a.cosplay-hover-link:hover + .cosplay-hover {
-      display: block;
+      visibility: visible;
     }*/
     /* Nieuwe cosplay button */ }
     .cosplay-profiel .col-9 .cosplay a img {
       position: relative; }
-    .cosplay-profiel .col-9 .cosplay .cosplay-hover {
-      display: block; }
-      .cosplay-profiel .col-9 .cosplay .cosplay-hover a, .cosplay-profiel .col-9 .cosplay .cosplay-hover img.cosplay-overlay {
-        position: absolute; }
-      .cosplay-profiel .col-9 .cosplay .cosplay-hover img.cosplay-overlay {
-        top: 0;
-        left: 11%;
-        max-width: 100%;
-        max-height: 100%; }
-      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.thumbnail-title {
-        left: 17%;
-        bottom: 5.5%;
-        max-width: 100%;
-        text-transform: uppercase;
-        text-decoration: underline;
-        color: #f6f6f6;
-        font-size: 1.1em;
-        font-weight: 600; }
-        .cosplay-profiel .col-9 .cosplay .cosplay-hover a.thumbnail-title:hover {
-          text-decoration: none; }
-      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.edit-link {
-        top: 5.5%;
-        right: 19%;
-        padding: 0; }
-        .cosplay-profiel .col-9 .cosplay .cosplay-hover a.edit-link .edit-picture {
-          width: 17.5px; }
-      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.delete-link {
-        top: 5.5%;
-        left: 17%;
-        padding: 0; }
-        .cosplay-profiel .col-9 .cosplay .cosplay-hover a.delete-link .delete-picture {
-          width: 15px; }
+    .cosplay-profiel .col-9 .cosplay .cosplay-hover a, .cosplay-profiel .col-9 .cosplay .cosplay-hover img.cosplay-overlay {
+      position: absolute; }
+    .cosplay-profiel .col-9 .cosplay .cosplay-hover img.cosplay-overlay {
+      top: 0;
+      left: 11%;
+      max-width: 100%;
+      max-height: 100%; }
+    .cosplay-profiel .col-9 .cosplay .cosplay-hover a.thumbnail-title {
+      left: 17%;
+      bottom: 5.5%;
+      max-width: 100%;
+      text-transform: uppercase;
+      text-decoration: underline;
+      color: #f6f6f6;
+      font-size: 1.1em;
+      font-weight: 600; }
+      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.thumbnail-title:hover {
+        text-decoration: none; }
+    .cosplay-profiel .col-9 .cosplay .cosplay-hover a.edit-link {
+      top: 5.5%;
+      right: 19%;
+      padding: 0; }
+      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.edit-link .edit-picture {
+        width: 17.5px; }
+    .cosplay-profiel .col-9 .cosplay .cosplay-hover a.delete-link {
+      top: 5.5%;
+      left: 17%;
+      padding: 0; }
+      .cosplay-profiel .col-9 .cosplay .cosplay-hover a.delete-link .delete-picture {
+        width: 15px; }
     .cosplay-profiel .col-9 .cosplay a.new-cosplay {
       position: absolute;
       text-transform: uppercase;
@@ -234,6 +236,96 @@
   .cosplay-profiel .col-3 {
     flex: 0 0 40%;
     max-width: 40%; } }
+/* COSPLAY INFO */
+.cosplay-info {
+  text-align: center; }
+  .cosplay-info .col-3 .edit-icon img {
+    width: 20px; }
+  .cosplay-info .username-cosplay {
+    margin-top: 0.5em; }
+
+.profile-description {
+  padding-left: 0 !important; }
+
+.cosplay-names {
+  margin-top: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e5e5; }
+  .cosplay-names h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #3e297b;
+    margin-bottom: 0.15em;
+    font-weight: 600; }
+  .cosplay-names p {
+    font-size: 0.75em;
+    font-weight: 600; }
+
+/* Cosplay niveau */
+.cosplay-niveau-rij {
+  border-bottom: 1px solid #e5e5e5; }
+  .cosplay-niveau-rij .col-6 {
+    border-right: 1px solid #e5e5e5;
+    padding-top: 1.60rem;
+    padding-bottom: 1.60rem; }
+    .cosplay-niveau-rij .col-6 p:first-child {
+      font-size: 0.75em;
+      color: #adacac;
+      margin-bottom: 0.155em; }
+    .cosplay-niveau-rij .col-6 p:last-child {
+      font-size: 1em;
+      margin-bottom: 0;
+      font-weight: 600; }
+  .cosplay-niveau-rij .col-6:last-child {
+    border-right: none; }
+
+/* Cosplay share */
+.social-footer.social-cosplay {
+  margin-top: 0;
+  margin-bottom: 0; }
+  .social-footer.social-cosplay li {
+    margin-right: 15%; }
+    .social-footer.social-cosplay li a img {
+      width: 28.5px;
+      height: 28.5px; }
+
+.share {
+  font-size: 1.2em;
+  font-weight: 600; }
+
+/* SLIDER COSPLAYPHOTOS */
+/* PROJECT DESCRIPTION */
+.project-description {
+  border-top: 1px solid #e5e5e5;
+  padding: 2rem;
+  padding-bottom: 0; }
+
+.project-description-info .float-left {
+  margin-right: 1rem; }
+
+.project-description-info .float-left:last-child {
+  margin-right: 0; }
+
+.project-description-info {
+  margin-bottom: 0.4rem; }
+  .project-description-info h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding-top: 5px;
+    font-weight: 600; }
+  .project-description-info p {
+    font-size: 0.7em;
+    color: #adacac;
+    padding-top: 11px; }
+
+.project-description-content {
+  color: #787878;
+  font-size: 0.90em; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #2e2e2e; }
+
 /* NAVIGATIE */
 .navbar {
   margin-bottom: 3em; }
@@ -241,14 +333,14 @@
 .navbar-top {
   margin-top: 0.75em; }
 
-.profile-link a {
+a.profile-link {
   padding: 0;
   padding-bottom: 0.5em;
   padding-left: 0.5em; }
-  .profile-link a .profile-picture {
+  a.profile-link .profile-picture {
     width: 45px;
     border-radius: 50%;
-    margin-top: -0.3em; }
+    margin-top: -0.4em; }
 
 .navbar-brand {
   margin-right: 0.5em; }
@@ -292,55 +384,58 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto; }
-  footer .social-footer, footer .nav-footer {
-    list-style: none;
-    padding: 0; }
-    footer .social-footer li, footer .nav-footer li {
-      margin-right: 5em;
-      display: inline; }
-    footer .social-footer li:last-child, footer .nav-footer li:last-child {
-      margin-right: 0; }
-  footer .social-footer {
-    margin-top: 3em;
-    margin-bottom: 3em;
-    /*Facebook*/
-    /*Instagram*/
-    /*Pinterest*/ }
-    footer .social-footer li a img {
-      height: 30px;
-      width: 30px; }
-    footer .social-footer li a img.social-facebook {
-      background: url("/img/iconen/facebook.svg") no-repeat;
-      background-size: contain; }
-      footer .social-footer li a img.social-facebook:hover {
-        background: url("/img/iconen/facebook-full.svg") no-repeat;
-        background-size: contain; }
-    footer .social-footer li a img.social-instagram {
-      background: url("/img/iconen/instagram.svg") no-repeat;
-      background-size: contain; }
-      footer .social-footer li a img.social-instagram:hover {
-        background: url("/img/iconen/instagram-full.svg") no-repeat;
-        background-size: contain; }
-    footer .social-footer li a img.social-pinterest {
-      background: url("/img/iconen/pinterest.svg") no-repeat;
-      background-size: contain; }
-      footer .social-footer li a img.social-pinterest:hover {
-        background: url("/img/iconen/pinterest-full.svg") no-repeat;
-        background-size: contain; }
-  footer .nav-footer {
-    margin-bottom: 7em; }
-    footer .nav-footer li {
-      margin-right: 7em; }
-      footer .nav-footer li a {
-        text-decoration: none;
-        color: #bcbbbb; }
-        footer .nav-footer li a:hover {
-          color: #e5e5e5; }
   footer p {
     font-size: 0.7em;
     margin-bottom: 0;
     padding-bottom: 1em;
     color: #bcbbbb; }
+
+.social-footer, .nav-footer {
+  list-style: none;
+  padding: 0; }
+  .social-footer li, .nav-footer li {
+    margin-right: 5em;
+    display: inline; }
+  .social-footer li:last-child, .nav-footer li:last-child {
+    margin-right: 0; }
+
+.social-footer {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  /*Facebook*/
+  /*Instagram*/
+  /*Pinterest*/ }
+  .social-footer li a img {
+    height: 30px;
+    width: 30px; }
+  .social-footer li a img.social-facebook {
+    background: url("/img/iconen/facebook.svg") no-repeat;
+    background-size: contain; }
+    .social-footer li a img.social-facebook:hover {
+      background: url("/img/iconen/facebook-full.svg") no-repeat;
+      background-size: contain; }
+  .social-footer li a img.social-instagram {
+    background: url("/img/iconen/instagram.svg") no-repeat;
+    background-size: contain; }
+    .social-footer li a img.social-instagram:hover {
+      background: url("/img/iconen/instagram-full.svg") no-repeat;
+      background-size: contain; }
+  .social-footer li a img.social-pinterest {
+    background: url("/img/iconen/pinterest.svg") no-repeat;
+    background-size: contain; }
+    .social-footer li a img.social-pinterest:hover {
+      background: url("/img/iconen/pinterest-full.svg") no-repeat;
+      background-size: contain; }
+
+.nav-footer {
+  margin-bottom: 7em; }
+  .nav-footer li {
+    margin-right: 7em; }
+    .nav-footer li a {
+      text-decoration: none;
+      color: #bcbbbb; }
+      .nav-footer li a:hover {
+        color: #e5e5e5; }
 
 /* ALGEMEEN */
 .padding-top-3em {
@@ -355,8 +450,8 @@ footer {
   .navbar-nav li a {
     text-align: center; }
 
-  .profile-link a .profile-picture {
-    margin-top: 1.2em; }
+  .navbar-collapse a.profile-link .profile-picture {
+    margin-top: 0.5em; }
 
   .navbar-top {
     margin-top: 1.5em; }

@@ -15,10 +15,6 @@
   }
 
 
-  .profile-picture-large {
-    border-radius: 50%;
-  }
-
   h1 {
     text-transform: uppercase;
     font-size: $font-big;
@@ -32,12 +28,19 @@
     margin-top: 1em;
   }
 
-  .profile-description {
-    font-size: $font-medium-small;
-    font-style: italic;
-    color: $medium-grijs;
-  }
 
+}
+
+
+/* herbruikbaar */
+.profile-picture-large {
+  border-radius: 50%;
+}
+
+.small-grey-italic {
+  font-size: $font-medium-small;
+  font-style: italic;
+  color: $medium-licht-grijs;
 }
 
 
@@ -110,6 +113,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-weight: 600;
   }
 }
 
@@ -134,12 +138,12 @@
     }
 
     /*a.cosplay-hover-link:hover + .cosplay-hover {
-      display: block;
+      visibility: visible;
     }*/
 
 
     .cosplay-hover {
-      display:block;
+      //visibility: hidden;
 
       a, img.cosplay-overlay {
       position: absolute;

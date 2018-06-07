@@ -40,7 +40,7 @@
         <img class="profile-picture-large" src="{{ asset('/storage/images/' . $user->profile_picture_url) }}" alt="profile picture {{ $user->username }}">
 
         <h1>{{ $user->username }}</h1>
-        <p class="profile-description">{{ $user->description }}</p>
+        <p class="small-grey-italic">{{ $user->description }}</p>
 
       </div>
 

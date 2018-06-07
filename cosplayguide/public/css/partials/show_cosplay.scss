@@ -1,0 +1,130 @@
+/* COSPLAY INFO */
+
+.cosplay-info {
+  text-align: center;
+
+  .col-3 .edit-icon img{
+    width: 20px;
+  }
+
+  .username-cosplay {
+    margin-top: 0.5em;
+  }
+
+}
+
+
+.profile-description {
+  padding-left: 0 !important;
+}
+
+.cosplay-names {
+  margin-top: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $heel-licht-grijs;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: $font-big;
+    color: $donker-secondary-color;
+    margin-bottom: 0.15em;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: $font-medium-small;
+    font-weight: 600;
+  }
+}
+
+
+/* Cosplay niveau */
+.cosplay-niveau-rij {
+  border-bottom: 1px solid $heel-licht-grijs;
+
+  .col-6 {
+    border-right: 1px solid $heel-licht-grijs;
+    padding-top: 1.60rem;
+    padding-bottom: 1.60rem;
+
+    p:first-child {
+      font-size: $font-medium-small;
+      color:$medium-licht-grijs;
+      margin-bottom: 0.155em;
+    }
+
+    p:last-child {
+      font-size: $font-medium-big;
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+  }
+
+  .col-6:last-child {
+    border-right: none;
+  }
+}
+
+
+/* Cosplay share */
+.social-footer.social-cosplay {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  li {
+    margin-right: 15%;
+
+    a img {
+      width: 28.5px;
+      height: 28.5px;
+    }
+  }
+}
+
+.share {
+  font-size: $font-big;
+  font-weight: 600;
+}
+
+
+/* SLIDER COSPLAYPHOTOS */
+
+
+/* PROJECT DESCRIPTION */
+.project-description {
+  border-top: 1px solid $heel-licht-grijs;
+  padding: 2rem;
+  padding-bottom: 0;
+
+}
+
+.project-description-info .float-left {
+  margin-right: 1rem;
+}
+
+.project-description-info .float-left:last-child {
+  margin-right: 0;
+}
+
+.project-description-info {
+  margin-bottom: 0.4rem;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: $font-big;
+    padding-top: 5px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: $font-small;
+    color: $medium-licht-grijs;
+    padding-top: 11px;
+  }
+
+}
+
+.project-description-content {
+  color: $medium-donker-grijs;
+  font-size: 0.90em;
+}

@@ -8,6 +8,7 @@ $bijna-zwart: #2e2e2e;
 $heel-donker-grijs: #3f3e3e;
 $medium-donker-grijs: #787878;
 $medium-grijs: #8c8c8c;
+$medium-licht-grijs: #adacac;
 $licht-grijs: #bcbbbb;
 $heel-licht-grijs: #e5e5e5;
 $bijna-wit: #f6f6f6;
@@ -21,7 +22,14 @@ $font-big: 1.2em;
 
 
 @import "partials/profile";
+@import "partials/show_cosplay";
 
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $bijna-zwart;
+
+}
 
 /* NAVIGATIE */
 
@@ -33,7 +41,7 @@ $font-big: 1.2em;
   margin-top: 0.75em;
 }
 
-.profile-link a {
+a.profile-link  {
 
   padding: 0;
   padding-bottom: 0.5em;
@@ -42,7 +50,7 @@ $font-big: 1.2em;
   .profile-picture {
     width: 45px;
     border-radius: 50%;
-    margin-top: -0.3em;
+    margin-top: -0.4em;
   }
 
 }
@@ -108,113 +116,117 @@ $font-big: 1.2em;
 
 
 footer {
+  background-color: #302e2e;
+  text-align: center;
 
-    background-color: #302e2e;
-    text-align: center;
+  .logo-zw {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
 
-   .logo-zw {
-     width: 100px;
-     display: block;
-     margin-left: auto;
-     margin-right: auto
+  p {
+   font-size: $font-small;
+   margin-bottom:0;
+   padding-bottom: 1em;
+   color: $licht-grijs;
+  }
+}
+
+
+
+
+.social-footer, .nav-footer {
+ list-style: none;
+ padding:0;
+
+ li {
+   margin-right: 5em;
+   display: inline;
+ }
+
+ li:last-child {
+   margin-right: 0;
+ }
+}
+
+
+.social-footer {
+ margin-top: 3em;
+ margin-bottom: 3em;
+
+
+ li a img {
+   height: 30px;
+   width: 30px;
+ }
+
+
+ /*Facebook*/
+ li a img.social-facebook {
+   background:url('/img/iconen/facebook.svg') no-repeat;
+   background-size: contain;
+
+   &:hover {
+     background:url('/img/iconen/facebook-full.svg') no-repeat;
+     background-size: contain;
    }
+ }
 
 
-   .social-footer, .nav-footer {
-     list-style: none;
-     padding:0;
+ /*Instagram*/
+ li a img.social-instagram {
+   background:url('/img/iconen/instagram.svg') no-repeat;
+   background-size: contain;
 
-     li {
-       margin-right: 5em;
-       display: inline;
-     }
-
-     li:last-child {
-       margin-right: 0;
-     }
+   &:hover {
+     background:url('/img/iconen/instagram-full.svg') no-repeat;
+     background-size: contain;
    }
+ }
 
 
-   .social-footer {
-     margin-top: 3em;
-     margin-bottom: 3em;
+ /*Pinterest*/
+ li a img.social-pinterest {
+   background:url('/img/iconen/pinterest.svg') no-repeat;
+   background-size: contain;
 
-
-     li a img {
-       height: 30px;
-       width: 30px;
-     }
-
-
-     /*Facebook*/
-     li a img.social-facebook {
-       background:url('/img/iconen/facebook.svg') no-repeat;
-       background-size: contain;
-
-       &:hover {
-         background:url('/img/iconen/facebook-full.svg') no-repeat;
-         background-size: contain;
-       }
-     }
-
-
-     /*Instagram*/
-     li a img.social-instagram {
-       background:url('/img/iconen/instagram.svg') no-repeat;
-       background-size: contain;
-
-       &:hover {
-         background:url('/img/iconen/instagram-full.svg') no-repeat;
-         background-size: contain;
-       }
-     }
-
-
-     /*Pinterest*/
-     li a img.social-pinterest {
-       background:url('/img/iconen/pinterest.svg') no-repeat;
-       background-size: contain;
-
-       &:hover {
-         background:url('/img/iconen/pinterest-full.svg') no-repeat;
-         background-size: contain;
-       }
-     }
-
+   &:hover {
+     background:url('/img/iconen/pinterest-full.svg') no-repeat;
+     background-size: contain;
    }
+ }
 
-   .nav-footer {
-     margin-bottom: 7em;
+}
 
-     li {
+.nav-footer {
+ margin-bottom: 7em;
 
-       margin-right: 7em;
+ li {
 
-
-       a {
-         text-decoration: none;
-         color: $licht-grijs;
-
-         &:hover {
-           color: $heel-licht-grijs;
-         }
-
-       }
-    }
+   margin-right: 7em;
 
 
-   }
-
-
-   p {
-     font-size: $font-small;
-     margin-bottom:0;
-     padding-bottom: 1em;
+   a {
+     text-decoration: none;
      color: $licht-grijs;
+
+     &:hover {
+       color: $heel-licht-grijs;
+     }
+
    }
+}
 
 
 }
+
+
+
+
+
+
 
 
 
@@ -243,9 +255,10 @@ footer {
 
   }
 
-  .profile-link a .profile-picture {
-    margin-top: 1.2em;
+  .navbar-collapse a.profile-link .profile-picture {
+    margin-top: 0.5em;
   }
+
 
   .navbar-top {
     margin-top: 1.5em;

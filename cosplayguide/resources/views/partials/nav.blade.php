@@ -15,7 +15,7 @@
           @guest
               <li><a class="nav-link" href="{{ route('login') }}">{{ __('LOGIN') }}</a></li>
           @else
-              <li class="profile-link"><a class="nav-link" href="/profiel"><img class="profile-picture" src="{{ asset('/storage/images/' . Auth::user()->profile_picture_url) }}" alt="profiel foto {{ Auth::user()->username }}"></a></li>
+              <li><a class="nav-link profile-link" href="/profiel"><img class="profile-picture" src="{{ asset('/storage/images/' . Auth::user()->profile_picture_url) }}" alt="profiel foto {{ Auth::user()->username }}"></a></li>
           @endguest
             </ul>
 
