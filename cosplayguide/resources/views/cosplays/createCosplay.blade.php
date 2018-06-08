@@ -9,12 +9,14 @@
 
     <div class="row nieuw">
 
+
       <div class="col">
 
         <a class="button-yellow back-profiel" href="/profiel">
           <img class="arrow left" src="/img/iconen/kort-pijltje-links-wit.png" alt="wit pijltje links">
           <p class="left">PROFIEL</p>
         </a>
+
       </div>
 
       <div class="col-5 create-cosplay">

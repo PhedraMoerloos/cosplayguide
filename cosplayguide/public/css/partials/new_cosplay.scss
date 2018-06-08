@@ -1,3 +1,5 @@
+/* IMAGE UPLOAD*/
+
 .cosplay-voorbeeld {
   position: relative;
 
@@ -24,6 +26,7 @@
     	z-index: -1;
     }
 
+
     label {
       font-family: 'Titillium Web', sans-serif;
       padding: 10px 15px;
@@ -47,6 +50,7 @@
   }
 }
 
+/* buttons */
 button.button-yellow {
   border: none;
 }
@@ -62,6 +66,18 @@ button.button-yellow.create {
   }
 }
 
+.button-yellow.back-profiel {
+  display: inline-block;
+  background-color: $licht-grijs;
+
+  &:hover {
+    background-color: #c3c2c2;
+  }
+}
+
+
+/* INPUTS */
+
 .create-cosplay input {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 600;
@@ -75,6 +91,10 @@ button.button-yellow.create {
     box-shadow: none;
     border:none;
   }
+
+  &::placeholder {
+    text-decoration: underline;
+  }
 }
 
 .create-cosplay .form-group.name {
@@ -85,18 +105,74 @@ button.button-yellow.create {
   font-size: $font-medium-small;
 }
 
-.button-yellow.back-profiel {
-  display: inline-block;
-  background-color: $licht-grijs;
 
-  &:hover {
-    background-color: #c3c2c2;
+
+/* Door grote gelijkheid: edit profiel pagina css */
+h1.edit-profile-title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2.10rem;
+}
+
+.profile-picture-large.edit-profile {
+  width:auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-group.edit-profile {
+  position: relative;
+  transform: none;
+  top: auto;
+  left: auto;
+  width: auto;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+
+  label {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    color: #2e2e2e;
+    border: 1px solid #bbb7b7;
+    font-size: $font-medium-big;
+
+    &:hover {
+      border-color: white;
+      background-color: rgba($bijna-zwart, 0.05);
+    }
   }
 }
+
+.create-cosplay input.edit-profile {
+  font-size: 1rem;
+  padding: .375rem .75rem;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: none;
+  color: $medium-licht-grijs;
+}
+
+.create-cosplay .form-group.description {
+  text-align: center;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
 
 @media (max-width: 1199px){
   .cosplay-voorbeeld .form-group label {
     font-size: $font-big;
+  }
+
+  .cosplay-voorbeeld .form-group.edit-profile label {
+    font-size: $font-medium-big;
   }
 
 

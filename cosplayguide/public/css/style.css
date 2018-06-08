@@ -413,6 +413,7 @@
 
   .cosplay-show, .share-block {
     margin-bottom: 3rem; } }
+/* IMAGE UPLOAD*/
 .cosplay-voorbeeld {
   position: relative; }
   .cosplay-voorbeeld img {
@@ -448,6 +449,7 @@
       font-size: 0.75em;
       color: #f6f6f6; }
 
+/* buttons */
 button.button-yellow {
   border: none; }
 
@@ -459,6 +461,13 @@ button.button-yellow.create {
   button.button-yellow.create:hover {
     background-color: #4a3192; }
 
+.button-yellow.back-profiel {
+  display: inline-block;
+  background-color: #bcbbbb; }
+  .button-yellow.back-profiel:hover {
+    background-color: #c3c2c2; }
+
+/* INPUTS */
 .create-cosplay input {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 600;
@@ -470,6 +479,8 @@ button.button-yellow.create {
   .create-cosplay input:focus {
     box-shadow: none;
     border: none; }
+  .create-cosplay input::placeholder {
+    text-decoration: underline; }
 
 .create-cosplay .form-group.name {
   margin-bottom: 0.1em; }
@@ -477,15 +488,57 @@ button.button-yellow.create {
 .create-cosplay input[name="name_serie"] {
   font-size: 0.75em; }
 
-.button-yellow.back-profiel {
-  display: inline-block;
-  background-color: #bcbbbb; }
-  .button-yellow.back-profiel:hover {
-    background-color: #c3c2c2; }
+/* Door grote gelijkheid: edit profiel pagina css */
+h1.edit-profile-title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2.10rem; }
 
+.profile-picture-large.edit-profile {
+  width: auto;
+  display: block;
+  margin: 0 auto; }
+
+.form-group.edit-profile {
+  position: relative;
+  transform: none;
+  top: auto;
+  left: auto;
+  width: auto;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem; }
+  .form-group.edit-profile label {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    color: #2e2e2e;
+    border: 1px solid #bbb7b7;
+    font-size: 1em; }
+    .form-group.edit-profile label:hover {
+      border-color: white;
+      background-color: rgba(46, 46, 46, 0.05); }
+
+.create-cosplay input.edit-profile {
+  font-size: 1rem;
+  padding: .375rem .75rem;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: none;
+  color: #adacac; }
+
+.create-cosplay .form-group.description {
+  text-align: center; }
+
+/* MEDIA QUERIES */
 @media (max-width: 1199px) {
   .cosplay-voorbeeld .form-group label {
-    font-size: 1.2em; } }
+    font-size: 1.2em; }
+
+  .cosplay-voorbeeld .form-group.edit-profile label {
+    font-size: 1em; } }
 @media (max-width: 992px) {
   .nieuw .col-5 {
     flex: 0 0 60%;
