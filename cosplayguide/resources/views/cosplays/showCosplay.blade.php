@@ -54,7 +54,7 @@
               <div class="col-6">
 
                 <p>Tijd</p>
-                <p>{{ $cosplay->months_spent }} maanden</p>
+                <p>{{ $cosplay->months_spent }} <span>maanden</span></p>
               </div>
 
             </div>

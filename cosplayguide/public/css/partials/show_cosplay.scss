@@ -1,3 +1,13 @@
+.cosplay-show .col-9 {
+  padding-left: 4%;
+  padding-right: 0;
+}
+
+.cosplay-show .col-3 {
+  padding-right: 2.5%;
+}
+
+
 /* COSPLAY INFO */
 
 .cosplay-info {
@@ -58,7 +68,13 @@
       font-size: $font-medium-big;
       margin-bottom: 0;
       font-weight: 600;
+
+      span {
+        font-size: $font-medium;
+      }
     }
+
+
   }
 
   .col-6:last-child {
@@ -144,15 +160,6 @@
 
 
 /* SLIDER COSPLAYPHOTOS */
-.cosplay-show .col-9 {
-  padding-left: 4%;
-  padding-right: 0;
-}
-
-.cosplay-show .col-3 {
-  padding-right: 2.5%;
-}
-
 
 
 .carousel-item {
@@ -201,8 +208,9 @@
 /* PROJECT DESCRIPTION */
 .project-description {
   border-top: 1px solid $heel-licht-grijs;
-  padding: 2rem;
-  padding-bottom: 0;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
 }
 
@@ -235,4 +243,46 @@
 .project-description-content {
   color: $medium-donker-grijs;
   font-size: 0.90em;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  .cosplay-show .col-9, .cosplay-show .col-3.cosplay-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    bottom: 0;
+    top: 0;
+    width: 15%;
+  }
+
+  .carousel-control-next {
+    right: 0;
+    margin-left: 0;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 42px;
+    height: 15px;
+  }
+
+  .carousel-control-prev-icon {
+      background-image: url("/img/iconen/pijltje-links-wit.png");
+  }
+
+  .carousel-control-next-icon {
+      background-image: url("/img/iconen/pijltje-rechts-wit.png");
+  }
+
+  .cosplay-show, .share-block {
+    margin-bottom: 3rem;
+  }
+
+
+
+
 }

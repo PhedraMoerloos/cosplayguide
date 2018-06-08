@@ -236,6 +236,13 @@
   .cosplay-profiel .col-3 {
     flex: 0 0 40%;
     max-width: 40%; } }
+.cosplay-show .col-9 {
+  padding-left: 4%;
+  padding-right: 0; }
+
+.cosplay-show .col-3 {
+  padding-right: 2.5%; }
+
 /* COSPLAY INFO */
 .cosplay-info {
   text-align: center; }
@@ -275,6 +282,8 @@
       font-size: 1em;
       margin-bottom: 0;
       font-weight: 600; }
+      .cosplay-niveau-rij .col-6 p:last-child span {
+        font-size: 0.85em; }
   .cosplay-niveau-rij .col-6:last-child {
     border-right: none; }
 
@@ -323,13 +332,6 @@
       background-size: contain; }
 
 /* SLIDER COSPLAYPHOTOS */
-.cosplay-show .col-9 {
-  padding-left: 4%;
-  padding-right: 0; }
-
-.cosplay-show .col-3 {
-  padding-right: 2.5%; }
-
 .carousel-item {
   background-color: #2e2e2e; }
   .carousel-item img {
@@ -362,8 +364,9 @@
 /* PROJECT DESCRIPTION */
 .project-description {
   border-top: 1px solid #e5e5e5;
-  padding: 2rem;
-  padding-bottom: 0; }
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
 .project-description-info .float-left {
   margin-right: 1rem; }
@@ -387,6 +390,34 @@
   color: #787878;
   font-size: 0.90em; }
 
+/* MEDIA QUERIES */
+@media (max-width: 992px) {
+  .cosplay-show .col-9, .cosplay-show .col-3.cosplay-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0; }
+
+  .carousel-control-prev, .carousel-control-next {
+    bottom: 0;
+    top: 0;
+    width: 15%; }
+
+  .carousel-control-next {
+    right: 0;
+    margin-left: 0; }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 42px;
+    height: 15px; }
+
+  .carousel-control-prev-icon {
+    background-image: url("/img/iconen/pijltje-links-wit.png"); }
+
+  .carousel-control-next-icon {
+    background-image: url("/img/iconen/pijltje-rechts-wit.png"); }
+
+  .cosplay-show, .share-block {
+    margin-bottom: 3rem; } }
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e; }
