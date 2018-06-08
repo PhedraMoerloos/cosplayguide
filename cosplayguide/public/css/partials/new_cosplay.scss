@@ -1,19 +1,51 @@
 img.cosplay-voorbeeld {
   width: 100%;
+  margin-bottom: 1.25rem;
 }
 
 button.button-yellow {
   border: none;
 }
 
+button.button-yellow.create {
+  background-color: $donker-secondary-color;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+
+  &:hover {
+    background-color: #4a3192;
+  }
+}
+
 .create-cosplay input {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   border: none;
   padding: 0;
   text-align: center;
+  font-size: $font-big;
 
   &:focus {
     box-shadow: none;
     border:none;
+  }
+}
+
+.create-cosplay .form-group.name {
+  margin-bottom: 0.1em;
+}
+
+.create-cosplay input[name="name_serie"] {
+  font-size: $font-medium-small;
+}
+
+.button-yellow.back-profiel {
+  display: inline-block;
+  background-color: $licht-grijs;
+
+  &:hover {
+    background-color: #c3c2c2;
   }
 }

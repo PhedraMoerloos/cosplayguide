@@ -11,9 +11,9 @@
 
       <div class="col">
 
-        <a class="button-yellow" href="/profiel">
-          <img class="arrow left" src="/img/iconen/pijltje-links-wit.png" alt="wit pijltje links">
-          PROFIEL
+        <a class="button-yellow back-profiel" href="/profiel">
+          <img class="arrow left" src="/img/iconen/kort-pijltje-links-wit.png" alt="wit pijltje links">
+          <p class="left">PROFIEL</p>
         </a>
       </div>
 
@@ -29,16 +29,19 @@
 
 
 
-            <div class="form-group">
-                <input type="text" class="form-control" id="name" name="name" value="PERSONAGE NAAM" placeholder="PERSONAGE NAAM" required>
+            <div class="form-group name">
+                <input type="text" class="form-control" id="name" name="name" value="personage naam" placeholder="PERSONAGE NAAM" required>
             </div>
 
             <div class="form-group">
-                <input type="text" class="form-control" id="name_serie" name="name_serie" value="SERIE/FILM" placeholder="SERIE/FILM" required>
+                <input type="text" class="form-control" id="name_serie" name="name_serie" value="serie/film" placeholder="SERIE/FILM" required>
             </div>
 
 
-            <button class="button-yellow" type="submit" name="create" class="btn btn-primary">CREËR</button>
+            <button class="button-yellow create" type="submit" name="create" class="btn btn-primary">
+              <p>CREËR</p>
+              <!--<img class="arrow right" src="/img/iconen/kort-pijltje-rechts-wit.png" alt="wit pijltje links">-->
+            </button>
 
 
             @if( $errors->any() )
@@ -59,8 +62,7 @@
         </form>
       </div>
 
-      <div class="col">
-      </div>
+      <div class="col"></div>
 
     </div>
 

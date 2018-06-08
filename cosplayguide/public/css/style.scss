@@ -48,15 +48,34 @@ body {
     color: $bijna-wit;
   }
 
-  .arrow {
-    position: absolute;
-    height: 15px;
+  p {
+    display: inline;
+    margin: 0;
+
   }
 
-  .left {
-    top: 5%;
-    left: 5%;
+  p.left {
+    margin-left: 40px;
   }
+
+  p.right {
+    margin-right: 40px;
+  }
+
+  .arrow {
+    position: absolute;
+    height: 12px;
+  }
+
+  img.left, img.right {
+    top: 35%;
+  }
+
+  img.right {
+    right: 15px;
+  }
+
+
 
 }
 

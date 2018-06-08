@@ -25,8 +25,8 @@ class CreateCosplayRequest extends FormRequest
     {
         return [
 
-          'name' => 'required|min:2',
-          'name_serie' => 'required|min:2',
+          'name' => 'required|min:2|different:personage naam',
+          'name_serie' => 'required|min:2|different:serie/film',
           'photo_url' => 'required|image|mimes:jpeg,png,jpg|max:2048',
 
         ];
@@ -36,8 +36,10 @@ class CreateCosplayRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required'       => 'Geef de naam van je cosplay personage.',
+            'name.required'       => "Geef de naam van je cosplay personage.",
             'name_serie.required' => "Geef de naam van de serie of film waaruit je cosplay personage komt.",
+            'name.different'      => "Geef de naam van je cosplay personage.",
+            'name_serie.different'=> "Geef de naam van de serie of film waaruit je cosplay personage komt.",
             'name.min'            => "De naam van je personage moet minstens 2 letters lang zijn.",
             'name_serie.min'      => "De naam van de serie of film waaruit je cosplay personage komt moet minstens 2 letters lang zijn.",
             'photo_url.required'  => "Upload 1 foto van je personage om je op te baseren.",
