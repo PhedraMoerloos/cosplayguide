@@ -1,0 +1,19 @@
+img.cosplay-voorbeeld {
+  width: 100%;
+}
+
+button.button-yellow {
+  border: none;
+}
+
+.create-cosplay input {
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+  text-align: center;
+
+  &:focus {
+    box-shadow: none;
+    border:none;
+  }
+}

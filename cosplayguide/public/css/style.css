@@ -127,18 +127,13 @@
     .cosplay-profiel .col-9 .cosplay a.new-cosplay {
       position: absolute;
       text-transform: uppercase;
-      text-decoration: none;
-      padding: 10px;
-      background-color: #ffad01;
-      color: #2e2e2e;
-      font-size: 0.85em;
-      font-weight: 600;
       top: 50%;
+      color: #2e2e2e;
       left: 50%;
       margin-right: -50%;
       transform: translate(-50%, -50%); }
       .cosplay-profiel .col-9 .cosplay a.new-cosplay:hover {
-        background-color: #ffb824; }
+        color: #2e2e2e; }
   .cosplay-profiel .col-9 .cosplay:nth-child(3n+3) {
     padding-right: 0;
     padding-left: 7.5%; }
@@ -418,9 +413,43 @@
 
   .cosplay-show, .share-block {
     margin-bottom: 3rem; } }
+img.cosplay-voorbeeld {
+  width: 100%; }
+
+button.button-yellow {
+  border: none; }
+
+.create-cosplay input {
+  text-transform: uppercase;
+  border: none;
+  padding: 0;
+  text-align: center; }
+  .create-cosplay input:focus {
+    box-shadow: none;
+    border: none; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e; }
+
+.button-yellow {
+  position: relative;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #ffad01;
+  color: #f6f6f6;
+  font-size: 0.85em;
+  font-weight: 600; }
+  .button-yellow:hover {
+    background-color: #ffb824;
+    text-decoration: none;
+    color: #f6f6f6; }
+  .button-yellow .arrow {
+    position: absolute;
+    height: 15px; }
+  .button-yellow .left {
+    top: 5%;
+    left: 5%; }
 
 /* NAVIGATIE */
 .navbar {

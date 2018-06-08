@@ -111,7 +111,7 @@
               @elseif ($cosplay->status == "new")
                 <div class="col-4 cosplay">
                   <img class="img-fluid" src="/img/new-cosplay.png" alt="achtergrond nieuwe cosplay">
-                  <a class="new-cosplay" href="/profiel/nieuwe-cosplay">Nieuwe cosplay</a>
+                  <a class="button-yellow new-cosplay" href="/profiel/nieuwe-cosplay">Nieuwe cosplay</a>
                 </div>
 
 

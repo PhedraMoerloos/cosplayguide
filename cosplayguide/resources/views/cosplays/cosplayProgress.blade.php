@@ -4,6 +4,60 @@
 @section('content')
 
 
+  <!--<div class="row">
+
+    <div class="col">
+      <a class="button-yellow" href="/profiel">PROFIEL</a>
+    </div>
+
+    <div class="col-5">
+      <img class="img-fluid cosplay-voorbeeld" src="/img/voorbeeld-cosplayphoto.jpg" alt="cosplay voorbeeld">
+      <form method="post" action="/profiel/nieuwe-cosplay" enctype="multipart/form-data">
+
+          {{ csrf_field() }}
+
+          <div class="form-group">
+              <input type="file" name="photo_url" accept="image/*" required>
+          </div>
+
+          <button class="button-yellow" type="submit" name="create" class="btn btn-primary">CREËR</button>
+
+          @if( $errors->any() )
+
+              <ul class="alert alert-danger">
+
+                @foreach( $errors->all() as $error )
+                    <li>{{ $error }}</li>
+                @endforeach
+
+              </ul>
+
+          @endif
+
+
+          <div>
+            <h2>{{ $cosplay->name }}</h2>
+            <p>{{ $cosplay->name_serie }}</p>
+          </div>
+
+
+      </form>
+    </div>
+
+    <div class="col">
+      <button class="button-yellow" type="submit" name="create" class="btn btn-primary">CREËR</button>
+    </div>
+
+  </div>-->
+
+
+
+
+
+
+
+
+
     @foreach ($cosplayphotos as $cosplayphoto)
         <img src="{{ asset('public/storage/images/' . $cosplayphoto->photo_url) }}" alt="{{ $cosplay->name }} cosplay">
         <a href="{{ action('CosplayphotoController@delete', [$cosplayphoto->id]) }}">Delete</a>

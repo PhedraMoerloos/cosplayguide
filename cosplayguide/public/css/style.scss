@@ -23,11 +23,40 @@ $font-big: 1.2em;
 
 @import "partials/profile";
 @import "partials/show_cosplay";
+@import "partials/new_cosplay";
 
 
 body {
   font-family: 'Open Sans', sans-serif;
   color: $bijna-zwart;
+
+}
+
+
+.button-yellow {
+  position: relative;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: $primary-color;
+  color: $bijna-wit;
+  font-size: $font-medium;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $primary-color-light;
+    text-decoration: none;
+    color: $bijna-wit;
+  }
+
+  .arrow {
+    position: absolute;
+    height: 15px;
+  }
+
+  .left {
+    top: 5%;
+    left: 5%;
+  }
 
 }
 

@@ -202,19 +202,14 @@
     a.new-cosplay {
       position: absolute;
       text-transform: uppercase;
-      text-decoration: none;
-      padding: 10px;
-      background-color: $primary-color;
-      color: $bijna-zwart;
-      font-size: $font-medium;
-      font-weight: 600;
       top: 50%;
+      color: $bijna-zwart;
       left: 50%;
       margin-right: -50%;
       transform: translate(-50%, -50%);
 
       &:hover {
-        background-color: $primary-color-light;
+        color: $bijna-zwart;
       }
     }
 
