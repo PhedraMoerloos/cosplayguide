@@ -19,6 +19,7 @@ $font-medium-small: 0.75em;
 $font-medium: 0.85em;
 $font-medium-big: 1em;
 $font-big: 1.2em;
+$font-very-big: 1.5em;
 
 
 @import "partials/profile";
@@ -78,6 +79,28 @@ body {
 
 
 }
+
+
+
+.alert-danger {
+  list-style: none;
+  margin-top: 2rem;
+  border: none;
+  padding:0;
+  background: none;
+
+  li {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    background-color: #f8d7da;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
 
 /* NAVIGATIE */
 

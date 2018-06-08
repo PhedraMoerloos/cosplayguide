@@ -1,6 +1,50 @@
-img.cosplay-voorbeeld {
-  width: 100%;
-  margin-bottom: 1.25rem;
+.cosplay-voorbeeld {
+  position: relative;
+
+  img {
+    width: 100%;
+    margin-bottom: 1.25rem;
+    position: relative;
+  }
+
+  .form-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    text-align: center;
+
+    input {
+      width: 0.1px;
+    	height: 0.1px;
+    	opacity: 0;
+    	overflow: hidden;
+    	position: absolute;
+    	z-index: -1;
+    }
+
+    label {
+      font-family: 'Titillium Web', sans-serif;
+      padding: 10px 15px;
+      text-transform: uppercase;
+      color: $bijna-wit;
+      border: 1px solid $bijna-wit;
+      font-weight: 600;
+      font-size: $font-very-big;
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(white, 0.10);
+      }
+    }
+
+    p {
+      font-size:$font-medium-small;
+      color: $bijna-wit;
+    }
+
+  }
 }
 
 button.button-yellow {

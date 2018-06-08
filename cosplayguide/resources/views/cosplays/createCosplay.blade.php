@@ -18,28 +18,38 @@
       </div>
 
       <div class="col-5 create-cosplay">
-        <img class="img-fluid cosplay-voorbeeld" src="/img/voorbeeld-cosplayphoto.jpg" alt="cosplay voorbeeld">
         <form method="post" action="/profiel/nieuwe-cosplay" enctype="multipart/form-data">
 
             {{ csrf_field() }}
 
+
+            <div class="cosplay-voorbeeld">
+
+
+            <img class="img-fluid" src="/img/voorbeeld-cosplayphoto.jpg" alt="cosplay voorbeeld">
+
             <div class="form-group">
-                <input type="file" name="photo_url" accept="image/*" required>
+              <input class="inputfile" type="file" name="photo_url" id="photo_url" accept="image/*" data-multiple-caption="{count} files selected" />
+              <label for="photo_url"><span>Upload jouw voorbeeld</span></label>
+              <p>Min 500 x 600 px</p>
+            </div>
+
+
             </div>
 
 
 
             <div class="form-group name">
-                <input type="text" class="form-control" id="name" name="name" value="personage naam" placeholder="PERSONAGE NAAM" required>
+                <input type="text" class="form-control" id="name" name="name" placeholder="PERSONAGE NAAM" required>
             </div>
 
             <div class="form-group">
-                <input type="text" class="form-control" id="name_serie" name="name_serie" value="serie/film" placeholder="SERIE/FILM" required>
+                <input type="text" class="form-control" id="name_serie" name="name_serie" placeholder="SERIE/FILM" required>
             </div>
 
 
-            <button class="button-yellow create" type="submit" name="create" class="btn btn-primary">
-              <p>CREËR</p>
+            <button class="button-yellow create" type="submit" name="create">
+              <span>CREËR</span>
               <!--<img class="arrow right" src="/img/iconen/kort-pijltje-rechts-wit.png" alt="wit pijltje links">-->
             </button>
 

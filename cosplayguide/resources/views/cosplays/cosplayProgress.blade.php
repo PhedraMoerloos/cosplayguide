@@ -17,7 +17,8 @@
           {{ csrf_field() }}
 
           <div class="form-group">
-              <input type="file" name="photo_url" accept="image/*" required>
+            <input class="inputfile" type="file" name="photo_url" id="photo_url" accept="image/*" data-multiple-caption="{count} files selected" multiple />
+            <label for="photo_url"><span>Upload cosplay foto's</span></label>
           </div>
 
           <button class="button-yellow" type="submit" name="create" class="btn btn-primary">CREËR</button>
