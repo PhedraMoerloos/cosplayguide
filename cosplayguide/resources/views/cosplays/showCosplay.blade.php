@@ -1,6 +1,11 @@
 @extends('master')
 
 
+@section('title')
+  <title>Cosplay {{ $cosplay->name }} door {{ $cosplay_creator->username }}</title>
+@endsection
+
+
 @section('content')
 
 
