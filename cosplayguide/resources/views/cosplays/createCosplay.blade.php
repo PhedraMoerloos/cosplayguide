@@ -7,7 +7,7 @@
 
 @section('content')
 
-    <div class="row">
+    <div class="row nieuw">
 
       <div class="col">
 

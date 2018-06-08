@@ -93,3 +93,48 @@ button.button-yellow.create {
     background-color: #c3c2c2;
   }
 }
+
+@media (max-width: 1199px){
+  .cosplay-voorbeeld .form-group label {
+    font-size: $font-big;
+  }
+
+
+}
+
+@media (max-width: 992px){
+  .nieuw {
+    .col-5 {
+      flex: 0 0 60%;
+      max-width: 60%;
+    }
+
+    .col {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+
+  }
+
+}
+
+
+@media (max-width: 767px){
+  .nieuw {
+    .col-5 {
+      flex: 0 0 70%;
+      max-width: 70%;
+    }
+
+    .col:first-child {
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
+
+    .col:last-child {
+      flex: 0 0 0%;
+      max-width: 0%;
+    }
+
+  }
+}

@@ -483,6 +483,26 @@ button.button-yellow.create {
   .button-yellow.back-profiel:hover {
     background-color: #c3c2c2; }
 
+@media (max-width: 1199px) {
+  .cosplay-voorbeeld .form-group label {
+    font-size: 1.2em; } }
+@media (max-width: 992px) {
+  .nieuw .col-5 {
+    flex: 0 0 60%;
+    max-width: 60%; }
+  .nieuw .col {
+    flex: 0 0 20%;
+    max-width: 20%; } }
+@media (max-width: 767px) {
+  .nieuw .col-5 {
+    flex: 0 0 70%;
+    max-width: 70%; }
+  .nieuw .col:first-child {
+    flex: 0 0 30%;
+    max-width: 30%; }
+  .nieuw .col:last-child {
+    flex: 0 0 0%;
+    max-width: 0%; } }
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e; }
