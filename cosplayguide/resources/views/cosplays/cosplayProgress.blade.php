@@ -4,28 +4,42 @@
 @section('content')
 
 
-  <div class="row">
+  <div class="row cosplay-progress">
 
 
     <div class="col">
 
 
-      <div class="onderdelen-links">
+      <div class="onderdelen left">
 
-        <a href="/profiel/cosplay-overzicht/grime">
-          <p>Grime</p>
-          <img src="/img/onderdelen/grime.jpg" alt="grime">
-        </a>
 
-        <a href="/profiel/cosplay-overzicht/grime">
-          <p>Grime</p>
-          <img src="/img/onderdelen/grime.jpg" alt="grime">
-        </a>
+        <div class="onderdeel clearfix">
 
-        <a href="/profiel/cosplay-overzicht/grime">
-          <p>Grime</p>
-          <img src="/img/onderdelen/grime.jpg" alt="grime">
-        </a>
+          <div class="float-right">
+            <a href="/profiel/cosplay-overzicht/grime">
+              <div class="overlay-grijs"></div>
+              <img src="/img/onderdelen/grime.jpg" alt="grime">
+            </a>
+            <a class="onderdeel-title" href="/profiel/cosplay-overzicht/grime"><p>GRIME</p></a>
+          </div>
+
+        </div>
+
+        <div class="onderdeel">
+          <a href="/profiel/cosplay-overzicht/lenzen">
+            <div class="overlay-grijs"></div>
+            <img src="/img/onderdelen/lenzen.jpg" alt="lenzen">
+          </a>
+          <a class="onderdeel-title" href="/profiel/cosplay-overzicht/lenzen"><p>LENZEN</p></a>
+        </div>
+
+        <div class="onderdeel">
+          <a href="/profiel/cosplay-overzicht/pruiken">
+            <div class="overlay-grijs"></div>
+            <img src="/img/onderdelen/pruiken.jpg" alt="pruik">
+          </a>
+          <a class="onderdeel-title" href="/profiel/cosplay-overzicht/pruiken"><p>PRUIK</p></a>
+        </div>
 
       </div>
 
@@ -43,6 +57,7 @@
             <input class="inputfile" type="file" name="photo_url" id="photo_url" accept="image/*" data-multiple-caption="{count} files selected" multiple />
             <label for="photo_url"><span>Upload cosplay foto's</span></label>
           </div>
+
 
           <img class="img-fluid" src="/img/voorbeeld-cosplayphoto.jpg" alt="cosplay voorbeeld">
 
@@ -73,28 +88,42 @@
     <div class="col">
 
 
-      <div class="onderdelen-rechts">
+      <div class="onderdelen right">
 
-        <a href="/profiel/cosplay-overzicht/grime">
-          <p>Grime</p>
-          <img src="/img/onderdelen/grime.jpg" alt="grime">
-        </a>
+        <div class="onderdeel">
+          <a class="onderdeel-title" href="/profiel/cosplay-overzicht/armor"><p>ARMOR</p></a>
+          <a href="/profiel/cosplay-overzicht/armor">
+            <div class="overlay-grijs"></div>
+            <img src="/img/onderdelen/armor.jpg" alt="armor">
+          </a>
+        </div>
 
-        <a href="/profiel/cosplay-overzicht/grime">
-          <p>Grime</p>
-          <img src="/img/onderdelen/grime.jpg" alt="grime">
-        </a>
+        <div class="onderdeel">
+          <a class="onderdeel-title" href="/profiel/cosplay-overzicht/voorwerpen"><p>VOORWERP</p></a>
+          <a href="/profiel/cosplay-overzicht/voorwerpen">
+            <div class="overlay-grijs"></div>
+            <img src="/img/onderdelen/voorwerpen.jpg" alt="voorwerpen">
+          </a>
+        </div>
 
-        <a href="/profiel/cosplay-overzicht/grime">
-          <p>Grime</p>
-          <img src="/img/onderdelen/grime.jpg" alt="grime">
-        </a>
+
+        <div class="onderdeel clearfix">
+
+          <div class="float-right">
+            <a class="onderdeel-title" href="/profiel/cosplay-overzicht/stoffen"><p>STOF</p></a>
+            <a href="/profiel/cosplay-overzicht/stoffen">
+              <div class="overlay-grijs"></div>
+              <img src="/img/onderdelen/stoffen.jpg" alt="stof">
+            </a>
+          </div>
+
+        </div>
 
       </div>
 
-      <a class="button-yellow" href="/profiel">
+      <a class="button-yellow" href="{{ route('cosplay_edit', [$cosplay->id, $cosplay->slug])}}">
         <img class="arrow right" src="/img/iconen/kort-pijltje-rechts-wit.png" alt="wit pijltje rechts">
-        <p class="right">PROFIEL</p>
+        <p class="right">KLAAR!</p>
       </a>
     </div>
 

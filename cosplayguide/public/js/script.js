@@ -31,4 +31,28 @@ $( document ).ready(function() {
      })( jQuery, window, document );
 
 
+
+
+     ;( function( $, window, document, undefined ){
+
+
+         $( ".onderdeel-title" ).mouseenter(
+
+           function() {
+             $(this).siblings("a").children(".overlay-grijs").hide();
+
+         });
+
+
+         $( ".onderdeel-title" ).mouseleave(
+
+           function() {
+             $(this).siblings("a").children(".overlay-grijs").show();
+
+         });
+
+
+     })( jQuery, window, document );
+
+
 });

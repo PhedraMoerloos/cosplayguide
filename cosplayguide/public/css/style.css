@@ -418,8 +418,10 @@
   position: relative; }
   .cosplay-voorbeeld img {
     width: 100%;
-    margin-bottom: 1.25rem;
-    position: relative; }
+    margin-bottom: 3.25rem;
+    position: relative;
+    filter: drop-shadow(16px 25px 30px rgba(0, 0, 0, 0.3));
+    -webkit-filter: drop-shadow(16px 25px 30px rgba(0, 0, 0, 0.3)); }
   .cosplay-voorbeeld .form-group {
     position: absolute;
     top: 50%;
@@ -555,6 +557,69 @@ h1.edit-profile-title {
   .nieuw .col:last-child {
     flex: 0 0 0%;
     max-width: 0%; } }
+/* ONDERDELEN */
+.onderdelen {
+  position: relative; }
+
+.onderdelen .onderdeel:nth-child(2) {
+  text-align: center; }
+
+.onderdelen .onderdeel {
+  margin-bottom: 5rem; }
+  .onderdelen .onderdeel a {
+    position: relative;
+    display: inline-block; }
+    .onderdelen .onderdeel a:hover .overlay-grijs {
+      display: none; }
+    .onderdelen .onderdeel a p {
+      display: inline;
+      margin: 0; }
+    .onderdelen .onderdeel a img {
+      width: 100px;
+      border-radius: 50%; }
+    .onderdelen .onderdeel a .overlay-grijs {
+      width: 100px;
+      height: 100px;
+      background-color: rgba(48, 48, 48, 0.7);
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0; }
+
+.onderdelen .onderdeel:last-child {
+  margin-bottom: 0; }
+
+.onderdelen.left .onderdeel a p {
+  margin-left: 12.5px; }
+
+.onderdelen.right .onderdeel a p {
+  margin-right: 12.5px; }
+
+.onderdeel-title {
+  font-size: 0.7em;
+  color: #3f3e3e;
+  font-weight: 700; }
+  .onderdeel-title:hover {
+    color: #3f3e3e; }
+
+.cosplay-progress .col:first-child {
+  padding-right: 4%; }
+
+/*button rechts*/
+.cosplay-progress .col:last-child {
+  position: relative;
+  padding-left: 4%; }
+  .cosplay-progress .col:last-child .button-yellow {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+
+/* COSPLAYPHOTOS */
+.cosplay-progress .col-5 img {
+  filter: drop-shadow(16px 25px 30px rgba(0, 0, 0, 0.3));
+  -webkit-filter: drop-shadow(16px 25px 30px rgba(0, 0, 0, 0.3));
+  position: relative; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e; }

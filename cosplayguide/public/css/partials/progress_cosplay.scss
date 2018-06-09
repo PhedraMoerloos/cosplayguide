@@ -1,0 +1,101 @@
+
+/* ONDERDELEN */
+
+.onderdelen {
+  position: relative;
+}
+
+.onderdelen .onderdeel:nth-child(2) {
+  text-align: center;
+}
+
+.onderdelen .onderdeel {
+  margin-bottom: 5rem;
+
+  a {
+  position: relative;
+  display: inline-block;
+
+    &:hover .overlay-grijs {
+      display: none;
+    }
+
+    p {
+      display: inline;
+      margin: 0;
+    }
+
+    img {
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    .overlay-grijs {
+      width: 100px;
+      height: 100px;
+      background-color: rgba(48,48,48, 0.7);
+      border-radius: 50%;
+      position: absolute;
+      top:0;
+      left:0;
+    }
+
+  }
+}
+
+.onderdelen .onderdeel:last-child {
+  margin-bottom: 0;
+}
+
+.onderdelen.left .onderdeel {
+  a p {
+    margin-left: 12.5px;
+  }
+}
+
+.onderdelen.right .onderdeel {
+  a p {
+    margin-right: 12.5px;
+  }
+}
+
+.onderdeel-title {
+  font-size: $font-small;
+  color: $heel-donker-grijs;
+  font-weight: 700;
+
+  &:hover {
+    color: $heel-donker-grijs;
+  }
+}
+
+
+.cosplay-progress .col:first-child {
+  padding-right: 4%;
+}
+
+/*button rechts*/
+.cosplay-progress .col:last-child {
+  position: relative;
+  padding-left: 4%;
+
+  .button-yellow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+
+
+
+/* COSPLAYPHOTOS */
+.cosplay-progress .col-5 {
+
+  img {
+    filter: drop-shadow(16px 25px 30px rgba(0,0,0,0.3));
+    -webkit-filter: drop-shadow(16px 25px 30px rgba(0,0,0,0.3));
+    position: relative;
+  }
+
+}

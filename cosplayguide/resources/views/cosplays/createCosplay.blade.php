@@ -27,15 +27,13 @@
 
             <div class="cosplay-voorbeeld">
 
+              <img class="img-fluid" src="/img/voorbeeld-cosplayphoto.jpg" alt="cosplay voorbeeld">
 
-            <img class="img-fluid" src="/img/voorbeeld-cosplayphoto.jpg" alt="cosplay voorbeeld">
-
-            <div class="form-group">
-              <input class="inputfile" type="file" name="photo_url" id="photo_url" accept="image/*" data-multiple-caption="{count} files selected" />
-              <label for="photo_url"><span>Upload jouw voorbeeld</span></label>
-              <p>Min 500 x 600 px</p>
-            </div>
-
+              <div class="form-group">
+                <input class="inputfile" type="file" name="photo_url" id="photo_url" accept="image/*" data-multiple-caption="{count} files selected" />
+                <label for="photo_url"><span>Upload jouw voorbeeld</span></label>
+                <p>Min 500 x 600 px</p>
+              </div>
 
             </div>
 

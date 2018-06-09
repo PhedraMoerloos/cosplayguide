@@ -5,8 +5,10 @@
 
   img {
     width: 100%;
-    margin-bottom: 1.25rem;
+    margin-bottom: 3.25rem;
     position: relative;
+    filter: drop-shadow(16px 25px 30px rgba(0,0,0,0.3));
+    -webkit-filter: drop-shadow(16px 25px 30px rgba(0,0,0,0.3));
   }
 
   .form-group {
