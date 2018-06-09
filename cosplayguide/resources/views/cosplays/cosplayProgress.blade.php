@@ -54,14 +54,48 @@
 
 
           <div class="form-group cosplayphoto-upload">
-            <input class="inputfile" type="file" name="photo_url" id="photo_url" accept="image/*" data-multiple-caption="{count} files selected" multiple />
-            <label for="photo_url"><span>Upload cosplay foto's</span></label>
+            <input class="inputfile" type="file" name="photo_url[]" id="photo_url" accept="image/*" data-multiple-caption="{count} files selected" onchange="this.form.submit();" multiple />
+            <label for="photo_url">
+              <img class="icon-camera-simple" src="/img/iconen/camera-full.svg" alt="camera">
+            </label>
           </div>
 
 
-          <img class="img-fluid" src="/img/voorbeeld-cosplayphoto.jpg" alt="cosplay voorbeeld">
 
-          <button class="button-yellow" type="submit" name="create" class="btn btn-primary">VOEG TOE</button>
+
+          <div id="carouselCosplayphotos" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+          @foreach ($cosplayphotos as $cosplayphoto)
+
+              <div class="carousel-item @if ($photo_number == 1) active @endif">
+
+                <img class="d-block" src="{{ asset('/storage/images/' . $cosplayphoto->photo_url) }}" alt="Foto {{ $cosplay->name }} cosplay {{ $photo_number++}}">
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="{{ action('CosplayphotoController@delete', [$cosplayphoto->id]) }}"><img src="/img/iconen/trash-full.svg" alt="vuilbakje"></a>
+                </div>
+
+
+              </div>
+
+          @endforeach
+
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselCosplayphotos" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselCosplayphotos" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+          </div>
+
+
+
+
 
           @if( $errors->any() )
 
@@ -76,9 +110,8 @@
           @endif
 
 
-          <div>
+          <div class="cosplay-name">
             <h2>{{ $cosplay->name }}</h2>
-            <p>{{ $cosplay->name_serie }}</p>
           </div>
 
 
@@ -136,61 +169,6 @@
 
 
 <!--
-
-    @foreach ($cosplayphotos as $cosplayphoto)
-        <img src="{{ asset('public/storage/images/' . $cosplayphoto->photo_url) }}" alt="{{ $cosplay->name }} cosplay">
-        <a href="{{ action('CosplayphotoController@delete', [$cosplayphoto->id]) }}">Delete</a>
-    @endforeach
-
-
-    <form method="post" action="/profiel/cosplay-overzicht/{{ $cosplay->id }}" enctype="multipart/form-data">
-
-        <div class="form-group">
-            <input type="file" name="photo_url[]" id="cosplayphoto" multiple />
-        </div>
-
-
-        {{ csrf_field() }}
-
-        <button type="submit" class="btn btn-primary">Creëer nieuwe foto's</button>
-
-
-
-        @if( $errors->any() )
-
-
-            <ul class="alert alert-danger">
-
-              @foreach( $errors->all() as $error )
-                  <li>{{ $error }}</li>
-              @endforeach
-
-            </ul>
-
-
-        @endif
-
-    </form>
-
-
-
-    <div>
-      <a href="/profiel/cosplay-overzicht/grime">Grime</a>
-      <a href="/profiel/cosplay-overzicht/lenzen">Lenzen</a>
-      <a href="/profiel/cosplay-overzicht/pruiken">Pruiken</a>
-    </div>
-
-    <div>
-      <a href="/profiel/cosplay-overzicht/armor">Armor</a>
-      <a href="/profiel/cosplay-overzicht/voorwerpen">Voorwerpen</a>
-      <a href="/profiel/cosplay-overzicht/stoffen">Stoffen</a>
-    </div>
-
-
-    <div>
-      <h2>{{ $cosplay->name }}</h2>
-      <p>{{ $cosplay->name_serie }}</p>
-    </div>
 
 
     <ul>

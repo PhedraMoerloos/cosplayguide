@@ -58,7 +58,7 @@ class CosplayphotoController extends Controller
           }
 
 
-      return redirect('/profiel/cosplay-overzicht/'. $cosplay->id);
+      return redirect(route('show_progress', [$cosplay->id, $cosplay->slug]));
 
     }
 
