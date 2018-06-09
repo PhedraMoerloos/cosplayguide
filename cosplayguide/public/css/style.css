@@ -462,7 +462,6 @@ button.button-yellow.create {
     background-color: #4a3192; }
 
 .button-yellow.back-profiel {
-  display: inline-block;
   background-color: #bcbbbb; }
   .button-yellow.back-profiel:hover {
     background-color: #c3c2c2; }
@@ -567,7 +566,8 @@ body {
   background-color: #ffad01;
   color: #f6f6f6;
   font-size: 0.85em;
-  font-weight: 600; }
+  font-weight: 600;
+  display: inline-block; }
   .button-yellow:hover {
     background-color: #ffb824;
     text-decoration: none;

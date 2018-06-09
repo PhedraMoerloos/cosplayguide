@@ -25,6 +25,8 @@ $font-very-big: 1.5em;
 @import "partials/profile";
 @import "partials/show_cosplay";
 @import "partials/new_cosplay";
+@import "partials/progress_cosplay";
+
 
 
 body {
@@ -42,6 +44,7 @@ body {
   color: $bijna-wit;
   font-size: $font-medium;
   font-weight: 600;
+  display: inline-block;
 
   &:hover {
     background-color: $primary-color-light;
