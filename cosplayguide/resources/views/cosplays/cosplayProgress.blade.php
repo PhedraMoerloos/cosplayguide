@@ -109,14 +109,72 @@
 
           @endif
 
-
-          <div class="cosplay-name">
-            <h2>{{ $cosplay->name }}</h2>
-          </div>
-
-
       </form>
+
+
+      <div class="cosplay-name">
+        <h2>{{ $cosplay->name }}</h2>
+      </div>
+
+
+
+      <ul class="status">
+
+        <li><a class="lancering" href="{{ action('CosplayController@change_status', [$cosplay->id, "lancering"]) }}">
+
+          <img @if ($cosplay->status == "lancering")
+            class="active"
+          @endif src="/img/social-icon.png" alt="lancering">
+
+        </a></li>
+
+
+
+        <li><a class="shoppen" href="{{ action('CosplayController@change_status', [$cosplay->id, "shoppen"]) }}">
+
+          <img @if ($cosplay->status == "shoppen")
+            class="active"
+          @endif src="/img/social-icon.png" alt="shoppen">
+
+        </a></li>
+
+
+
+        <li><a class="knutselen" href="{{ action('CosplayController@change_status', [$cosplay->id, "knutselen"]) }}">
+
+          <img @if ($cosplay->status == "knutselen")
+            class="active"
+          @endif src="/img/social-icon.png" alt="knutselen">
+
+        </a></li>
+
+
+
+        <li><a class="verven" href="{{ action('CosplayController@change_status', [$cosplay->id, "verven"]) }}">
+
+          <img @if ($cosplay->status == "verven")
+            class="active"
+          @endif src="/img/social-icon.png" alt="verven">
+
+        </a></li>
+
+
+
+        <li><a class="icon-media" href="{{ action('CosplayController@change_status', [$cosplay->id, "media"]) }}">
+
+          <img @if ($cosplay->status == "media")
+          class="active"
+          @endif src="/img/social-icon.png" alt="media">
+
+        </a></li>
+
+      </ul>
+
+
+
     </div>
+
+
 
     <div class="col">
 
@@ -168,34 +226,6 @@
 
 
 
-<!--
-
-
-    <ul>
-      <li @if ($cosplay->status == "lancering")
-        class="font-weight-bold"
-      @endif><a href="{{ action('CosplayController@change_status', [$cosplay->id, "lancering"]) }}">lancering</a></li>
-
-      <li @if ($cosplay->status == "shoppen")
-        class="font-weight-bold"
-      @endif><a href="{{ action('CosplayController@change_status', [$cosplay->id, "shoppen"]) }}">shoppen</a></li>
-
-      <li @if ($cosplay->status == "knutselen")
-        class="font-weight-bold"
-      @endif><a href="{{ action('CosplayController@change_status', [$cosplay->id, "knutselen"]) }}">knutselen</a></li>
-
-      <li @if ($cosplay->status == "verven")
-        class="font-weight-bold"
-      @endif><a href="{{ action('CosplayController@change_status', [$cosplay->id, "verven"]) }}">verven</a></li>
-
-      <li @if ($cosplay->status == "media")
-        class="font-weight-bold"
-      @endif><a href="{{ action('CosplayController@change_status', [$cosplay->id, "media"]) }}">media</a></li>
-    </ul>
-
-
-    <a href="{{ route('cosplay_edit', [$cosplay->id, $cosplay->slug])}} " class="btn btn-primary">Klaar!</a>
--->
 
 
 @endsection

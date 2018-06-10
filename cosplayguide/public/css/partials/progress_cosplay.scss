@@ -109,18 +109,6 @@
 .cosplay-progress .col-5 {
 
 
-  .cosplay-name {
-    font-family: 'Titillium Web', sans-serif;
-    text-align: center;
-    margin-top: 3rem;
-
-    h2 {
-      font-size: $font-big;
-      text-transform: uppercase;
-    }
-  }
-
-
   .carousel-inner {
     height: 560px;
     filter: drop-shadow(16px 25px 30px rgba(0,0,0,0.3));
@@ -150,8 +138,123 @@
     left: auto;
   }
 
+  .cosplay-name {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+
+    h2 {
+      font-size: $font-big;
+      text-transform: uppercase;
+    }
+  }
+
+
 }
 
 .icon-camera-simple {
   width: 30px;
+  cursor: pointer;
 }
+
+
+/* STATUS */
+ul.status {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+
+  li {
+    padding-right: 5.90em;
+    padding-bottom: 0.5em;
+    display: inline-block;
+    border-bottom: 2px solid #565656;
+
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin-left: -10px;
+    }
+
+
+    /* Lancering */
+
+    a.lancering img {
+      background-image: url("/img/iconen/spaceship.svg");
+      background-size: contain;
+    }
+
+    a.lancering:hover img, a.lancering img.active  {
+      background-image: url("/img/iconen/spaceship-full.svg");
+      background-size: contain;
+    }
+
+
+    /* Shoppen */
+
+    a.shoppen img {
+      background-image: url("/img/iconen/shopping-bag.svg");
+      background-size: contain;
+    }
+
+    a.shoppen:hover img, a.shoppen img.active {
+      background-image: url("/img/iconen/shopping-bag-full.svg");
+      background-size: contain;
+    }
+
+
+    /* Knutselen */
+
+    a.knutselen img {
+      background-image: url("/img/iconen/crafting.svg");
+      background-size: contain;
+    }
+
+    a.knutselen:hover img, a.knutselen img.active {
+      background-image: url("/img/iconen/crafting-full.svg");
+      background-size: contain;
+    }
+
+
+    /* Verven */
+
+    a.verven img {
+      background-image: url("/img/iconen/spray-paint.svg");
+      background-size: contain;
+    }
+
+    a.verven:hover img, a.verven img.active {
+      background-image: url("/img/iconen/spray-paint-full.svg");
+      background-size: contain;
+    }
+
+
+    /* Media */
+
+    a.icon-media img {
+      background-image: url("/img/iconen/fancy-camera.svg");
+      background-size: contain;
+    }
+
+    a.icon-media:hover img, a.icon-media img.active {
+      background-image: url("/img/iconen/fancy-camera-full.svg");
+      background-size: contain;
+    }
+
+  }//einde li
+
+
+  li:last-child {
+    padding-right: 0;
+    border: none;
+  }
+
+
+
+}//einde ul

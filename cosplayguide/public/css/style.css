@@ -625,13 +625,6 @@ h1.edit-profile-title {
     position: absolute;
     z-index: -1; }
 
-.cosplay-progress .col-5 .cosplay-name {
-  font-family: 'Titillium Web', sans-serif;
-  text-align: center;
-  margin-top: 3rem; }
-  .cosplay-progress .col-5 .cosplay-name h2 {
-    font-size: 1.2em;
-    text-transform: uppercase; }
 .cosplay-progress .col-5 .carousel-inner {
   height: 560px;
   filter: drop-shadow(16px 25px 30px rgba(0, 0, 0, 0.3));
@@ -652,9 +645,73 @@ h1.edit-profile-title {
   top: 0;
   bottom: auto;
   left: auto; }
+.cosplay-progress .col-5 .cosplay-name {
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem; }
+  .cosplay-progress .col-5 .cosplay-name h2 {
+    font-size: 1.2em;
+    text-transform: uppercase; }
 
 .icon-camera-simple {
-  width: 30px; }
+  width: 30px;
+  cursor: pointer; }
+
+/* STATUS */
+ul.status {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0; }
+  ul.status li {
+    padding-right: 5.90em;
+    padding-bottom: 0.5em;
+    display: inline-block;
+    border-bottom: 2px solid #565656;
+    /* Lancering */
+    /* Shoppen */
+    /* Knutselen */
+    /* Verven */
+    /* Media */ }
+    ul.status li a {
+      text-decoration: none; }
+    ul.status li img {
+      width: 20px;
+      height: 20px;
+      margin-left: -10px; }
+    ul.status li a.lancering img {
+      background-image: url("/img/iconen/spaceship.svg");
+      background-size: contain; }
+    ul.status li a.lancering:hover img, ul.status li a.lancering img.active {
+      background-image: url("/img/iconen/spaceship-full.svg");
+      background-size: contain; }
+    ul.status li a.shoppen img {
+      background-image: url("/img/iconen/shopping-bag.svg");
+      background-size: contain; }
+    ul.status li a.shoppen:hover img, ul.status li a.shoppen img.active {
+      background-image: url("/img/iconen/shopping-bag-full.svg");
+      background-size: contain; }
+    ul.status li a.knutselen img {
+      background-image: url("/img/iconen/crafting.svg");
+      background-size: contain; }
+    ul.status li a.knutselen:hover img, ul.status li a.knutselen img.active {
+      background-image: url("/img/iconen/crafting-full.svg");
+      background-size: contain; }
+    ul.status li a.verven img {
+      background-image: url("/img/iconen/spray-paint.svg");
+      background-size: contain; }
+    ul.status li a.verven:hover img, ul.status li a.verven img.active {
+      background-image: url("/img/iconen/spray-paint-full.svg");
+      background-size: contain; }
+    ul.status li a.icon-media img {
+      background-image: url("/img/iconen/fancy-camera.svg");
+      background-size: contain; }
+    ul.status li a.icon-media:hover img, ul.status li a.icon-media img.active {
+      background-image: url("/img/iconen/fancy-camera-full.svg");
+      background-size: contain; }
+  ul.status li:last-child {
+    padding-right: 0;
+    border: none; }
 
 body {
   font-family: 'Open Sans', sans-serif;

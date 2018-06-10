@@ -52,7 +52,11 @@ $( document ).ready(function() {
          });
 
 
+         $("ul.status li a img.active").parents( "li" ).prevAll().css( "border", "#afafaf" );
+
+
      })( jQuery, window, document );
-     
+
+
 
 });
