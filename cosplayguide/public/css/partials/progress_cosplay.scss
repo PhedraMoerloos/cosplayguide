@@ -386,4 +386,69 @@ ul.status {
     display: block !important;
   }
 
+
+  .onderdelen .onderdeel a img {
+    display: none;
+  }
+
+  .cosplay-progress .col-5 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .cosplay-progress .col {
+    padding-top: 6rem;
+  }
+
+  .cosplay-progress .col:first-child {
+    padding-left: 0;
+  }
+
+  .cosplay-progress .col:last-child {
+    padding-right: 0;
+  }
+
+  .cosplay-progress .col-5 .cosplay-name {
+    margin-top: 0;
+  }
+
+  ul.status li {
+    padding-right: 17%;
+  }
+
+  .cosplay-progress .col:last-child .button-yellow {
+    padding: 5px 10px;
+  }
+
+}
+
+@media (max-width: 562px){
+  ul.status li {
+    padding-right: 16%;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .cosplay-progress .col-5 .carousel-inner {
+    height: 400px;
+  }
+
+  .cosplay-progress .col {
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 458px) {
+  .cosplay-progress .col-5 .carousel-inner {
+    height: 350px;
+  }
+
+  ul.status li {
+    padding-right: 14%;
+  }
+
+  .cosplay-progress .col {
+    padding-top: 4rem;
+  }
 }

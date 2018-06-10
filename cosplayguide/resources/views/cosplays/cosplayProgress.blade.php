@@ -1,6 +1,11 @@
 @extends('master')
 
 
+@section('title')
+  <title>Progress cosplay {{ $cosplay->name }}</title>
+@endsection
+
+
 @section('content')
 
 

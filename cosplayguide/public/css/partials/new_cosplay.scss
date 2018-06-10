@@ -11,6 +11,11 @@
     -webkit-filter: drop-shadow(16px 25px 30px rgba(0,0,0,0.3));
   }
 
+  img.edit-profile {
+    filter: none;
+    -webkit-filter: none;
+  }
+
   .form-group {
     position: absolute;
     top: 50%;

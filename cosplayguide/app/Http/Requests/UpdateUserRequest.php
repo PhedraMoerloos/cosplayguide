@@ -25,8 +25,8 @@ class UpdateUserRequest extends FormRequest
     {
         return [
 
-            'description' => 'required|min:4',
-            'profile_picture_url' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+            'description' => 'min:4',
+            'profile_picture_url' => 'image|mimes:jpeg,png,jpg|max:2048',
 
         ];
     }
@@ -35,8 +35,6 @@ class UpdateUserRequest extends FormRequest
     public function messages()
     {
         return [
-            'description.required'          => 'Geef een beschrijving van jezelf.',
-            'profile_picture_url.required'  => "Upload 1 foto van jezelf als profielfoto.",
             'description.min'               => "Je beschrijving moet minstens 4 letters lang zijn.",
             'profile_picture_url.image'     => "Je upgeloade bestand moet een afbeelding zijn.",
             'profile_picture_url.max'       => "Je foto mag niet groter zijn dan 2048 bytes.",
