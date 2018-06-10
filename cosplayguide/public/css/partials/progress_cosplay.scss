@@ -114,10 +114,14 @@
     filter: drop-shadow(16px 25px 30px rgba(0,0,0,0.3));
     -webkit-filter: drop-shadow(16px 25px 30px rgba(0,0,0,0.3));
   }
+
   .carousel-item img {
     height: auto;
     max-width: 500px;
     width: auto;
+    filter: drop-shadow(2px 2px 10px rgba(0,0,0,0.3));
+    -webkit-filter: drop-shadow(2px 2px 10px rgba(0,0,0,0.3));
+
   }
 
   .carousel-item .carousel-caption {
@@ -166,32 +170,43 @@ ul.status {
   margin-bottom: 0;
 
   li {
-    padding-right: 5.90em;
+    padding-right: 5.70em;
     padding-bottom: 0.5em;
     display: inline-block;
-    border-bottom: 2px solid #565656;
+    border-bottom: 2px solid #ebe9e9;
 
 
     a {
       text-decoration: none;
+      position: relative;
+
+      .sphere {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #6b6a6a;
+        bottom: -0.95em;
+        left: -45%;
+      }
     }
 
     img {
-      width: 20px;
-      height: 20px;
-      margin-left: -10px;
+      width: 25px;
+      height: 25px;
+      margin-left: -12.50px;
     }
 
 
     /* Lancering */
 
     a.lancering img {
-      background-image: url("/img/iconen/spaceship.svg");
+      background-image: url("/img/iconen/spaceship-dark.svg");
       background-size: contain;
     }
 
     a.lancering:hover img, a.lancering img.active  {
-      background-image: url("/img/iconen/spaceship-full.svg");
+      background-image: url("/img/iconen/spaceship-full-dark.svg");
       background-size: contain;
     }
 
@@ -199,12 +214,12 @@ ul.status {
     /* Shoppen */
 
     a.shoppen img {
-      background-image: url("/img/iconen/shopping-bag.svg");
+      background-image: url("/img/iconen/shopping-bag-dark.svg");
       background-size: contain;
     }
 
     a.shoppen:hover img, a.shoppen img.active {
-      background-image: url("/img/iconen/shopping-bag-full.svg");
+      background-image: url("/img/iconen/shopping-bag-full-dark.svg");
       background-size: contain;
     }
 
@@ -212,12 +227,12 @@ ul.status {
     /* Knutselen */
 
     a.knutselen img {
-      background-image: url("/img/iconen/crafting.svg");
+      background-image: url("/img/iconen/crafting-dark.svg");
       background-size: contain;
     }
 
     a.knutselen:hover img, a.knutselen img.active {
-      background-image: url("/img/iconen/crafting-full.svg");
+      background-image: url("/img/iconen/crafting-full-dark.svg");
       background-size: contain;
     }
 
@@ -225,12 +240,12 @@ ul.status {
     /* Verven */
 
     a.verven img {
-      background-image: url("/img/iconen/spray-paint.svg");
+      background-image: url("/img/iconen/spray-paint-dark.svg");
       background-size: contain;
     }
 
     a.verven:hover img, a.verven img.active {
-      background-image: url("/img/iconen/spray-paint-full.svg");
+      background-image: url("/img/iconen/spray-paint-full-dark.svg");
       background-size: contain;
     }
 
@@ -238,12 +253,12 @@ ul.status {
     /* Media */
 
     a.icon-media img {
-      background-image: url("/img/iconen/fancy-camera.svg");
+      background-image: url("/img/iconen/fancy-camera-dark.svg");
       background-size: contain;
     }
 
     a.icon-media:hover img, a.icon-media img.active {
-      background-image: url("/img/iconen/fancy-camera-full.svg");
+      background-image: url("/img/iconen/fancy-camera-full-dark.svg");
       background-size: contain;
     }
 

@@ -52,7 +52,7 @@ $( document ).ready(function() {
          });
 
 
-         $("ul.status li a img.active").parents( "li" ).prevAll().css( "border", "#afafaf" );
+         $("ul.status li a img.active").parents( "li" ).prevAll().css( "border-color", "#9f9d9d" );
 
 
      })( jQuery, window, document );

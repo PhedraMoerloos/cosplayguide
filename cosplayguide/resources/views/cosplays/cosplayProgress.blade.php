@@ -125,6 +125,7 @@
           <img @if ($cosplay->status == "lancering")
             class="active"
           @endif src="/img/social-icon.png" alt="lancering">
+          <div class="sphere"></div>
 
         </a></li>
 
@@ -135,6 +136,7 @@
           <img @if ($cosplay->status == "shoppen")
             class="active"
           @endif src="/img/social-icon.png" alt="shoppen">
+          <div class="sphere"></div>
 
         </a></li>
 
@@ -145,6 +147,7 @@
           <img @if ($cosplay->status == "knutselen")
             class="active"
           @endif src="/img/social-icon.png" alt="knutselen">
+          <div class="sphere"></div>
 
         </a></li>
 
@@ -155,6 +158,7 @@
           <img @if ($cosplay->status == "verven")
             class="active"
           @endif src="/img/social-icon.png" alt="verven">
+          <div class="sphere"></div>
 
         </a></li>
 
@@ -165,6 +169,7 @@
           <img @if ($cosplay->status == "media")
           class="active"
           @endif src="/img/social-icon.png" alt="media">
+          <div class="sphere"></div>
 
         </a></li>
 
@@ -219,6 +224,11 @@
     </div>
 
   </div>
+
+
+
+
+
 
 
 
