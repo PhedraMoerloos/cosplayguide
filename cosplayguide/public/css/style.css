@@ -850,7 +850,7 @@ form.edit-cosplay label {
   color: #bcbbbb;
   text-transform: uppercase;
   font-weight: 600; }
-form.edit-cosplay input, form.edit-cosplay select {
+form.edit-cosplay input, form.edit-cosplay select, form.edit-cosplay p.inline {
   font-size: 0.90em;
   font-weight: 600;
   color: #2e2e2e; }
@@ -886,7 +886,7 @@ label[for=thumbnail_url] {
   position: relative; }
   label[for=thumbnail_url] span {
     position: absolute;
-    bottom: -175px;
+    bottom: -160px;
     right: 0;
     text-transform: none; }
 
@@ -897,6 +897,55 @@ label[for=thumbnail_url] {
 .cosplayphoto-upload.thumbnail-url {
   margin-bottom: 0.60rem; }
 
+@media (max-width: 1199px) {
+  label[for=thumbnail_url] span {
+    bottom: -140px; } }
+@media (max-width: 992px) {
+  .cosplay-progress .col-7 {
+    flex: 0 0 55%;
+    max-width: 55%; }
+
+  .cosplay-progress .col-5 .carousel-inner.cosplay-edit {
+    filter: none;
+    -webkit-filter: none; }
+
+  form.edit-cosplay .row .col-4:last-child {
+    padding-right: 0; }
+
+  form.edit-cosplay .lower-part-form {
+    padding-right: 15px; }
+
+  .icon-camera-simple.cosplay-edit {
+    width: 20px; }
+
+  .top-left.thumbnail-url {
+    top: 5px; }
+
+  label[for=thumbnail_url] span {
+    bottom: -110px; }
+
+  form.edit-cosplay p.months {
+    font-size: 0.6em; }
+  form.edit-cosplay select {
+    font-size: 0.7em; } }
+@media (max-width: 768px) {
+  .cosplay-progress .col-7, .cosplay-progress .col-5.cosplay-edit {
+    flex: 0 0 100%;
+    max-width: 100%; }
+
+  .cosplay-progress .col-7 {
+    margin-top: 10%; }
+
+  form.edit-cosplay p.months {
+    font-size: 0.9em; }
+  form.edit-cosplay select {
+    font-size: 0.9em; }
+
+  form.edit-cosplay .lower-part-form {
+    padding-right: 25px; }
+
+  .cosplay-progress .col-5 .carousel-item {
+    background-color: #2e2e2e; } }
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e; }
@@ -980,6 +1029,9 @@ body {
 
 .block {
   display: block; }
+
+.inline {
+  display: inline; }
 
 /* NAVIGATIE */
 .navbar {

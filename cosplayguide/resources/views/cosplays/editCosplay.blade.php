@@ -11,7 +11,7 @@
 
   <div class="row cosplay-progress">
 
-    <div class="col-5">
+    <div class="col-5 cosplay-edit">
       <form method="post" action="/profiel/cosplay-overzicht/{{ $cosplay->id }}" enctype="multipart/form-data">
 
           {{ csrf_field() }}
@@ -28,7 +28,7 @@
 
 
           <div id="carouselCosplayphotos" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner cosplay-edit">
 
           @foreach ($cosplayphotos as $cosplayphoto)
 
@@ -102,7 +102,7 @@
               <div class="form-group cosplayphoto-upload thumbnail-url">
                 <input class="inputfile" type="file" name="thumbnail_url" id="thumbnail_url">
                 <label for="thumbnail_url">
-                  <img class="icon-camera-simple" src="/img/iconen/camera-full.svg" alt="camera">
+                  <img class="icon-camera-simple cosplay-edit" src="/img/iconen/camera-full.svg" alt="camera">
                   <span></span>
                 </label>
               </div>
@@ -123,12 +123,22 @@
 
 
             <div class="col-4">
-              <div class="form-group select-style">
+              <div class="form-group">
                   <label for="difficulty">Moeilijkheidsgraad*</label>
-                  <select name="difficulty" required>
-                      <option value="Gemakkelijk">Gemakkelijk</option>
-                      <option value="Gemiddeld">Gemiddeld</option>
-                      <option value="Moeilijk">Moeilijk</option>
+                  <select name="difficulty" id="difficulty" required>
+
+                      <option value="Gemakkelijk" @if ($cosplay->difficulty == "Gemakkelijk")
+                      selected='selected'
+                      @endif >Gemakkelijk</option>
+
+                      <option value="Gemiddeld" @if ($cosplay->difficulty == "Gemiddeld")
+                      selected='selected'
+                      @endif >Gemiddeld</option>
+
+                      <option value="Moeilijk" @if ($cosplay->difficulty == "Moeilijk")
+                      selected='selected'
+                      @endif >Moeilijk</option>
+
                   </select>
               </div>
             </div>
@@ -136,14 +146,16 @@
             <div class="col-4">
               <div class="form-group">
                   <label for="independence_percentage">Zelfstandigheid*</label>
-                  <input type="number" class="form-control percentage" id="independence_percentage" name="independence_percentage" placeholder=50 value="{{ $cosplay->independence_percentage }}" required>%
+                  <input type="number" class="form-control percentage" id="independence_percentage" name="independence_percentage" placeholder=50 value="{{ $cosplay->independence_percentage }}" required>
+                  <p class="inline">%</p>
               </div>
             </div>
 
             <div class="col-4">
               <div class="form-group">
                   <label for="months_spent">Gespendeerde tijd*</label>
-                  <input type="number" class="form-control tijd" id="months_spent" name="months_spent" placeholder=2 value="{{ $cosplay->months_spent }}" required>maanden
+                  <input type="number" class="form-control tijd" id="months_spent" name="months_spent" placeholder=2 value="{{ $cosplay->months_spent }}" required>
+                  <p class="inline months">maanden</p>
               </div>
             </div>
 
@@ -155,7 +167,8 @@
 
             <div class="form-group margin-bottom-7">
                 <label class="block" for="euros_spent">Gespendeerd budget*</label>
-                <input type="number" class="form-control budget" id="euros_spent" name="euros_spent" placeholder=100 value="{{ $cosplay->euros_spent }}" required> euros <span>geschat*</span>
+                <input type="number" class="form-control budget" id="euros_spent" name="euros_spent" placeholder=100 value="{{ $cosplay->euros_spent }}" required>
+                <p class="inline">euros <span>geschat*</span></p>
             </div>
 
 
