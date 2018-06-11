@@ -233,9 +233,10 @@ class CosplayController extends Controller
     {
 
       $cosplay = Cosplay::findOrFail($id);
-      $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->where('is_shown', 1)->get();
+      $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->where('is_shown', 1)->orderBy('id', 'desc')->get();
+      $photo_number = 1;
 
-      return view('cosplays.editCosplay', compact('cosplay', 'cosplayphotos'));
+      return view('cosplays.editCosplay', compact('cosplay', 'cosplayphotos', 'photo_number'));
 
     }
 
@@ -253,7 +254,6 @@ class CosplayController extends Controller
 
         $cosplay->name = $request->get('name');
         $cosplay->name_serie  =  $request->get('name_serie');
-        //$cosplay->thumbnail_url =  $request->('thumbnail_url');
         $cosplay->difficulty = $request->get('difficulty');
         $cosplay->independence_percentage = $request->get('independence_percentage');
         $cosplay->months_spent = $request->get('months_spent');
@@ -284,35 +284,11 @@ class CosplayController extends Controller
         };
 
 
-        //toegevoegde cosplayphotos
-        if($request->hasFile('photo_url')){
-
-            foreach(($request->file('photo_url')) as $image){
-
-              $cosplayphoto = new Cosplayphoto;
-              $cosplayphoto->cosplay_id = $cosplay->id;
-
-
-              //database:
-              // allemaal een andere naam, cosplay foto's vinden door cosplay_id, thumbnail naam wordt opgeslagen in cosplay zelf
-              $filename = $image->hashName();
-              $cosplayphoto->photo_url = $filename;
-
-              //resizen en opslaan
-              Image::make($image)->resize(700, null, function ($constraint) {
-                  $constraint->aspectRatio();
-              })->save( storage_path('app/public/images/' . $filename ) );
-
-              $cosplayphoto->save();
-
-            }
-        };
-
 
 
         if ($cosplay->status != "completed") {
 
-          $cosplay->status                = 'completed';
+          $cosplay->status = 'completed';
 
         }
 
@@ -323,12 +299,16 @@ class CosplayController extends Controller
         return redirect(route('show_cosplay', [$cosplay->id, $cosplay->slug]));
     }
 
+
+
+
     /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function destroy($id)
     {
 

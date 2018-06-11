@@ -58,7 +58,7 @@ class CosplayphotoController extends Controller
           }
 
 
-      return redirect(route('show_progress', [$cosplay->id, $cosplay->slug]));
+      return back()->withInput();
 
     }
 

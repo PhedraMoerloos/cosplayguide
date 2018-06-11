@@ -44,6 +44,7 @@ Route::get('/profiel/delete/{id}', 'CosplayphotoController@delete');
 
 
 
+
 Route::get('/profiel/cosplay-info/{id}/{slug?}', 'CosplayController@edit')->name('cosplay_edit');
 Route::post('/profiel/cosplay-info/update/{id}', 'CosplayController@update');
 Route::get('/cosplays/{id}/{slug?}', 'CosplayController@show');
