@@ -84,22 +84,27 @@
 
 
             <div class="col-4">
-              <div class="form-group">
-                  <label for="name">Naam</label>
+              <div class="form-group stick-bottom">
+                  <label for="name">Naam*</label>
                   <input type="text" class="form-control" id="name" name="name" placeholder="Naam personage" value="{{ $cosplay->name }}" required>
               </div>
             </div>
 
             <div class="col-4">
-              <div class="form-group">
-                  <label for="name_serie">Serie</label>
+              <div class="form-group stick-bottom">
+                  <label for="name_serie">Serie*</label>
                   <input type="text" class="form-control" id="name_serie" name="name_serie" placeholder="Naam serie/film" value="{{ $cosplay->name_serie }}" required>
               </div>
             </div>
 
             <div class="col-4">
-              <div class="form-group">
-                  <input type="file" name="thumbnail_url">
+              <label class="top-left thumbnail-url">Thumbnail</label>
+              <div class="form-group cosplayphoto-upload thumbnail-url">
+                <input class="inputfile" type="file" name="thumbnail_url" id="thumbnail_url">
+                <label for="thumbnail_url">
+                  <img class="icon-camera-simple" src="/img/iconen/camera-full.svg" alt="camera">
+                  <span></span>
+                </label>
               </div>
 
               <div>
@@ -118,9 +123,9 @@
 
 
             <div class="col-4">
-              <div class="form-group">
-                  <label for="difficulty">Moeilijkheidsgraad</label>
-                  <select name="difficulty" size="3" required>
+              <div class="form-group select-style">
+                  <label for="difficulty">Moeilijkheidsgraad*</label>
+                  <select name="difficulty" required>
                       <option value="Gemakkelijk">Gemakkelijk</option>
                       <option value="Gemiddeld">Gemiddeld</option>
                       <option value="Moeilijk">Moeilijk</option>
@@ -130,15 +135,15 @@
 
             <div class="col-4">
               <div class="form-group">
-                  <label for="independence_percentage">Zelfstandigheid</label>
-                  <input type="number" class="form-control" id="independence_percentage" name="independence_percentage" placeholder=50 value="{{ $cosplay->independence_percentage }}" required>%
+                  <label for="independence_percentage">Zelfstandigheid*</label>
+                  <input type="number" class="form-control percentage" id="independence_percentage" name="independence_percentage" placeholder=50 value="{{ $cosplay->independence_percentage }}" required>%
               </div>
             </div>
 
             <div class="col-4">
               <div class="form-group">
-                  <label for="months_spent">Gespendeerde tijd</label>
-                  <input type="number" class="form-control" id="months_spent" name="months_spent" placeholder=2 value="{{ $cosplay->months_spent }}" required>maanden
+                  <label for="months_spent">Gespendeerde tijd*</label>
+                  <input type="number" class="form-control tijd" id="months_spent" name="months_spent" placeholder=2 value="{{ $cosplay->months_spent }}" required>maanden
               </div>
             </div>
 
@@ -146,24 +151,28 @@
           </div>
 
 
+          <div class="lower-part-form">
+
+            <div class="form-group margin-bottom-7">
+                <label class="block" for="euros_spent">Gespendeerd budget*</label>
+                <input type="number" class="form-control budget" id="euros_spent" name="euros_spent" placeholder=100 value="{{ $cosplay->euros_spent }}" required> euros <span>geschat*</span>
+            </div>
 
 
-          <div class="form-group">
-              <label for="euros_spent">Gespendeerd budget</label>
-              <input type="number" class="form-control" id="euros_spent" name="euros_spent" placeholder=100 value="{{ $cosplay->euros_spent }}" required> euros <span>geschat*</span>
+            <div class="form-group">
+                <label for="project_description">Project beschrijving*</label>
+                <input type="text" class="form-control" id="project_description" name="project_description" placeholder="Verloop van het cosplayproces, gebruikte materialen (lenzen, pruiken,..)" value="{{ $cosplay->project_description }}" required>
+            </div>
+
+
+            <div class="clearfix">
+              <button type="submit" class="button-yellow float-right edit-cosplay">
+                <img class="arrow right" src="/img/iconen/kort-pijltje-rechts-wit.png" alt="wit pijltje rechts">
+                <p class="right">PUBLICEER</p>
+              </button>
+            </div>
+
           </div>
-
-
-          <div class="form-group">
-              <label for="project_description">Project beschrijving</label>
-              <input type="text" class="form-control" id="project_description" name="project_description" placeholder="Verloop van het cosplayproces, gebruikte materialen (lenzen, pruiken,..)" value="{{ $cosplay->project_description }}" required>
-          </div>
-
-
-          <button type="submit" class="button-yellow">
-            <img class="arrow right" src="/img/iconen/kort-pijltje-rechts-wit.png" alt="wit pijltje rechts">
-            <p class="right">PUBLICEER</p>
-          </button>
 
 
           @if( $errors->any() )

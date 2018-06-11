@@ -134,8 +134,30 @@ body {
 }
 
 
+.stick-bottom {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
 .desaturate {
   filter: grayscale(100%);
+}
+
+.margin-bottom-7 {
+  margin-bottom: 7% !important;
+}
+
+.block {
+  display:block;
 }
 
 

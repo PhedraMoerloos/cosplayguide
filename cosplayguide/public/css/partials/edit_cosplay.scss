@@ -2,6 +2,99 @@
   padding-left: 6%;
 }
 
+.cosplay-progress .col-7 {
+  padding-right: 0;
+}
+
+.cosplay-progress .col-7 .button-yellow {
+  text-align: right;
+}
+
+.button-yellow.edit-cosplay {
+  margin-top: 7%;
+}
+
 form.edit-cosplay {
-  
+
+  label {
+    font-size: $font-very-small;
+    color: $licht-grijs;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  input, select {
+    font-size: 0.90em;
+    font-weight: 600;
+    color: $bijna-zwart;
+  }
+
+  select {
+    padding: 5px;
+    border-color: $heel-licht-grijs;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px solid $heel-licht-grijs;
+    padding-left: 0;
+  }
+
+  input.percentage, input.tijd, input.budget {
+    width: 3em;
+    display: inline;
+  }
+
+  input.tijd {
+    width: 2.5em;
+  }
+
+  input.budget {
+    width: 3.5em;
+  }
+
+  .row .col-4 {
+    margin-right: 7%;
+    flex: 0 0 26.333333%;
+    max-width: 26.333333%;
+    margin-bottom: 7%;
+  }
+
+  .row .col-4:last-child {
+    margin-right: 0;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+.lower-part-form {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+
+
+}
+
+label[for=thumbnail_url] {
+  display: block;
+  position: relative;
+
+  span {
+    position: absolute;
+    bottom: -175px;
+    right: 0;
+    text-transform: none;
+  }
+}
+
+
+.top-left.thumbnail-url {
+  top: 12px;
+  left: 15px;
+}
+
+.cosplayphoto-upload.thumbnail-url {
+  margin-bottom: 0.60rem;
 }

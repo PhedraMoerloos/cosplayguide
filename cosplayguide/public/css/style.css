@@ -836,6 +836,67 @@ ul.status {
 .form-cosplay {
   padding-left: 6%; }
 
+.cosplay-progress .col-7 {
+  padding-right: 0; }
+
+.cosplay-progress .col-7 .button-yellow {
+  text-align: right; }
+
+.button-yellow.edit-cosplay {
+  margin-top: 7%; }
+
+form.edit-cosplay label {
+  font-size: 0.6em;
+  color: #bcbbbb;
+  text-transform: uppercase;
+  font-weight: 600; }
+form.edit-cosplay input, form.edit-cosplay select {
+  font-size: 0.90em;
+  font-weight: 600;
+  color: #2e2e2e; }
+form.edit-cosplay select {
+  padding: 5px;
+  border-color: #e5e5e5; }
+form.edit-cosplay input {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 0; }
+form.edit-cosplay input.percentage, form.edit-cosplay input.tijd, form.edit-cosplay input.budget {
+  width: 3em;
+  display: inline; }
+form.edit-cosplay input.tijd {
+  width: 2.5em; }
+form.edit-cosplay input.budget {
+  width: 3.5em; }
+form.edit-cosplay .row .col-4 {
+  margin-right: 7%;
+  flex: 0 0 26.333333%;
+  max-width: 26.333333%;
+  margin-bottom: 7%; }
+form.edit-cosplay .row .col-4:last-child {
+  margin-right: 0; }
+form.edit-cosplay .form-group {
+  margin-bottom: 0; }
+form.edit-cosplay .lower-part-form {
+  padding-left: 0;
+  padding-right: 40px; }
+
+label[for=thumbnail_url] {
+  display: block;
+  position: relative; }
+  label[for=thumbnail_url] span {
+    position: absolute;
+    bottom: -175px;
+    right: 0;
+    text-transform: none; }
+
+.top-left.thumbnail-url {
+  top: 12px;
+  left: 15px; }
+
+.cosplayphoto-upload.thumbnail-url {
+  margin-bottom: 0.60rem; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e; }
@@ -901,8 +962,24 @@ body {
 .margin-top-1-5rem {
   margin-top: 1.5rem; }
 
+.stick-bottom {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0; }
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 .desaturate {
   filter: grayscale(100%); }
+
+.margin-bottom-7 {
+  margin-bottom: 7% !important; }
+
+.block {
+  display: block; }
 
 /* NAVIGATIE */
 .navbar {
