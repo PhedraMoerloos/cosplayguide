@@ -946,6 +946,55 @@ label[for=thumbnail_url] {
 
   .cosplay-progress .col-5 .carousel-item {
     background-color: #2e2e2e; } }
+.login {
+  background-color: #2e2e2e; }
+
+.form-login {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%); }
+  .form-login form {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .form-login .form-group.mb-0 {
+    margin-top: 4rem;
+    margin-right: -15px; }
+  .form-login label {
+    margin-right: 1.5rem; }
+    .form-login label img {
+      width: 25px; }
+  .form-login .titel {
+    margin-bottom: 4rem; }
+  .form-login input, .form-login input:focus {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid #444444;
+    border-radius: 0;
+    font-size: 0.95em; }
+    .form-login input::placeholder, .form-login input:focus::placeholder {
+      color: #787878; }
+  .form-login input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(242, 242, 242, 0.25); }
+  .form-login a.login-link {
+    display: block;
+    text-align: right;
+    font-size: 0.85em;
+    color: #adacac;
+    font-weight: 400;
+    text-decoration: none; }
+    .form-login a.login-link span {
+      text-decoration: underline;
+      font-weight: 600; }
+      .form-login a.login-link span:hover {
+        color: #f6f6f6; }
+  .form-login .login-extra {
+    margin-top: 1rem; }
+
+.login .col-5 {
+  padding-left: 0; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e; }
@@ -994,15 +1043,26 @@ body {
 .titel {
   display: inline-block;
   text-transform: uppercase;
-  font-family: 'Titillium Web', sans-serif; }
+  font-family: 'Titillium Web', sans-serif;
+  margin-bottom: 0.35em; }
   .titel h1.klein {
-    font-size: 1.5em;
-    margin-bottom: 0.35em; }
+    font-size: 1.5em; }
+  .titel h1.medium {
+    font-size: 2em; }
+  .titel h1.large {
+    font-size: 2.5em;
+    font-weight: 700; }
+
+.light {
+  color: #f6f6f6; }
 
 .titels-underline {
   height: 2px;
   width: 35%;
   background-color: #2e2e2e; }
+
+.titels-underline.light {
+  background-color: #f6f6f6; }
 
 /* ALGEMEEN */
 .padding-top-3em {

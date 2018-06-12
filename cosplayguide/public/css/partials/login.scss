@@ -1,0 +1,82 @@
+.login {
+  background-color: $bijna-zwart;
+}
+
+.form-login {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+
+
+  form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .form-group.mb-0 {
+    margin-top: 4rem;
+    margin-right: -15px;
+  }
+
+
+  label {
+    margin-right: 1.5rem;
+
+    img {
+      width: 25px;
+    }
+  }
+
+  .titel {
+    margin-bottom: 4rem;
+  }
+
+  input, input:focus {
+    background-color: rgba(0,0,0,0);
+    border:none;
+    border-bottom: 1px solid #444444;
+    border-radius: 0;
+    font-size: 0.95em;
+
+    &::placeholder {
+      color: $medium-donker-grijs;
+    }
+
+  }
+
+  input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(242,242,242,.25);
+  }
+
+  a.login-link {
+    display: block;
+    text-align: right;
+    font-size: $font-medium;
+    color: $medium-licht-grijs;
+    font-weight: 400;
+    text-decoration: none;
+
+
+    span {
+      text-decoration: underline;
+      font-weight: 600;
+
+      &:hover {
+        color: $bijna-wit
+      }
+    }
+  }
+
+  .login-extra {
+    margin-top: 1rem;
+  }
+
+}
+
+
+.login .col-5 {
+  padding-left: 0;
+}

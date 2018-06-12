@@ -68,7 +68,7 @@
 
       <div class="titel">
         <h1 class="klein">NOG WAT INFO</h1>
-        <div class="titels-underline small"></div>
+        <div class="titels-underline"></div>
       </div>
 
 
