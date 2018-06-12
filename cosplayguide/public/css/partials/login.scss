@@ -2,6 +2,13 @@
   background-color: $bijna-zwart;
 }
 
+
+.background-login {
+  width: 542px;
+  height: 452px;
+  background-color: #2e2e2e;
+}
+
 .form-login {
   display: inline-block;
   position: absolute;
@@ -21,6 +28,10 @@
     margin-right: -15px;
   }
 
+  .form-group.mb-0.register {
+    margin-top: 2.5rem;
+  }
+
 
   label {
     margin-right: 1.5rem;
@@ -34,12 +45,17 @@
     margin-bottom: 4rem;
   }
 
+  .titel.register  {
+    margin-bottom: 2.5rem;
+  }
+
   input, input:focus {
     background-color: rgba(0,0,0,0);
     border:none;
     border-bottom: 1px solid #444444;
     border-radius: 0;
     font-size: 0.95em;
+    color: $bijna-wit;
 
     &::placeholder {
       color: $medium-donker-grijs;
@@ -79,4 +95,54 @@
 
 .login .col-5 {
   padding-left: 0;
+}
+
+@media(max-width: 1199px ) {
+  .titel.login {
+    margin-bottom: 2.5rem;
+  }
+
+  .form-group.mb-0.login {
+    margin-top: 2.5rem;
+  }
+
+}
+
+@media(max-width: 992px) {
+
+  .login .col-5 {
+    flex: 0 0 0%;
+    max-width: 0;
+  }
+
+  .login .col-7 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .form-login {
+    top: 47%;
+    left: 50%;
+  }
+
+}
+
+
+
+@media(max-width: 768px) {
+  .background-login {
+    width: 464px;
+  }
+
+}
+
+@media(max-width: 550px) {
+  .form-login {
+    width: 300px;
+  }
+
+  .background-login {
+    width: 389px;
+  }
+
 }

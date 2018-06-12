@@ -16,9 +16,11 @@
 
           <div class="col-7">
 
+            <div class="background-login"></div>
+
                 <div class="form-login">
 
-                  <div class="titel">
+                  <div class="titel login">
                     <h1 class="large light">GEAR UP</h1>
                     <div class="titels-underline small light"></div>
                   </div>
@@ -60,7 +62,7 @@
                       </div>
 
 
-                      <div class="form-group mb-0">
+                      <div class="form-group mb-0 login">
 
                               <div class="clearfix">
                                 <button type="submit" class="button-yellow float-right">
