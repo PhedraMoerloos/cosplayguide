@@ -51,8 +51,9 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Reset paswoord') }}
+                                <button type="submit" class="button-yellow uppercase">
+                                  <img class="arrow right" src="/img/iconen/kort-pijltje-rechts-wit.png" alt="wit pijltje rechts">
+                                  <p class="right">Reset paswoord</p>
                                 </button>
                             </div>
                         </div>

@@ -1028,7 +1028,7 @@ label[for=thumbnail_url] {
     width: 464px; } }
 @media (max-width: 550px) {
   .form-login {
-    width: 300px; }
+    width: 255px; }
 
   .background-login {
     width: 389px; } }
@@ -1129,6 +1129,9 @@ body {
 
 .inline {
   display: inline; }
+
+.uppercase {
+  text-transform: uppercase; }
 
 /* NAVIGATIE */
 .navbar {
