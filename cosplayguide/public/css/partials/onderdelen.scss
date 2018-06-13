@@ -69,6 +69,11 @@
 
 
 /* LINKS */
+
+.links .col-8 {
+  margin-top: 7%;
+}
+
 .row.links .link a {
   display: inline-block;
 
@@ -81,6 +86,7 @@
 .link .tekst {
   color: $donker-secondary-color;
   text-decoration: none;
+  padding-left: 7%;
 
 
   &:hover {
@@ -99,6 +105,21 @@
     font-weight: 400;
     font-size: $font-small;
   }
+}
+
+
+
+
+.links .titel.extra-large {
+  margin-bottom: 5.5rem;
+}
+
+.links .link {
+  margin-bottom: 4.5rem;
+}
+
+.links .titel .small {
+  margin-bottom: 2rem;
 }
 
 

@@ -100,7 +100,7 @@
     <div class="row links">
       <div class="col-8">
 
-        <div class="titel">
+        <div class="titel extra-large">
           <h2 class="extra-large">ENKELE LINKS</h2>
           <div class="titels-underline large"></div>
         </div>

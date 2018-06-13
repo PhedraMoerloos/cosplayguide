@@ -1171,6 +1171,9 @@ label[for=thumbnail_url] {
   margin-bottom: 8rem; }
 
 /* LINKS */
+.links .col-8 {
+  margin-top: 7%; }
+
 .row.links .link a {
   display: inline-block; }
   .row.links .link a img {
@@ -1179,7 +1182,8 @@ label[for=thumbnail_url] {
 
 .link .tekst {
   color: #3e297b;
-  text-decoration: none; }
+  text-decoration: none;
+  padding-left: 7%; }
   .link .tekst:hover {
     color: #ffad01; }
   .link .tekst p {
@@ -1191,6 +1195,15 @@ label[for=thumbnail_url] {
     color: #adacac;
     font-weight: 400;
     font-size: 0.7em; }
+
+.links .titel.extra-large {
+  margin-bottom: 5.5rem; }
+
+.links .link {
+  margin-bottom: 4.5rem; }
+
+.links .titel .small {
+  margin-bottom: 2rem; }
 
 @media (max-width: 1199px) {
   .header-tekst {
