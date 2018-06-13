@@ -7,7 +7,7 @@
 
 
   <div class="row header">
-    <img src="/img/pruik-achtergrond.jpg" alt="Cosplay met pruik">
+    <img id="header-achtergrond-pruik" src="/img/pruik-achtergrond.jpg" alt="Cosplay met pruik">
     <div class="header-tekst">
 
       <div class="titel">

@@ -78,17 +78,6 @@ $( document ).ready(function() {
       }
 
 
-      /* CONTACT ASTRONAUT IMG */
-      if (window.matchMedia("(max-width: 768px)").matches) {
-
-        $(".col-6.astronaut img").attr('src', '/img/astronaut-small.png');
-
-      }
-
-      else {
-        $(".col-6.astronaut img").attr('src', '/img/astronaut.png');
-      }
-
 
 
       /* FOOTER ACHTERGROND */
@@ -109,6 +98,27 @@ $( document ).ready(function() {
           scrollTop: $('.meer-info').offset().top
         }, 500);
       });
+
+
+
+      /**** IMAGE CHANGE OP KLEIN FORMAAT ****/
+
+      /* Contact astronaut */
+      if (window.matchMedia("(max-width: 768px)").matches) {
+
+        $(".col-6.astronaut img").attr('src', '/img/astronaut-small.png');
+
+      }
+
+
+      /* header pruik  */
+
+      if (window.matchMedia("(max-width: 540px)").matches) {
+
+        $("#header-achtergrond-pruik").attr('src', '/img/pruik-achtergrond-klein.jpg');
+
+      }
+
 
 
 

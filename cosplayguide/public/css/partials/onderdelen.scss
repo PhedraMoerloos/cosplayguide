@@ -1,4 +1,4 @@
-
+/* HEADER */
 .header, .header img {
   position: relative;
 }
@@ -31,6 +31,50 @@
 
 // media queries
 
-/*.pruik .row.header {
-  height:
-}*/
+@media(max-width:992px) {
+  .header-tekst {
+    width: 45%
+  }
+
+  .header img {
+    height: 525px;
+  }
+
+}
+
+@media(max-width:768px) {
+  .header-tekst {
+    width: 60%
+  }
+
+}
+
+@media(max-width:700px) {
+  .header-tekst {
+    width: 55%;
+    top: 10%;
+  }
+
+  .header img {
+    height: 450px;
+  }
+
+  .header-tekst p {
+    font-size: 0.80em;
+  }
+
+  .header .link-cosplayer {
+    font-size: $font-small;
+  }
+
+}
+
+
+@media(max-width:540px) {
+  .header-tekst {
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
