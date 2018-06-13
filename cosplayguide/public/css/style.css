@@ -1125,6 +1125,9 @@ label[for=thumbnail_url] {
 .onderdeel .row {
   margin-bottom: 10rem; }
 
+.onderdeel .row:last-child {
+  margin-bottom: 4rem; }
+
 .onderdeel p {
   font-size: 0.85em; }
 
@@ -1166,6 +1169,28 @@ label[for=thumbnail_url] {
 
 .meer-info-target {
   margin-bottom: 8rem; }
+
+/* LINKS */
+.row.links .link a {
+  display: inline-block; }
+  .row.links .link a img {
+    width: 150px;
+    border-radius: 50%; }
+
+.link .tekst {
+  color: #3e297b;
+  text-decoration: none; }
+  .link .tekst:hover {
+    color: #ffad01; }
+  .link .tekst p {
+    font-style: italic;
+    font-size: 0.85em;
+    margin-bottom: 0.25em;
+    font-weight: 600; }
+  .link .tekst p.sub-info {
+    color: #adacac;
+    font-weight: 400;
+    font-size: 0.7em; }
 
 @media (max-width: 1199px) {
   .header-tekst {
@@ -1263,7 +1288,7 @@ body {
   text-transform: uppercase;
   font-family: 'Titillium Web', sans-serif;
   margin-bottom: 0.35em; }
-  .titel .klein {
+  .titel .small {
     font-size: 1.5em; }
   .titel .medium {
     font-size: 2em; }
@@ -1272,6 +1297,8 @@ body {
     font-weight: 700; }
   .titel .large.oversize {
     font-size: 2.25em; }
+  .titel .extra-large {
+    font-size: 3.5em; }
 
 .light {
   color: #f6f6f6; }
@@ -1288,6 +1315,9 @@ body {
 
 .titels-underline.medium {
   height: 3.5px; }
+
+.titels-underline.large {
+  height: 4.5px; }
 
 .titels-underline.light {
   background-color: #f6f6f6; }

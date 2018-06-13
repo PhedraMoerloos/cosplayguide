@@ -67,7 +67,7 @@
     <div class="col-7 form-cosplay">
 
       <div class="titel">
-        <h1 class="klein">NOG WAT INFO</h1>
+        <h1 class="small">NOG WAT INFO</h1>
         <div class="titels-underline"></div>
       </div>
 

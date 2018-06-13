@@ -95,6 +95,98 @@
       </div>
     </div>
 
+
+
+    <div class="row links">
+      <div class="col-8">
+
+        <div class="titel">
+          <h2 class="extra-large">ENKELE LINKS</h2>
+          <div class="titels-underline large"></div>
+        </div>
+
+
+        <div class="row">
+
+          <div class="col-6">
+
+            <div class="titel">
+              <h2 class="small">TUTORIALS</h2>
+            </div>
+
+
+              <div class="link">
+
+                  <a href="#"><img src="/img/links/kamui-cosplay.jpg" alt="Kamuicosplay"></a>
+
+                  <a class="tekst" href="#">
+                    <p>Kamuicosplay</p>
+                    <p class="sub-info">Duitsland</p>
+                  </a>
+
+              </div>
+
+
+
+              <div class="link">
+
+                  <a href="#"><img src="/img/links/arda-wigs-tutorials.jpg" alt="Arda wigs cosplay"></a>
+
+                  <a class="tekst" href="#">
+                    <p>Arda Wigs</p>
+                    <p class="sub-info">USA</p>
+                  </a>
+
+              </div>
+
+
+
+
+          </div> <!-- einde col-6-->
+
+
+          <div class="col-6">
+
+            <div class="titel">
+              <h2 class="small">WEBSHOPS</h2>
+            </div>
+
+
+            <div class="link">
+
+                <a href="#"><img src="/img/links/wigisfashion.jpg" alt="Kamuicosplay"></a>
+
+                <a class="tekst" href="#">
+                  <p>Wigisfashion</p>
+                  <p class="sub-info">Klein budget</p>
+                </a>
+
+            </div>
+
+
+
+            <div class="link">
+
+                <a href="#"><img src="/img/links/arda-wigs.jpg" alt="Arda wigs cosplay"></a>
+
+                <a class="tekst" href="#">
+                  <p>Arda wigs</p>
+                  <p class="sub-info">Medium budget</p>
+                </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-4">
+        <img src="/img/pruik-links.jpg" alt="Haar op gele achtergrond">
+      </div>
+    </div>
+
 </div>
 
 

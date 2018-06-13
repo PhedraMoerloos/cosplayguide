@@ -3,6 +3,10 @@
   margin-bottom: 10rem;
 }
 
+.onderdeel .row:last-child {
+  margin-bottom: 4rem;
+}
+
 .onderdeel p {
   font-size: $font-medium;
 }
@@ -61,6 +65,43 @@
 .meer-info-target {
   margin-bottom: 8rem;
 }
+
+
+
+/* LINKS */
+.row.links .link a {
+  display: inline-block;
+
+  img {
+    width: 150px;
+    border-radius: 50%;
+  }
+}
+
+.link .tekst {
+  color: $donker-secondary-color;
+  text-decoration: none;
+
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  p {
+    font-style: italic;
+    font-size: $font-medium;
+    margin-bottom: 0.25em;
+    font-weight: 600;
+  }
+
+  p.sub-info {
+    color: $medium-licht-grijs;
+    font-weight: 400;
+    font-size: $font-small;
+  }
+}
+
+
 
 
 // MEDIA QUERIES
