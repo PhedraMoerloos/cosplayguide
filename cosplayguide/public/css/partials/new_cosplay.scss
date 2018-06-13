@@ -89,17 +89,22 @@ button.button-yellow.create {
   font-weight: 600;
   text-transform: uppercase;
   border: none;
+  color: $bijna-wit;
   padding: 0;
   text-align: center;
   font-size: $font-big;
+  background-color: rgba(0,0,0,0);
 
   &:focus {
     box-shadow: none;
     border:none;
+    background-color: rgba(0,0,0,0);
+    color: $bijna-wit;
   }
 
   &::placeholder {
     text-decoration: underline;
+    color: $bijna-wit;
   }
 }
 

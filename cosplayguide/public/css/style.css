@@ -359,9 +359,7 @@
 /* PROJECT DESCRIPTION */
 .project-description {
   border-top: 1px solid #e5e5e5;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem; }
+  padding: 2rem 1rem 1rem 1rem; }
 
 .project-description-info .float-left {
   margin-right: 1rem; }
@@ -477,14 +475,19 @@ button.button-yellow.create {
   font-weight: 600;
   text-transform: uppercase;
   border: none;
+  color: #f6f6f6;
   padding: 0;
   text-align: center;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0); }
   .create-cosplay input:focus {
     box-shadow: none;
-    border: none; }
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #f6f6f6; }
   .create-cosplay input::placeholder {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #f6f6f6; }
 
 .create-cosplay .form-group.name {
   margin-bottom: 0.1em; }
@@ -659,7 +662,8 @@ h1.edit-profile-title {
   margin-bottom: 4.5rem; }
   .cosplay-progress .col-5 .cosplay-name h2 {
     font-size: 1.2em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #f6f6f6; }
 
 .icon-camera-simple {
   width: 30px;
@@ -674,7 +678,7 @@ ul.status {
     padding-right: 20.5%;
     padding-bottom: 0.5em;
     display: inline-block;
-    border-bottom: 2px solid #ebe9e9;
+    border-bottom: 2px solid #6d6b6b;
     /* Lancering */
     /* Shoppen */
     /* Knutselen */
@@ -688,7 +692,7 @@ ul.status {
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background-color: #6b6a6a;
+        background-color: white;
         bottom: -0.95em;
         left: -45%; }
     ul.status li img {
@@ -696,34 +700,34 @@ ul.status {
       height: 25px;
       margin-left: -12.50px; }
     ul.status li a.lancering img {
-      background-image: url("/img/iconen/spaceship-dark.svg");
+      background-image: url("/img/iconen/spaceship.svg");
       background-size: contain; }
     ul.status li a.lancering:hover img, ul.status li a.lancering img.active {
-      background-image: url("/img/iconen/spaceship-full-dark.svg");
+      background-image: url("/img/iconen/spaceship-full.svg");
       background-size: contain; }
     ul.status li a.shoppen img {
-      background-image: url("/img/iconen/shopping-bag-dark.svg");
+      background-image: url("/img/iconen/shopping-bag.svg");
       background-size: contain; }
     ul.status li a.shoppen:hover img, ul.status li a.shoppen img.active {
-      background-image: url("/img/iconen/shopping-bag-full-dark.svg");
+      background-image: url("/img/iconen/shopping-bag-full.svg");
       background-size: contain; }
     ul.status li a.knutselen img {
-      background-image: url("/img/iconen/crafting-dark.svg");
+      background-image: url("/img/iconen/crafting.svg");
       background-size: contain; }
     ul.status li a.knutselen:hover img, ul.status li a.knutselen img.active {
-      background-image: url("/img/iconen/crafting-full-dark.svg");
+      background-image: url("/img/iconen/crafting-full.svg");
       background-size: contain; }
     ul.status li a.verven img {
-      background-image: url("/img/iconen/spray-paint-dark.svg");
+      background-image: url("/img/iconen/spray-paint.svg");
       background-size: contain; }
     ul.status li a.verven:hover img, ul.status li a.verven img.active {
-      background-image: url("/img/iconen/spray-paint-full-dark.svg");
+      background-image: url("/img/iconen/spray-paint-full2.svg");
       background-size: contain; }
     ul.status li a.icon-media img {
-      background-image: url("/img/iconen/fancy-camera-dark.svg");
+      background-image: url("/img/iconen/fancy-camera.svg");
       background-size: contain; }
     ul.status li a.icon-media:hover img, ul.status li a.icon-media img.active {
-      background-image: url("/img/iconen/fancy-camera-full-dark.svg");
+      background-image: url("/img/iconen/fancy-camera-full.svg");
       background-size: contain; }
   ul.status li:last-child {
     padding-right: 0;
@@ -1006,6 +1010,9 @@ label[for=thumbnail_url] {
   padding-left: 0; }
 
 /* door sterke gelijkenis: Contact pagina: */
+.row.contact {
+  margin-top: 10%; }
+
 .col-6.contact-form {
   height: 570px;
   padding-right: 0; }
@@ -1082,10 +1089,9 @@ label[for=thumbnail_url] {
   .col-6.astronaut {
     flex: 0 0 30%;
     max-width: 30%;
-    margin-top: 5rem; } }
-@media (max-width: 610px) {
-  .col-6.astronaut img {
-    margin-left: -50%; } }
+    margin-top: 5rem; }
+    .col-6.astronaut img {
+      margin-left: -70%; } }
 @media (max-width: 574px) {
   .form {
     width: 255px; }
@@ -1268,9 +1274,19 @@ a.profile-link {
   outline: none; }
 
 /* FOOTER */
-.footer-background {
+.footer-background, .footer-background-earth {
   width: 100%;
-  position: relative; }
+  position: relative;
+  z-index: -1;
+  margin-top: -100px;
+  background-color: #302e2f; }
+
+.footer-background-earth {
+  margin-top: -225px; }
+
+.footer-background.up {
+  margin-top: -300px;
+  padding-bottom: 5%; }
 
 footer {
   background-color: #302e2e;
@@ -1334,6 +1350,18 @@ footer {
         color: #e5e5e5; }
 
 /* MEDIA QUERIES */
+@media (max-width: 1199px) {
+  .footer-background.up {
+    padding-bottom: 10%; } }
+@media (max-width: 992px) {
+  .footer-background.up {
+    padding-bottom: 15%; }
+
+  .footer-background.down {
+    margin-top: -50px; } }
+@media (max-width: 945px) {
+  .footer-background.up {
+    padding-bottom: 20%; } }
 /*tablet*/
 @media (max-width: 768px) {
   .navbar-nav li a {
@@ -1349,6 +1377,30 @@ footer {
     width: 60px; }
 
   .navbar-nav {
-    font-size: 0.85em; } }
+    font-size: 0.85em; }
+
+  .footer-background.up {
+    padding-bottom: 30%; }
+
+  .footer-background-earth {
+    margin-top: -150px; } }
+@media (max-width: 700px) {
+  .footer-background.up {
+    padding-bottom: 40%; } }
+@media (max-width: 575px) {
+  .footer-background.up {
+    margin-top: -250px; } }
+@media (max-width: 520px) {
+  .footer-background.up {
+    margin-top: -200px; }
+
+  .nav-footer li {
+    margin-right: 5em; } }
+@media (max-width: 440px) {
+  .nav-footer li {
+    margin-right: 4em; }
+
+  .footer-background-earth {
+    margin-top: -125px; } }
 
 /*# sourceMappingURL=style.css.map */

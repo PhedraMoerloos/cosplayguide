@@ -36,7 +36,7 @@
         @yield('content')
     </div>
 
-    <img class="footer-background" src="/img/footer.jpg" alt="Achtergrond bergen">
+    <img @yield('footer-image') src="/img/footer-earth.jpg" alt="Achtergrond bergen">
 
     @include('partials.footer')
 

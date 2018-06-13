@@ -101,6 +101,11 @@
 
 /* door sterke gelijkenis: Contact pagina: */
 
+  .row.contact {
+    margin-top: 10%;
+  }
+
+
 .col-6.contact-form {
   height: 570px;
   padding-right: 0;
@@ -217,16 +222,18 @@
     flex: 0 0 30%;
     max-width: 30%;
     margin-top: 5rem;
+
+    img {
+        margin-left: -70%;
+    }
   }
+
+
 
 }
 
 
-@media(max-width: 610px) {
-  .col-6.astronaut img {
-    margin-left: -50%;
-  }
-}
+
 
 
 @media(max-width: 574px) {

@@ -88,10 +88,14 @@ $( document ).ready(function() {
         $(".col-6.astronaut img").attr('src', '/img/astronaut.png');
       }
 
+      
+      $(".footer-background").attr('src', '/img/footer.jpg');
+      $(".footer-background-earth").attr('src', '/img/footer-earth.jpg');
 
 
 
-      $("ul.status li a img.active").parents( "li" ).prevAll().css( "border-color", "#9f9d9d" );
+
+      $("ul.status li a img.active").parents( "li" ).prevAll().css( "border-color", "#d5d3d3" );
 
 
 

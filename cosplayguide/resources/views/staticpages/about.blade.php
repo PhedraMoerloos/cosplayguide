@@ -8,3 +8,8 @@
 <p>"This is the view for the about page"</p>
 
 @endsection
+
+
+@section('footer-image')
+  class="footer-background"
+@endsection

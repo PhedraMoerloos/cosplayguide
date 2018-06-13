@@ -141,7 +141,9 @@
   </div>
 
 
+@endsection
 
 
-
+@section('footer-image')
+  class="footer-background down"
 @endsection

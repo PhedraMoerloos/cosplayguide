@@ -8,7 +8,7 @@
 @section('content')
 
 
-    <div class="row">
+    <div class="row contact">
 
       <div class="col-6 contact-form">
 
@@ -93,4 +93,9 @@
 
     </div>
 
+@endsection
+
+
+@section('footer-image')
+  class="footer-background-earth"
 @endsection

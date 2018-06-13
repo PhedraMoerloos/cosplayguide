@@ -157,6 +157,7 @@
     h2 {
       font-size: $font-big;
       text-transform: uppercase;
+      color: $bijna-wit;
     }
   }
 
@@ -180,7 +181,7 @@ ul.status {
     padding-right: 20.5%;
     padding-bottom: 0.5em;
     display: inline-block;
-    border-bottom: 2px solid #ebe9e9;
+    border-bottom: 2px solid #6d6b6b;
 
 
     a {
@@ -192,7 +193,7 @@ ul.status {
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        background-color: #6b6a6a;
+        background-color: white;
         bottom: -0.95em;
         left: -45%;
       }
@@ -208,12 +209,12 @@ ul.status {
     /* Lancering */
 
     a.lancering img {
-      background-image: url("/img/iconen/spaceship-dark.svg");
+      background-image: url("/img/iconen/spaceship.svg");
       background-size: contain;
     }
 
     a.lancering:hover img, a.lancering img.active  {
-      background-image: url("/img/iconen/spaceship-full-dark.svg");
+      background-image: url("/img/iconen/spaceship-full.svg");
       background-size: contain;
     }
 
@@ -221,12 +222,12 @@ ul.status {
     /* Shoppen */
 
     a.shoppen img {
-      background-image: url("/img/iconen/shopping-bag-dark.svg");
+      background-image: url("/img/iconen/shopping-bag.svg");
       background-size: contain;
     }
 
     a.shoppen:hover img, a.shoppen img.active {
-      background-image: url("/img/iconen/shopping-bag-full-dark.svg");
+      background-image: url("/img/iconen/shopping-bag-full.svg");
       background-size: contain;
     }
 
@@ -234,12 +235,12 @@ ul.status {
     /* Knutselen */
 
     a.knutselen img {
-      background-image: url("/img/iconen/crafting-dark.svg");
+      background-image: url("/img/iconen/crafting.svg");
       background-size: contain;
     }
 
     a.knutselen:hover img, a.knutselen img.active {
-      background-image: url("/img/iconen/crafting-full-dark.svg");
+      background-image: url("/img/iconen/crafting-full.svg");
       background-size: contain;
     }
 
@@ -247,12 +248,12 @@ ul.status {
     /* Verven */
 
     a.verven img {
-      background-image: url("/img/iconen/spray-paint-dark.svg");
+      background-image: url("/img/iconen/spray-paint.svg");
       background-size: contain;
     }
 
     a.verven:hover img, a.verven img.active {
-      background-image: url("/img/iconen/spray-paint-full-dark.svg");
+      background-image: url("/img/iconen/spray-paint-full2.svg");
       background-size: contain;
     }
 
@@ -260,12 +261,12 @@ ul.status {
     /* Media */
 
     a.icon-media img {
-      background-image: url("/img/iconen/fancy-camera-dark.svg");
+      background-image: url("/img/iconen/fancy-camera.svg");
       background-size: contain;
     }
 
     a.icon-media:hover img, a.icon-media img.active {
-      background-image: url("/img/iconen/fancy-camera-full-dark.svg");
+      background-image: url("/img/iconen/fancy-camera-full.svg");
       background-size: contain;
     }
 

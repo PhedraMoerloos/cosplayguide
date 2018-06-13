@@ -113,3 +113,7 @@
     </div>
 </div>
 @endsection
+
+@section('footer-image')
+  class="footer-background"
+@endsection
