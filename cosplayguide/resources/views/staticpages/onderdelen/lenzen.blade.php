@@ -3,7 +3,8 @@
 
 @section('content')
 
-<h1>Lenzen</h1>
+
+<h2>LENZEN</h2>
 
 
 @endsection

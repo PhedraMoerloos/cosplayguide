@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
 
-
+      /* UPLOAD FILES FILL SPAN MET NAAM OF AANTAL BESTANDEN */
     	$( '.inputfile' ).each( function()
     	{
     		var $input	 = $( this ),
@@ -32,7 +32,7 @@ $( document ).ready(function() {
 
 
 
-
+       /* PROGRESS HOVER ONDERDELEN */
        if (window.matchMedia("(max-width: 992px)").matches) {
 
 
@@ -78,6 +78,7 @@ $( document ).ready(function() {
       }
 
 
+      /* CONTACT ASTRONAUT IMG */
       if (window.matchMedia("(max-width: 768px)").matches) {
 
         $(".col-6.astronaut img").attr('src', '/img/astronaut-small.png');
@@ -88,16 +89,26 @@ $( document ).ready(function() {
         $(".col-6.astronaut img").attr('src', '/img/astronaut.png');
       }
 
-      
+
+
+      /* FOOTER ACHTERGROND */
       $(".footer-background").attr('src', '/img/footer.jpg');
       $(".footer-background-earth").attr('src', '/img/footer-earth.jpg');
 
 
 
-
+      /* PROGRESS STATUSBALK */
       $("ul.status li a img.active").parents( "li" ).prevAll().css( "border-color", "#d5d3d3" );
 
 
+      /* MEER INFO SCROLL */
+      $('.button-meer-info').click(function(e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+          scrollTop: $('.meer-info').offset().top
+        }, 500);
+      });
 
 
 

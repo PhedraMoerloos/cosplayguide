@@ -28,6 +28,7 @@ $font-very-big: 1.5em;
 @import "partials/progress_cosplay";
 @import "partials/edit_cosplay";
 @import "partials/login";
+@import "partials/onderdelen";
 
 
 
@@ -82,7 +83,16 @@ body {
     right: 15px;
   }
 
+}
 
+
+.buttons-linethrough {
+  position: absolute;
+  top: 49%;
+  left: -75px;
+  height: 2px;
+  width: 85px;
+  background-color: black;
 
 }
 
@@ -144,7 +154,6 @@ body {
 
 .titels-underline.light {
   background-color: $bijna-wit;
-  height: 2px;
 }
 
 .titels-underline.purple {
@@ -174,6 +183,15 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+a.link {
+  text-decoration: underline;
+
+  &:hover {
+    color: $primary-color;
+    text-decoration: none;
+  }
 }
 
 

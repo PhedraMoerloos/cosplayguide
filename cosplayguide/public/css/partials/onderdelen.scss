@@ -1,0 +1,36 @@
+
+.header, .header img {
+  position: relative;
+}
+
+.header-tekst {
+  position: absolute;
+  top: 15%;
+  left: 6%;
+  width: 30%;
+  color: $bijna-wit;
+  text-align: right;
+
+  p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: $font-medium;
+    font-weight: 600;
+  }
+}
+
+.header .link-cosplayer {
+  font-size: $font-medium-small;
+
+  a {
+    color: $bijna-wit;
+  }
+}
+
+
+
+// media queries
+
+/*.pruik .row.header {
+  height:
+}*/

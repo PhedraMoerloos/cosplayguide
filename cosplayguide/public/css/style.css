@@ -1000,11 +1000,13 @@ label[for=thumbnail_url] {
     text-decoration: none; }
     .form a.login-link span {
       text-decoration: underline;
-      font-weight: 600; }
+      font-weight: 600;
+      color: #f6f6f6; }
       .form a.login-link span:hover {
-        color: #f6f6f6; }
+        color: #ffad01;
+        text-decoration: none; }
   .form .login-extra {
-    margin-top: 1rem; }
+    margin-top: 1.5rem; }
 
 .login .col-5 {
   padding-left: 0; }
@@ -1119,6 +1121,30 @@ label[for=thumbnail_url] {
 
   .titel.contact {
     margin-left: 18%; } }
+.header, .header img {
+  position: relative; }
+
+.header-tekst {
+  position: absolute;
+  top: 15%;
+  left: 6%;
+  width: 30%;
+  color: #f6f6f6;
+  text-align: right; }
+  .header-tekst p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.85em;
+    font-weight: 600; }
+
+.header .link-cosplayer {
+  font-size: 0.75em; }
+  .header .link-cosplayer a {
+    color: #f6f6f6; }
+
+/*.pruik .row.header {
+  height:
+}*/
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e;
@@ -1151,6 +1177,14 @@ body {
     top: 35%; }
   .button-yellow img.right {
     right: 15px; }
+
+.buttons-linethrough {
+  position: absolute;
+  top: 49%;
+  left: -75px;
+  height: 2px;
+  width: 85px;
+  background-color: black; }
 
 .alert-danger {
   list-style: none;
@@ -1190,8 +1224,7 @@ body {
   background-color: #2e2e2e; }
 
 .titels-underline.light {
-  background-color: #f6f6f6;
-  height: 2px; }
+  background-color: #f6f6f6; }
 
 .titels-underline.purple {
   background-color: #3e297b; }
@@ -1212,6 +1245,12 @@ body {
   position: absolute;
   top: 0;
   left: 0; }
+
+a.link {
+  text-decoration: underline; }
+  a.link:hover {
+    color: #ffad01;
+    text-decoration: none; }
 
 .desaturate {
   filter: grayscale(100%); }

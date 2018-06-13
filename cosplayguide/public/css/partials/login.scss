@@ -79,15 +79,17 @@
     span {
       text-decoration: underline;
       font-weight: 600;
+      color: $bijna-wit;
 
       &:hover {
-        color: $bijna-wit
+        color: $primary-color;
+        text-decoration: none;
       }
     }
   }
 
   .login-extra {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
 }
