@@ -78,6 +78,17 @@ $( document ).ready(function() {
       }
 
 
+      if (window.matchMedia("(max-width: 768px)").matches) {
+
+        $(".col-6.astronaut img").attr('src', '/img/astronaut-small.png');
+
+      }
+
+      else {
+        $(".col-6.astronaut img").attr('src', '/img/astronaut.png');
+      }
+
+
 
 
       $("ul.status li a img.active").parents( "li" ).prevAll().css( "border-color", "#9f9d9d" );

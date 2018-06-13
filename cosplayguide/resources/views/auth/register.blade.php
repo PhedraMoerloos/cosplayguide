@@ -18,7 +18,7 @@
 
             <div class="background-login"></div>
 
-                <div class="form-login">
+                <div class="form">
 
                   <div class="titel register">
                     <h1 class="large light">GEAR UP</h1>

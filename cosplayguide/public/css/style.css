@@ -954,64 +954,95 @@ label[for=thumbnail_url] {
   height: 452px;
   background-color: #2e2e2e; }
 
-.form-login {
+.form {
   display: inline-block;
   position: absolute;
   top: 50%;
   left: 45%;
   transform: translate(-50%, -50%); }
-  .form-login form {
+  .form form {
     padding-left: 15px;
     padding-right: 15px; }
-  .form-login .form-group.mb-0 {
+  .form .form-group.mb-0 {
     margin-top: 4rem;
     margin-right: -15px; }
-  .form-login .form-group.mb-0.register {
+  .form .form-group.mb-0.register {
     margin-top: 2.5rem; }
-  .form-login label {
+  .form label {
     margin-right: 1.5rem; }
-    .form-login label img {
+    .form label img {
       width: 25px; }
-  .form-login .titel {
+  .form .titel {
     margin-bottom: 4rem; }
-  .form-login .titel.register {
+  .form .titel.register {
     margin-bottom: 2.5rem; }
-  .form-login input, .form-login input:focus {
+  .form input, .form input:focus {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     border-bottom: 1px solid #444444;
     border-radius: 0;
     font-size: 0.95em;
     color: #f6f6f6; }
-    .form-login input::placeholder, .form-login input:focus::placeholder {
+    .form input::placeholder, .form input:focus::placeholder {
       color: #787878; }
-  .form-login input:focus {
+  .form input:focus {
     box-shadow: 0 0 0 0.2rem rgba(242, 242, 242, 0.25); }
-  .form-login a.login-link {
+  .form a.login-link {
     display: block;
     text-align: right;
     font-size: 0.85em;
     color: #adacac;
     font-weight: 400;
     text-decoration: none; }
-    .form-login a.login-link span {
+    .form a.login-link span {
       text-decoration: underline;
       font-weight: 600; }
-      .form-login a.login-link span:hover {
+      .form a.login-link span:hover {
         color: #f6f6f6; }
-  .form-login .login-extra {
+  .form .login-extra {
     margin-top: 1rem; }
 
 .login .col-5 {
   padding-left: 0; }
+
+/* door sterke gelijkenis: Contact pagina: */
+.col-6.contact-form {
+  height: 570px;
+  padding-right: 0; }
+
+.form-group.contact label img {
+  opacity: 0.75; }
+
+.form-group.contact input {
+  border-color: #e5e5e5;
+  color: #8c8c8c; }
+  .form-group.contact input::placeholder {
+    color: #bcbbbb; }
+
+.titel.contact {
+  margin-left: 21%; }
+
+.form.contact {
+  top: 45%; }
+
+.col-6.astronaut {
+  padding-left: 0; }
+  .col-6.astronaut img {
+    margin-left: -20%; }
 
 @media (max-width: 1199px) {
   .titel.login {
     margin-bottom: 2.5rem; }
 
   .form-group.mb-0.login {
-    margin-top: 2.5rem; } }
-@media (max-width: 992px) {
+    margin-top: 2.5rem; }
+
+  .titel.contact {
+    margin-left: 16%; }
+
+  .form.contact {
+    top: 42%; } }
+@media (max-width: 991px) {
   .login .col-5 {
     flex: 0 0 0%;
     max-width: 0; }
@@ -1020,21 +1051,51 @@ label[for=thumbnail_url] {
     flex: 0 0 100%;
     max-width: 100%; }
 
-  .form-login {
-    top: 47%;
-    left: 50%; } }
+  .form {
+    top: 45%;
+    left: 50%; }
+
+  .titel.contact {
+    margin-left: 0; }
+    .titel.contact h1.large {
+      font-size: 2.25em; }
+
+  .form.contact {
+    transform: translate(-37%, -63%);
+    left: 30%;
+    top: 47%; } }
 @media (max-width: 768px) {
+  .col-6.contact-form {
+    height: 440px; }
+
   .background-login {
-    width: 464px; } }
+    width: 464px; }
+
+  .col-6.contact-form {
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding-left: 0; }
+
+  .form.contact {
+    transform: translate(-46%, -41%); }
+
+  .col-6.astronaut {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-top: 5rem; } }
+@media (max-width: 610px) {
+  .col-6.astronaut img {
+    margin-left: -50%; } }
 @media (max-width: 550px) {
-  .form-login {
+  .form {
     width: 255px; }
 
   .background-login {
     width: 389px; } }
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #2e2e2e; }
+  color: #2e2e2e;
+  overflow-x: hidden; }
 
 .button-yellow {
   position: relative;
@@ -1093,13 +1154,20 @@ body {
 .light {
   color: #f6f6f6; }
 
+.purple {
+  color: #3e297b; }
+
 .titels-underline {
-  height: 2px;
+  height: 2.5px;
   width: 35%;
   background-color: #2e2e2e; }
 
 .titels-underline.light {
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  height: 2px; }
+
+.titels-underline.purple {
+  background-color: #3e297b; }
 
 /* ALGEMEEN */
 .padding-top-3em {

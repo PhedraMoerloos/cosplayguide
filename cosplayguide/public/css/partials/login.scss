@@ -9,7 +9,7 @@
   background-color: #2e2e2e;
 }
 
-.form-login {
+.form {
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -97,6 +97,46 @@
   padding-left: 0;
 }
 
+
+
+/* door sterke gelijkenis: Contact pagina: */
+
+.col-6.contact-form {
+  height: 570px;
+  padding-right: 0;
+}
+
+.form-group.contact label img {
+  opacity: 0.75;
+}
+
+.form-group.contact input {
+  border-color: $heel-licht-grijs;
+  color: $medium-grijs;
+
+  &::placeholder {
+    color: $licht-grijs;
+  }
+}
+
+.titel.contact {
+  margin-left: 21%;
+}
+
+.form.contact {
+  top: 45%;
+}
+
+.col-6.astronaut {
+  padding-left: 0;
+
+  img {
+      margin-left: -20%;
+  }
+}
+
+
+
 @media(max-width: 1199px ) {
   .titel.login {
     margin-bottom: 2.5rem;
@@ -106,9 +146,17 @@
     margin-top: 2.5rem;
   }
 
+  .titel.contact {
+    margin-left: 16%;
+  }
+
+  .form.contact {
+    top: 42%;
+  }
+
 }
 
-@media(max-width: 992px) {
+@media(max-width: 991px) {
 
   .login .col-5 {
     flex: 0 0 0%;
@@ -120,9 +168,24 @@
     max-width: 100%;
   }
 
-  .form-login {
-    top: 47%;
+  .form {
+    top: 45%;
     left: 50%;
+  }
+
+  .titel.contact {
+    margin-left: 0;
+
+      h1.large {
+        font-size: 2.25em;
+      }
+    }
+
+
+  .form.contact {
+    transform: translate(-37%, -63%);
+    left: 30%;
+    top: 47%;
   }
 
 }
@@ -130,19 +193,49 @@
 
 
 @media(max-width: 768px) {
+
+  .col-6.contact-form {
+    height: 440px;
+  }
+
+
   .background-login {
     width: 464px;
   }
 
+  .col-6.contact-form {
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding-left: 0;
+  }
+
+  .form.contact {
+    transform: translate(-46%, -41%);
+  }
+
+  .col-6.astronaut {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-top: 5rem;
+  }
+
+}
+
+
+@media(max-width: 610px) {
+  .col-6.astronaut img {
+    margin-left: -50%;
+  }
 }
 
 @media(max-width: 550px) {
-  .form-login {
+  .form {
     width: 255px;
   }
 
   .background-login {
     width: 389px;
   }
+
 
 }
