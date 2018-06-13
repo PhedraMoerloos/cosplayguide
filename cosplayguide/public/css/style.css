@@ -1121,6 +1121,13 @@ label[for=thumbnail_url] {
 
   .titel.contact {
     margin-left: 18%; } }
+/* Algemeen */
+.onderdeel .row {
+  margin-bottom: 10rem; }
+
+.onderdeel p {
+  font-size: 0.85em; }
+
 /* HEADER */
 .header, .header img {
   position: relative; }
@@ -1135,7 +1142,6 @@ label[for=thumbnail_url] {
   .header-tekst p {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    font-size: 0.85em;
     font-weight: 600; }
 
 .header .link-cosplayer {
@@ -1143,6 +1149,27 @@ label[for=thumbnail_url] {
   .header .link-cosplayer a {
     color: #f6f6f6; }
 
+/* BLOKKEN MEER INFO */
+.meer-info p {
+  color: #8c8c8c;
+  margin-top: 1.5rem;
+  line-height: 1.65; }
+
+.meer-info img {
+  width: 60%; }
+
+.meer-info img.large {
+  width: 90%; }
+
+.meer-info .titel {
+  margin-top: 10%; }
+
+.meer-info-target {
+  margin-bottom: 8rem; }
+
+@media (max-width: 1199px) {
+  .header-tekst {
+    width: 35%; } }
 @media (max-width: 992px) {
   .header-tekst {
     width: 45%; }
@@ -1151,7 +1178,13 @@ label[for=thumbnail_url] {
     height: 525px; } }
 @media (max-width: 768px) {
   .header-tekst {
-    width: 60%; } }
+    width: 60%; }
+
+  .meer-info img, .meer-info img.large {
+    width: 100%; }
+
+  .onderdeel .row {
+    margin-bottom: 9rem; } }
 @media (max-width: 700px) {
   .header-tekst {
     width: 55%;
@@ -1230,13 +1263,15 @@ body {
   text-transform: uppercase;
   font-family: 'Titillium Web', sans-serif;
   margin-bottom: 0.35em; }
-  .titel h1.klein {
+  .titel .klein {
     font-size: 1.5em; }
-  .titel h1.medium {
+  .titel .medium {
     font-size: 2em; }
-  .titel h1.large {
+  .titel .large {
     font-size: 2.5em;
     font-weight: 700; }
+  .titel .large.oversize {
+    font-size: 2.25em; }
 
 .light {
   color: #f6f6f6; }
@@ -1245,9 +1280,14 @@ body {
   color: #3e297b; }
 
 .titels-underline {
-  height: 2.5px;
   width: 35%;
   background-color: #2e2e2e; }
+
+.titels-underline.small {
+  height: 2.5px; }
+
+.titels-underline.medium {
+  height: 3.5px; }
 
 .titels-underline.light {
   background-color: #f6f6f6; }

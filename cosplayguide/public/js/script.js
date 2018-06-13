@@ -95,7 +95,7 @@ $( document ).ready(function() {
         e.preventDefault();
 
         $('html, body').animate({
-          scrollTop: $('.meer-info').offset().top
+          scrollTop: $('.meer-info-target').offset().top
         }, 500);
       });
 

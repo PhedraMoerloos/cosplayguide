@@ -123,17 +123,21 @@ body {
   font-family: 'Titillium Web', sans-serif;
   margin-bottom: 0.35em;
 
-  h1.klein {
+  .klein {
     font-size: 1.5em;
   }
 
-  h1.medium {
+  .medium {
     font-size: 2em;
   }
 
-  h1.large {
+  .large {
     font-size: 2.5em;
     font-weight: 700;
+  }
+
+  .large.oversize {
+    font-size: 2.25em;
   }
 }
 
@@ -147,9 +151,16 @@ body {
 }
 
 .titels-underline {
-  height: 2.5px;
   width: 35%;
   background-color: $bijna-zwart;
+}
+
+.titels-underline.small {
+  height: 2.5px;
+}
+
+.titels-underline.medium {
+  height: 3.5px;
 }
 
 .titels-underline.light {
