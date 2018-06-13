@@ -1,6 +1,10 @@
 @extends('master')
 
 
+@section('title')
+  <title>Contacteer Cosplay Guide</title>
+@endsection
+
 @section('content')
 
 
@@ -44,7 +48,7 @@
                   </label>
 
                   <div>
-                      <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="Jouw emailadres" required autofocus>
+                      <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="Jouw emailadres" required>
 
                       @if ($errors->has('email'))
                           <span class="invalid-feedback">
@@ -62,7 +66,7 @@
                   </label>
 
                   <div>
-                      <input id="message" type="text" class="form-control" name="message" placeholder="Jouw bericht" required autofocus>
+                      <input id="message" type="text" class="form-control" name="message" placeholder="Jouw bericht" required>
                   </div>
               </div>
 

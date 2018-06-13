@@ -1028,7 +1028,7 @@ label[for=thumbnail_url] {
 .col-6.astronaut {
   padding-left: 0; }
   .col-6.astronaut img {
-    margin-left: -20%; }
+    margin-left: -10%; }
 
 @media (max-width: 1199px) {
   .titel.login {
@@ -1086,12 +1086,33 @@ label[for=thumbnail_url] {
 @media (max-width: 610px) {
   .col-6.astronaut img {
     margin-left: -50%; } }
-@media (max-width: 550px) {
+@media (max-width: 574px) {
   .form {
     width: 255px; }
 
   .background-login {
-    width: 389px; } }
+    width: 389px; }
+
+  .col-6.astronaut {
+    flex: 0 0 0%;
+    max-width: 0; }
+    .col-6.astronaut img {
+      display: none; }
+
+  .col-6.contact-form {
+    flex: 0 0 100%;
+    max-width: 100%; }
+
+  .col-6.contact-form {
+    height: 350px; }
+
+  .form.contact {
+    left: 47%;
+    top: 65%;
+    transform: translate(-50%, -50%); }
+
+  .titel.contact {
+    margin-left: 18%; } }
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e;
