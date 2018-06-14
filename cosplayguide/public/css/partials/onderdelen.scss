@@ -18,6 +18,18 @@
   position: relative;
 }
 
+.worbla .header .col-4 {
+  padding-right: 5%;
+  flex: 0 0 25.333333%;
+  max-width: 25.333333%;
+}
+
+.worbla .header .col-8 iframe {
+  width: 950px;
+  height: 530px;
+  border: none;
+}
+
 .header-tekst {
   position: absolute;
   top: 15%;
@@ -31,6 +43,32 @@
     margin-bottom: 1.5rem;
     font-weight: 600;
   }
+}
+
+.header-tekst.tips {
+  position: relative;
+  left: 0;
+  top: 7%;
+  width: 100%;
+}
+
+.header-tekst.tips .titel {
+  display: block;
+}
+
+.header-tekst.tips p.dark {
+  color: $licht-grijs;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.header-tekst.tips .button-yellow {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.header-tekst.tips .titel, .header-tekst.tips p {
+    text-align: left;
 }
 
 
@@ -133,6 +171,17 @@
   }
 }
 
+@media(max-width: 1100px) {
+  .worbla .header .col-8 iframe {
+    width: 775px;
+    height: 450px;
+  }
+
+  .header-tekst.tips {
+    top: 0.5%;
+  }
+}
+
 
 
 @media(max-width:992px) {
@@ -159,8 +208,34 @@
     }
   }
 
+  .worbla .header .col-8 iframe {
+    width: 625px;
+    height: 350px;
+  }
 
+  .header-tekst.tips {
+    top: -1%;
+  }
+
+  .worbla .header .col-4 {
+    padding-right: 4%;
+  }
+
+  .worbla .buttons-linethrough {
+    display: none;
+  }
+
+  .worbla .titel .large {
+    font-size: 2em;
+  }
+
+  .header-tekst.tips p.dark {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+  }
 }
+
+
 
 @media(max-width:768px) {
   .header-tekst {
@@ -185,9 +260,36 @@
 
   .links .link {
     margin-bottom: 2.5rem;
-}
+  }
+
+  .worbla .header .col-4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .worbla .header .col-4, .worbla .header .col-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .header-tekst.tips .titel {
+    display: inline-block;
+  }
+
+  .header-tekst.tips, .header-tekst.tips p {
+    text-align: center;
+  }
+
+  .worbla .header .col-8 iframe {
+    width: 510px;
+    height: 280px;
+    margin-top: 3rem;
+  }
+
 
 }
+
+
 
 @media(max-width:700px) {
   .header-tekst {
@@ -234,6 +336,14 @@
 
   .pruik .titel .large, .pruik .titel .large.oversize {
     font-size: 2em;
+  }
+
+  .header-tekst.tips {
+    position: relative;
+    left: 0;
+    top: 7%;
+    width: 100%;
+    transform: none;
   }
 
 }

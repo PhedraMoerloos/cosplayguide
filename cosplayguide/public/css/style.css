@@ -13,7 +13,8 @@
     text-transform: uppercase;
     font-size: 1.2em;
     margin-top: 0.5em;
-    margin-bottom: 2px; }
+    margin-bottom: 2px;
+    font-weight: 600; }
   .profiel-info .profile-title {
     font-size: 0.6em;
     font-weight: 600;
@@ -601,12 +602,12 @@ h1.edit-profile-title {
 .onderdelen.right .onderdeel .onderdeel-title {
   margin-right: 12.5px; }
 
-.onderdeel-title {
-  font-size: 0.7em;
+.onderdeel-title p {
+  font-size: 0.7em !important;
   color: #3f3e3e;
   font-weight: 700; }
-  .onderdeel-title:hover {
-    color: #3f3e3e; }
+.onderdeel-title:hover {
+  color: #3f3e3e; }
 
 .cosplay-progress .col:first-child {
   padding-right: 5%; }
@@ -1135,6 +1136,16 @@ label[for=thumbnail_url] {
 .header, .header img {
   position: relative; }
 
+.worbla .header .col-4 {
+  padding-right: 5%;
+  flex: 0 0 25.333333%;
+  max-width: 25.333333%; }
+
+.worbla .header .col-8 iframe {
+  width: 950px;
+  height: 530px;
+  border: none; }
+
 .header-tekst {
   position: absolute;
   top: 15%;
@@ -1146,6 +1157,27 @@ label[for=thumbnail_url] {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-weight: 600; }
+
+.header-tekst.tips {
+  position: relative;
+  left: 0;
+  top: 7%;
+  width: 100%; }
+
+.header-tekst.tips .titel {
+  display: block; }
+
+.header-tekst.tips p.dark {
+  color: #bcbbbb;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.header-tekst.tips .button-yellow {
+  padding-right: 20px;
+  padding-left: 20px; }
+
+.header-tekst.tips .titel, .header-tekst.tips p {
+  text-align: left; }
 
 .header .link-cosplayer {
   font-size: 0.75em; }
@@ -1208,6 +1240,13 @@ label[for=thumbnail_url] {
 @media (max-width: 1199px) {
   .header-tekst {
     width: 35%; } }
+@media (max-width: 1100px) {
+  .worbla .header .col-8 iframe {
+    width: 775px;
+    height: 450px; }
+
+  .header-tekst.tips {
+    top: 0.5%; } }
 @media (max-width: 992px) {
   .header-tekst {
     width: 45%; }
@@ -1223,7 +1262,27 @@ label[for=thumbnail_url] {
     margin-top: 0.75rem;
     padding-left: 15%; }
     .link .tekst p {
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+
+  .worbla .header .col-8 iframe {
+    width: 625px;
+    height: 350px; }
+
+  .header-tekst.tips {
+    top: -1%; }
+
+  .worbla .header .col-4 {
+    padding-right: 4%; }
+
+  .worbla .buttons-linethrough {
+    display: none; }
+
+  .worbla .titel .large {
+    font-size: 2em; }
+
+  .header-tekst.tips p.dark {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; } }
 @media (max-width: 768px) {
   .header-tekst {
     width: 60%; }
@@ -1241,7 +1300,26 @@ label[for=thumbnail_url] {
     margin-top: 2%; }
 
   .links .link {
-    margin-bottom: 2.5rem; } }
+    margin-bottom: 2.5rem; }
+
+  .worbla .header .col-4 {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .worbla .header .col-4, .worbla .header .col-8 {
+    flex: 0 0 100%;
+    max-width: 100%; }
+
+  .header-tekst.tips .titel {
+    display: inline-block; }
+
+  .header-tekst.tips, .header-tekst.tips p {
+    text-align: center; }
+
+  .worbla .header .col-8 iframe {
+    width: 510px;
+    height: 280px;
+    margin-top: 3rem; } }
 @media (max-width: 700px) {
   .header-tekst {
     width: 55%;
@@ -1273,7 +1351,14 @@ label[for=thumbnail_url] {
     max-width: 100%; }
 
   .pruik .titel .large, .pruik .titel .large.oversize {
-    font-size: 2em; } }
+    font-size: 2em; }
+
+  .header-tekst.tips {
+    position: relative;
+    left: 0;
+    top: 7%;
+    width: 100%;
+    transform: none; } }
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e;
@@ -1347,6 +1432,9 @@ body {
 
 .light {
   color: #f6f6f6; }
+
+.dark {
+  color: #2e2e2e; }
 
 .purple {
   color: #3e297b; }

@@ -134,6 +134,14 @@ $( document ).ready(function() {
       }
 
 
+      /* Remove br elementen in h1 Worbla & Foam */
+      if (window.matchMedia("(max-width: 768px)").matches) {
+
+        $("br").remove();
+
+      }
+
+
 
 
 

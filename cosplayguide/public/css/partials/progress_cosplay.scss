@@ -60,9 +60,11 @@
 }
 
 .onderdeel-title {
-  font-size: $font-small;
-  color: $heel-donker-grijs;
-  font-weight: 700;
+  p {
+    font-size: $font-small !important;
+    color: $heel-donker-grijs;
+    font-weight: 700;
+  }
 
   &:hover {
     color: $heel-donker-grijs;
