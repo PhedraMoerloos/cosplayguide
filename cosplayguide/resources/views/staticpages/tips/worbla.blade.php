@@ -40,21 +40,23 @@
 
 
       <div class="row meer-info meer-info-target">
-        <div class="col-6">
+        <div class="col-6 tekst">
 
           <div class="titel">
-            <h2 class="large">LACEFRONT</h2>
+            <h2 class="large oversize">CREATE A PATTERN</h2>
             <div class="titels-underline medium"></div>
           </div>
 
-          <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
+          <p class="dark">Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
     gebruikt.</p>
+
+          <p class="nummer first">1</p>
 
         </div>
 
 
         <div class="col-6">
-          <img class="large" src="/img/worbla-wapen-geel-rechts.png" alt="Lacefront pruik">
+          <img class="large" src="/img/worbla-wapen-geel-rechts.png" alt="Worbla">
         </div>
       </div>
 
@@ -63,40 +65,44 @@
       <div class="row meer-info">
 
         <div class="col-6">
-          <img class="large" src="/img/worbla-wapen-geel-links.png" alt="Kleurrange bij pruiken">
+          <img class="large" src="/img/worbla-wapen-geel-links.png" alt="Worbla">
         </div>
 
-        <div class="col-6">
+        <div class="col-6 tekst">
 
           <div class="titel">
-            <h2 class="large">KLEURRANGE</h2>
+            <h2 class="large oversize">DRAW ON THE WORBLA</h2>
             <div class="titels-underline medium"></div>
           </div>
 
-          <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
+          <p class="dark">Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
       gebruikt.</p>
 
+          <p class="nummer second">2</p>
+
         </div>
       </div>
 
 
 
       <div class="row meer-info">
-        <div class="col-6">
+        <div class="col-6 tekst">
 
           <div class="titel">
-            <h2 class="large oversize">HITTEBESTENDIG</h2>
+            <h2 class="large oversize">HEAT UP AND SHAPE</h2>
             <div class="titels-underline medium"></div>
           </div>
 
-          <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
+          <p class="dark">Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
     gebruikt.</p>
+
+          <p class="nummer third">3</p>
 
         </div>
 
 
         <div class="col-6">
-          <img class="large" src="/img/worbla-wapen-geel-rechts.png" alt="Stijltang">
+          <img class="large" src="/img/worbla-wapen-geel-rechts.png" alt="Worbla">
         </div>
       </div>
 
@@ -106,7 +112,7 @@
         <div class="col-8">
 
           <div class="titel extra-large">
-            <h2 class="extra-large">ENKELE LINKS</h2>
+            <h2 class="extra-large">THE EXPERTS</h2>
             <div class="titels-underline large"></div>
           </div>
 
@@ -135,11 +141,11 @@
 
                 <div class="link">
 
-                    <a href="#"><img src="/img/links/arda-wigs-tutorials.jpg" alt="Arda wigs cosplay"></a>
+                    <a href="#"><img src="/img/links/jak-cosplay.jpg" alt="Jak cosplay tutorials"></a>
 
                     <a class="tekst" href="#">
-                      <p>Arda Wigs</p>
-                      <p class="sub-info">USA</p>
+                      <p>Jak Cosplay</p>
+                      <p class="sub-info">Duitsland</p>
                     </a>
 
                 </div>
@@ -159,11 +165,11 @@
 
               <div class="link">
 
-                  <a href="#"><img src="/img/links/wigisfashion.jpg" alt="Kamuicosplay"></a>
+                  <a href="#"><img src="/img/links/cosplaysupplies.jpg" alt="Cosplaysupplies webshop"></a>
 
                   <a class="tekst" href="#">
-                    <p>Wigisfashion</p>
-                    <p class="sub-info">Klein budget</p>
+                    <p>Cosplaysupplies</p>
+                    <p class="sub-info">USA</p>
                   </a>
 
               </div>
@@ -172,11 +178,11 @@
 
               <div class="link">
 
-                  <a href="#"><img src="/img/links/arda-wigs.jpg" alt="Arda wigs cosplay"></a>
+                  <a href="#"><img src="/img/links/cosplayshop.jpg" alt="Cosplayshop"></a>
 
                   <a class="tekst" href="#">
-                    <p>Arda wigs</p>
-                    <p class="sub-info">Medium budget</p>
+                    <p>Cosplayshop</p>
+                    <p class="sub-info">België</p>
                   </a>
 
               </div>

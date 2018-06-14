@@ -22,6 +22,7 @@
   padding-right: 5%;
   flex: 0 0 25.333333%;
   max-width: 25.333333%;
+  padding-left: 15px;
 }
 
 .worbla .header .col-8 iframe {
@@ -105,6 +106,47 @@
 }
 
 
+/* Blog pagina's */
+
+.worbla .meer-info .col-6.tekst {
+  position: relative;
+  padding-left: 6.1%;
+
+  .titel, p.dark {
+    position: relative;
+  }
+
+  p.nummer {
+    position: absolute;
+    color: $licht-secondary-color;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    font-size: 19em;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    z-index: -1;
+    top: -28%;
+  }
+
+  p.nummer.first {
+    left: -1.5%;
+  }
+
+  p.nummer.second {
+    left: -7%;
+  }
+
+  p.nummer.third {
+    left: -6%;
+  }
+}
+
+
+
+
+
+
 
 /* LINKS */
 
@@ -169,6 +211,25 @@
   .header-tekst {
     width: 35%
   }
+
+
+  .worbla .meer-info .col-6.tekst p.nummer {
+    top: -36%;
+  }
+
+  .worbla .meer-info .col-6.tekst p.nummer.first {
+    left: -4%;
+  }
+
+  .worbla .meer-info .col-6.tekst p.nummer.second {
+    left: -11%;
+  }
+
+  .worbla .meer-info .col-6.tekst p.nummer.third {
+    left: -9%;
+  }
+
+
 }
 
 @media(max-width: 1100px) {
@@ -233,6 +294,21 @@
       margin-top: 1.5rem;
       margin-bottom: 1.5rem;
   }
+
+
+  .worbla .meer-info .col-6.tekst p.nummer {
+    top: -28%;
+    font-size: 14em;
+  }
+
+
+  .worbla .meer-info .col-6.tekst p.nummer.first {
+    left: -4%;
+  }
+
+  .worbla .meer-info .col-6.tekst p.nummer.second {
+    left: -10%;
+  }
 }
 
 
@@ -284,6 +360,16 @@
     width: 510px;
     height: 280px;
     margin-top: 3rem;
+  }
+
+
+
+  .worbla .meer-info .col-6.tekst p.nummer.first {
+    left: -9%;
+  }
+
+  .worbla .meer-info .col-6.tekst p.nummer.third {
+    left: -15%;
   }
 
 
@@ -344,6 +430,10 @@
     top: 7%;
     width: 100%;
     transform: none;
+  }
+
+  p.nummer {
+    display: none;
   }
 
 }
