@@ -124,12 +124,14 @@ $( document ).ready(function() {
       if (window.matchMedia("(max-width: 960px)").matches) {
 
         $(".links-image-rechts img").attr('src', '/img/pruik-links-medium.jpg');
+        $(".worbla .links-image-rechts img").attr('src', '/img/worbla-arm-rechts-medium.png');
 
       }
 
       if (window.matchMedia("(max-width: 768px)").matches) {
 
         $(".links-image-rechts img").attr('src', '/img/pruik-links-small.jpg');
+        $(".worbla .links-image-rechts img").attr('src', '/img/worbla-arm-rechts-small.png');
 
       }
 

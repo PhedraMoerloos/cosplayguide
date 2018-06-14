@@ -54,7 +54,7 @@
 
 
         <div class="col-6">
-          <img src="/img/lacefront.png" alt="Lacefront pruik">
+          <img class="large" src="/img/worbla-wapen-geel-rechts.png" alt="Lacefront pruik">
         </div>
       </div>
 
@@ -63,7 +63,7 @@
       <div class="row meer-info">
 
         <div class="col-6">
-          <img class="large" src="/img/kleurrange.png" alt="Kleurrange bij pruiken">
+          <img class="large" src="/img/worbla-wapen-geel-links.png" alt="Kleurrange bij pruiken">
         </div>
 
         <div class="col-6">
@@ -96,7 +96,7 @@
 
 
         <div class="col-6">
-          <img src="/img/hittebestendigheid.png" alt="Stijltang">
+          <img class="large" src="/img/worbla-wapen-geel-rechts.png" alt="Stijltang">
         </div>
       </div>
 
@@ -188,7 +188,7 @@
         </div>
 
         <div class="col-4 links-image-rechts">
-          <img src="/img/pruik-links.jpg" alt="Haar op gele achtergrond">
+          <img src="/img/worbla-arm-rechts.png" alt="Worbla ongeschilderde armbescherming">
         </div>
       </div>
 
