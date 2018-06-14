@@ -1213,7 +1213,17 @@ label[for=thumbnail_url] {
     width: 45%; }
 
   .header img {
-    height: 525px; } }
+    height: 525px; }
+
+  .links .col-8 {
+    margin-top: 4%; }
+
+  .link .tekst {
+    text-align: center;
+    margin-top: 0.75rem;
+    padding-left: 15%; }
+    .link .tekst p {
+      margin-bottom: 0; } }
 @media (max-width: 768px) {
   .header-tekst {
     width: 60%; }
@@ -1222,7 +1232,16 @@ label[for=thumbnail_url] {
     width: 100%; }
 
   .onderdeel .row {
-    margin-bottom: 9rem; } }
+    margin-bottom: 9rem; }
+
+  .links .titel .extra-large {
+    font-size: 3em; }
+
+  .links .col-8 {
+    margin-top: 2%; }
+
+  .links .link {
+    margin-bottom: 2.5rem; } }
 @media (max-width: 700px) {
   .header-tekst {
     width: 55%;
@@ -1241,7 +1260,20 @@ label[for=thumbnail_url] {
     width: 70%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); } }
+    transform: translate(-50%, -50%); }
+
+  .links .col-4.links-image-rechts {
+    flex: 0 0 0;
+    max-width: 0; }
+    .links .col-4.links-image-rechts img {
+      display: none; }
+
+  .links .col-8 {
+    flex: 0 0 100%;
+    max-width: 100%; }
+
+  .pruik .titel .large, .pruik .titel .large.oversize {
+    font-size: 2em; } }
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e;

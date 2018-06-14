@@ -182,7 +182,7 @@
 
       </div>
 
-      <div class="col-4">
+      <div class="col-4 links-image-rechts">
         <img src="/img/pruik-links.jpg" alt="Haar op gele achtergrond">
       </div>
     </div>
