@@ -1415,6 +1415,59 @@ label[for=thumbnail_url] {
 
   p.nummer {
     display: none; } }
+.tips-overzicht .row {
+  margin-bottom: 17%; }
+
+.tips-overzicht .row:last-child {
+  margin-bottom: 5%; }
+
+/* WORBLA EN FOAM */
+.worbla-img-breastplate {
+  width: 80%; }
+
+.worbla-img-daedrik {
+  width: 75%;
+  margin-top: -100px; }
+
+.tips-overzicht .titel {
+  margin-top: 2rem;
+  margin-bottom: 7rem; }
+
+.button-yellow.worbla-tip {
+  margin-top: 2rem;
+  margin-left: -7%; }
+
+.tips-overzicht .buttons-linethrough {
+  width: 125px;
+  left: -115px; }
+
+/* BEGINNER TIPS */
+.scissors {
+  position: absolute;
+  bottom: 0;
+  left: -20%; }
+
+.col-5.beginner-tips {
+  text-align: right; }
+
+.tips-overzicht .buttons-linethrough.right {
+  left: 140px; }
+
+.beginner-tips .button-yellow {
+  margin-right: 75px;
+  margin-top: 4rem; }
+
+/* COSPLAY PLANNER */
+.button-yellow.planner {
+  margin-top: 4rem;
+  margin-left: -85px; }
+
+.worbla-img-compass {
+  width: 90%; }
+
+.worbla-img-planner {
+  width: 80%; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e;
