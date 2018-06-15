@@ -93,6 +93,57 @@
 
       </div>
 
+    </div><!-- einde row header -->
+
+
+    <div class="row create-inspire">
+
+      <div class="col-8">
+        <img src="/img/create-inspire.jpg" alt="Voorbeeld cosplay begeleiding">
+      </div>
+
+      <div class="col-4">
+        <div class="titel">
+          <h1 class="large purple">CREATE & INSPIRE</h1>
+          <div class="titels-underline small purple"></div>
+        </div>
+
+        <p class="bold">Een cosplay maken is een geweldig avontuur maar kan overweldigend zijn om mee te starten. Daarom besloten .</p>
+        <p class="subtext">begeleiding en externe links bij elke stap van het cosplay proces.<br> brothers in arms doen namelijk niets liever dan jou verder <br> te helpen.</p>
+
+        <a class="button-yellow" href="/over-cosplay">
+          <p>HET COSPLAY PROCES</p>
+          <div class="buttons-linethrough right"></div>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="row worbla-teaser">
+
+      <div class="col-4">
+        <div class="titel">
+          <h1 class="large purple">WOBRLA & FOAM</h1>
+          <div class="titels-underline small purple"></div>
+        </div>
+
+        <p class="subtext">Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
+gebruikt.</p>
+
+        <a class="button-yellow" href="/over-cosplay">
+          <p>ONTDEK NU</p>
+          <div class="buttons-linethrough right"></div>
+        </a>
+
+      </div>
+
+
+      <div class="col-8">
+        <img src="/img/worbla-wapen.png" alt="Wapen gemaakt met Worbla">
+      </div>
+
     </div>
 
 

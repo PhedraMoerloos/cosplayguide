@@ -1547,12 +1547,15 @@ label[for=thumbnail_url] {
 
   .button-yellow.planner {
     margin-top: 2rem; } }
+.home .row {
+  margin-bottom: 8rem; }
+
 /* HEADER */
 .home-header-top {
   border-bottom: 1px solid #e5e5e5; }
 
 .home p {
-  color: #adacac;
+  color: #8c8c8c;
   font-size: 0.75em; }
 
 .home p.bold {
@@ -1629,6 +1632,46 @@ label[for=thumbnail_url] {
       background-image: url("/img/iconen/pijltje-rechts-wit.png");
       background-color: rgba(0, 0, 0, 0.15);
       box-shadow: 0 0 11px 3px rgba(0, 0, 0, 0.15); }
+
+/* CREATE & INSPIRE */
+.create-inspire .col-8 {
+  margin-left: -4.5%;
+  flex: 0 0 60%;
+  max-width: 60%; }
+  .create-inspire .col-8 img {
+    width: 125%; }
+
+.create-inspire .col-4 {
+  flex: 0 0 40%;
+  max-width: 40%;
+  text-align: right;
+  margin-top: 5rem; }
+  .create-inspire .col-4 .titel {
+    margin-bottom: 2rem; }
+
+.home .button-yellow {
+  margin-top: 1rem; }
+  .home .button-yellow p {
+    color: white;
+    font-size: 1em; }
+
+.home p.subtext {
+  color: #adacac; }
+
+/* WORBLA TEASER */
+.worbla-teaser .col-4 {
+  flex: 0 0 50%;
+  max-width: 50%; }
+  .worbla-teaser .col-4 .titel {
+    margin-bottom: 2rem; }
+  .worbla-teaser .col-4 .button-yellow {
+    margin-left: 75px; }
+
+.worbla-teaser .col-8 {
+  flex: 0 0 50%;
+  max-width: 50%; }
+  .worbla-teaser .col-8 img {
+    margin-left: -45%; }
 
 /* MEDIA QUERIES */
 @media (max-width: 992px) {
