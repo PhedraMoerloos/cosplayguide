@@ -14,9 +14,12 @@
 }
 
 
+
+
 /* Linkerkant met tekst */
 
-.home .header .col-4 {
+.home .home-header .col-4 {
+  padding-right: 0;
   margin-right: 8%;
 
   p {
@@ -54,6 +57,7 @@
 
   img {
     width: 50px;
+    height: 50px;
     background-color: $primary-color;
     border-radius: 50%;
     margin-left: 12px;
@@ -61,6 +65,10 @@
 
 
 }
+
+
+
+
 
 
 /* Rechterkant met slider */
@@ -94,14 +102,17 @@
         color: white;
         font-family: 'Titilium Web', sans-serif;
 
+        &:hover {
+          text-decoration: underline;
+        }
+
       }
     }
   }
 
   .carousel-control-prev, .carousel-control-next {
     top: 610px;
-    background-color: rgba(black, 0.15);
-    box-shadow: 0 0 18px 5px rgba(black, 0.15);
+    background-color: rgba(0,0,0,0);
     opacity: 0.75;
 
     &:hover {
@@ -114,6 +125,8 @@
 
     .carousel-control-prev-icon {
       background-image: url('/img/iconen/pijltje-links-wit.png');
+      background-color: rgba(black, 0.15);
+      box-shadow: 0 0 11px 3px rgba(black, 0.15);
     }
   }
 
@@ -123,10 +136,113 @@
 
     .carousel-control-next-icon {
       background-image: url('/img/iconen/pijltje-rechts-wit.png');
+      background-color: rgba(black, 0.15);
+      box-shadow: 0 0 11px 3px rgba(black, 0.15);
+    }
+  }
+
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 992px) {
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 35px;
+    height: 12px;
+  }
+
+  #carouselHome .carousel-control-prev {
+    left: 10px;
+  }
+
+  #carouselHome .carousel-control-next {
+    left: 110px;
+  }
+
+  .home .home-header .col-4 {
+    margin-right: 5%;
+    flex: 0 0 38%;
+    max-width: 38%;
+  }
+
+  .home .home-header .col-7 {
+    flex: 0 0 53%;
+    max-width: 53%;
+  }
+
+  .home .more-inspiration {
+    width: 200px;
+  }
+
+
+.join-knop a {
+  font-size: 1.2em;
+  }
+
+}
+
+
+@media(max-width: 768px) {
+
+  #carouselHome {
+    margin-top: 0;
+    width: 650px;
+    height: 575px;
+
+    .carousel-inner {
+
+      .carousel-item img {
+        height: 575px;
+      }
+
+      .carousel-item .d-none {
+        display: block!important;
+      }
+    }
+
+  }
+
+  #carouselHome .carousel-control-prev, #carouselHome .carousel-control-next {
+    top: 510px;
+  }
+
+
+  .home .home-header .col-4 {
+    margin-right: 3%;
+    padding-left: 0;
+    flex: 0 0 42%;
+    max-width: 42%;
+  }
+
+  #carouselHome .carousel-item .carousel-caption a {
+    text-decoration: underline;
+  }
+
+  .join-knop {
+    margin-top: 2.5rem;
+
+    a {
+      font-size: 1.1em;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
     }
   }
 
 
+
+  .home .titel .large {
+    font-size: 2.2em;
+    margin-top: 2rem;
+  }
+
+  .home .home-header .col-4 p {
+    margin-top: 2.5rem;
+  }
 
 
 }

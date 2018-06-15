@@ -9,7 +9,7 @@
   <div class="home">
 
 
-    <div class="row header">
+    <div class="row home-header">
       <div class="col-4">
 
         <div class="home-header-top">
@@ -28,7 +28,7 @@
         </div>
 
         <p class="bold">Bekijk nog meer inspirerende cosplays op:</p>
-        <img src="/img/deviantart.png" alt="Deviantart website logo">
+        <img class="more-inspiration" src="/img/deviantart.png" alt="Deviantart website logo">
 
       </div>
 
