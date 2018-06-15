@@ -1,6 +1,6 @@
 
 .home .row {
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
 }
 
 
@@ -213,6 +213,102 @@
     margin-left: -45%;
   }
 }
+
+
+/* TESTIMONIALS */
+
+
+.testimonials .col-6 {
+  text-align: center;
+
+  .titel {
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+}
+
+
+#carouselTestimonials {
+
+  .stars  {
+    margin-bottom: 2rem;
+
+      img {
+      width: 18px;
+      height: 18px;
+      }
+  }
+
+  .join-knop {
+    margin-top: 3rem;
+
+     a {
+      color: $bijna-wit;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  p.testimonial {
+    color: $bijna-wit;
+    font-size: $font-medium;
+    text-align: left;
+  }
+
+  p.name {
+    color: $bijna-wit;
+    font-size: $font-big;
+    font-weight: 700;
+    margin-bottom: 0.25em;
+  }
+
+  img.testimonial-profile {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+  }
+
+
+  .carousel-control-prev, .carousel-control-next {
+    top: 55%;
+    bottom: auto;
+    background-color: rgba(0,0,0,0);
+  }
+
+
+  .carousel-control-prev-icon , .carousel-control-next-icon {
+    width: 55px;
+    height: 20px;
+  }
+
+
+
+  .carousel-control-prev {
+    left: -25%;
+
+    .carousel-control-next-icon {
+      background-image: url('/img/iconen/pijltje-rechts-grijs.png');
+    }
+
+  }
+
+  .carousel-control-next {
+    left: 120%;
+    margin-left: 0;
+
+    .carousel-control-next-icon {
+      background-image: url('/img/iconen/pijltje-rechts-grijs.png');
+    }
+
+  }
+
+}
+
+
+
 
 
 

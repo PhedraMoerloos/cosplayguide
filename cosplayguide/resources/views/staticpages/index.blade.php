@@ -148,6 +148,128 @@ gebruikt.</p>
 
 
 
+    <div class="row justify-content-center testimonials">
+
+      <div class="col-6">
+
+        <div class="titel">
+          <h1 class="small">TESTIMONIALS</h1>
+          <div class="titels-underline small"></div>
+        </div>
+
+
+
+        <div id="carouselTestimonials" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+
+
+            <div class="carousel-item active">
+
+              <img class="d-block img-fluid" src="/img/testimonial-background.jpg" alt="Grijze achtergrond">
+              <div class="carousel-caption d-none d-md-block">
+
+                <img class="testimonial-profile" src="/img/testimonials/testimonials-4.jpg" alt="Foto man profiel">
+
+                <p class="name">David</p>
+
+                <div class="stars">
+                  <img src="/img/iconen/star-full.svg" alt="ster gevuld">
+                  <img src="/img/iconen/star-full.svg" alt="ster gevuld">
+                  <img src="/img/iconen/star-full.svg" alt="ster gevuld">
+                  <img src="/img/iconen/star-full.svg" alt="ster gevuld">
+                  <img src="/img/iconen/star.svg" alt="ster leeg">
+                </div>
+
+                <p class="testimonial">Na jaren van conventies bezoeken en andere en andersmans cosplay te bewonderen besloot ik het roer in eigen handen te nemen. Cosplayguide zorgde ervoor dat ik steeds op het juiste pad bleef en zonder al te veel problemen mijn cosplay af kreeg!</p>
+
+                <div class="join-knop">
+                  <a href="/register">START JOUW COSPLAY</a>
+                  <a href="/register"><img src="/img/join-knop.png" alt="Knop met plus teken"></a>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="carousel-item">
+
+              <img class="d-block img-fluid" src="/img/testimonial-background.jpg" alt="Grijze achtergrond">
+              <div class="carousel-caption d-none d-md-block">
+
+                <img class="testimonial-profile" src="/img/testimonials/testimonials-2.jpg" alt="Foto vrouw profiel">
+
+                <p class="name">Sarah</p>
+
+                <div class="stars">
+                  <img src="/img/iconen/star-full.svg" alt="ster gevuld">
+                  <img src="/img/iconen/star-full.svg" alt="ster gevuld">
+                  <img src="/img/iconen/star-full.svg" alt="ster gevuld">
+                  <img src="/img/iconen/star-full.svg" alt="ster gevuld">
+                  <img src="/img/iconen/star-full.svg" alt="ster gevuld">
+                </div>
+
+                <p class="testimonial">Na jaren van conventies bezoeken en andere en andersmans cosplay te bewonderen besloot ik het roer in eigen handen te nemen. Cosplayguide zorgde ervoor dat ik steeds op het juiste pad bleef en zonder al te veel problemen mijn cosplay af kreeg!</p>
+
+                <div class="join-knop">
+                  <a href="/register">START JOUW COSPLAY</a>
+                  <a href="/register"><img src="/img/join-knop.png" alt="Knop met plus teken"></a>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="carousel-item">
+
+              <img class="d-block img-fluid" src="/img/testimonial-background.jpg" alt="Grijze achtergrond">
+              <div class="carousel-caption d-none d-md-block">
+
+                <img class="testimonial-profile" src="/img/testimonials/testimonials-1.jpg" alt="Foto vrouw profiel">
+
+                <p class="name">Ashley</p>
+
+                <div class="stars">
+                  <img src="/img/iconen/star-full.svg" alt="ster gevuld">
+                  <img src="/img/iconen/star-full.svg" alt="ster gevuld">
+                  <img src="/img/iconen/star-full.svg" alt="ster gevuld">
+                  <img src="/img/iconen/star.svg" alt="ster leeg">
+                  <img src="/img/iconen/star.svg" alt="ster leeg">
+                </div>
+
+                <p class="testimonial">Na jaren van conventies bezoeken en andere en andersmans cosplay te bewonderen besloot ik het roer in eigen handen te nemen. Cosplayguide zorgde ervoor dat ik steeds op het juiste pad bleef en zonder al te veel problemen mijn cosplay af kreeg!</p>
+
+                <div class="join-knop">
+                  <a href="/register">START JOUW COSPLAY</a>
+                  <a href="/register"><img src="/img/join-knop.png" alt="Knop met plus teken"></a>
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+
+          </div>
+
+          <a class="carousel-control-prev progress" href="#carouselTestimonials" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next progress" href="#carouselTestimonials" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
 
 
 
