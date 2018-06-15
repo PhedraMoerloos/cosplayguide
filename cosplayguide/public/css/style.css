@@ -1665,6 +1665,9 @@ label[for=thumbnail_url] {
   color: #adacac; }
 
 /* WORBLA TEASER */
+.home .row.worbla-teaser {
+  margin-bottom: 13rem; }
+
 .worbla-teaser .col-4 {
   flex: 0 0 50%;
   max-width: 50%; }
@@ -1680,11 +1683,15 @@ label[for=thumbnail_url] {
     margin-left: -45%; }
 
 /* TESTIMONIALS */
+.home .row.testimonials {
+  margin-bottom: 13rem; }
+
 .testimonials .col-6 {
   position: relative; }
   .testimonials .col-6 .telefoon {
     position: absolute;
-    top: 0; }
+    top: 0;
+    z-index: -1; }
   .testimonials .col-6 .telefoon.links {
     left: -70%; }
   .testimonials .col-6 .telefoon.rechts {
@@ -1730,11 +1737,11 @@ label[for=thumbnail_url] {
   width: 55px;
   height: 20px; }
 #carouselTestimonials .carousel-control-prev {
-  left: -25%; }
+  left: -20%; }
   #carouselTestimonials .carousel-control-prev .carousel-control-next-icon {
     background-image: url("/img/iconen/pijltje-rechts-grijs.png"); }
 #carouselTestimonials .carousel-control-next {
-  left: 113%;
+  right: -20%;
   margin-left: 0; }
   #carouselTestimonials .carousel-control-next .carousel-control-next-icon {
     background-image: url("/img/iconen/pijltje-rechts-grijs.png"); }
@@ -1745,8 +1752,14 @@ label[for=thumbnail_url] {
   font-size: 1.3em; }
 
 /* MEDIA QUERIES */
+@media (max-width: 1199px) {
+  .create-inspire .col-8 img {
+    width: 120%; }
+
+  .testimonials .col-6 .telefoon.links {
+    left: -85%; } }
 @media (max-width: 992px) {
-  .carousel-control-prev-icon, .carousel-control-next-icon {
+  #carouselHome .carousel-control-prev-icon, .carousel-control-next-icon {
     width: 35px;
     height: 12px; }
 
@@ -1769,7 +1782,37 @@ label[for=thumbnail_url] {
     width: 200px; }
 
   .join-knop a {
-    font-size: 1.2em; } }
+    font-size: 1.2em; }
+
+  .home .create-inspire .titel .large, .home .worbla-teaser .titel .large {
+    font-size: 1.9em; }
+
+  .create-inspire .col-4 {
+    margin-top: 2rem; }
+
+  .create-inspire .col-8 img {
+    width: 115%; }
+
+  .worbla-teaser .col-8 img {
+    width: 150%; }
+
+  .create-inspire .col-4 {
+    flex: 0 0 43%;
+    max-width: 43%; }
+
+  .testimonials .col-6 {
+    flex: 0 0 60%;
+    max-width: 60%; }
+
+  #carouselTestimonials .carousel-control-prev-icon {
+    background-image: url("/img/iconen/pijltje-links-grijs.png"); }
+
+  #carouselTestimonials .carousel-control-next-icon {
+    background-image: url("/img/iconen/pijltje-rechts-grijs.png"); }
+
+  .partners .col-9 {
+    flex: 0 0 90%;
+    max-width: 90%; } }
 @media (max-width: 768px) {
   #carouselHome {
     margin-top: 0;
@@ -1805,7 +1848,43 @@ label[for=thumbnail_url] {
     margin-top: 2rem; }
 
   .home .home-header .col-4 p {
-    margin-top: 2.5rem; } }
+    margin-top: 2.5rem; }
+
+  .create-inspire .col-8 {
+    padding-left: 0; }
+
+  .home .create-inspire .titel .large {
+    margin-top: 0;
+    text-align: left;
+    width: 130%; }
+
+  .home .create-inspire .titels-underline, .home .create-inspire .titel .large {
+    margin-left: -20%; }
+
+  .create-inspire .col-4 .titel {
+    margin-bottom: 1rem; }
+
+  .worbla-teaser .col-8 img {
+    margin-left: -25%;
+    margin-top: 4rem; }
+
+  .testimonials .col-6 {
+    flex: 0 0 80%;
+    max-width: 80%; }
+
+  .testimonials .col-6 .d-none {
+    display: block !important; }
+
+  .partners .col-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0; }
+
+  .partners .justify-content-betweens .col img {
+    max-width: 110px; }
+
+  .testimonials .col-6 .telefoon.rechts {
+    left: 110%; } }
 @media (max-width: 720px) {
   #carouselHome .carousel-item .carousel-caption {
     left: 92px; }
@@ -1832,7 +1911,44 @@ label[for=thumbnail_url] {
     margin-bottom: 3rem; }
 
   .home .titels-underline.purple {
-    display: none; } }
+    display: none; }
+
+  .telefoon {
+    display: none; }
+
+  .home .row, .home {
+    margin-bottom: 7rem; }
+
+  .home .row.worbla-teaser, .home .row.testimonials {
+    margin-bottom: 10rem; }
+
+  .home .row:last-child {
+    margin-bottom: 3rem; }
+
+  .partners .row {
+    margin-bottom: 1rem; }
+
+  #carouselTestimonials .carousel-control-prev, #carouselTestimonials .carousel-control-next {
+    top: 93%; }
+
+  #carouselTestimonials .carousel-control-prev {
+    left: 5%; }
+
+  #carouselTestimonials .carousel-control-next {
+    right: 5%; }
+
+  #carouselTestimonials .carousel-control-prev-icon {
+    background-image: url("/img/iconen/pijltje-links-wit.png"); }
+
+  #carouselTestimonials .carousel-control-next .carousel-control-next-icon {
+    background-image: url("/img/iconen/pijltje-rechts-wit.png"); } }
+@media (max-width: 540px) {
+  .partners .justify-content-betweens .col img {
+    max-width: 90px; }
+
+  .home .create-inspire .titel .large {
+    margin-left: 0;
+    text-align: center; } }
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e;
