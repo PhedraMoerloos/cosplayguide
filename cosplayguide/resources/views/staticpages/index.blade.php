@@ -104,7 +104,7 @@
 
       <div class="col-4">
         <div class="titel">
-          <h1 class="large purple">CREATE & INSPIRE</h1>
+          <h2 class="large purple">CREATE & INSPIRE</h2>
           <div class="titels-underline small purple"></div>
         </div>
 
@@ -125,7 +125,7 @@
 
       <div class="col-4">
         <div class="titel">
-          <h1 class="large purple">WOBRLA & FOAM</h1>
+          <h2 class="large purple">WOBRLA & FOAM</h2>
           <div class="titels-underline small purple"></div>
         </div>
 
@@ -153,14 +153,17 @@ gebruikt.</p>
       <div class="col-6">
 
         <div class="titel">
-          <h1 class="small">TESTIMONIALS</h1>
+          <h2 class="small">TESTIMONIALS</h2>
           <div class="titels-underline small"></div>
         </div>
 
 
 
+
         <div id="carouselTestimonials" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
+
+
 
 
             <div class="carousel-item active">
@@ -192,6 +195,8 @@ gebruikt.</p>
             </div>
 
 
+
+
             <div class="carousel-item">
 
               <img class="d-block img-fluid" src="/img/testimonial-background.jpg" alt="Grijze achtergrond">
@@ -219,6 +224,8 @@ gebruikt.</p>
               </div>
 
             </div>
+
+
 
 
             <div class="carousel-item">
@@ -252,7 +259,7 @@ gebruikt.</p>
 
 
 
-          </div>
+          </div> <!-- einde carousel-inner -->
 
           <a class="carousel-control-prev progress" href="#carouselTestimonials" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -262,6 +269,73 @@ gebruikt.</p>
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+
+        </div> <!-- einde carousel testimonials -->
+
+
+        <img class="telefoon links" src="/img/telefoon-links.png" alt="Oude telefoon met draad">
+        <img class="telefoon rechts" src="/img/telefoon-rechts.png" alt="Oude telefoon met draad">
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="row justify-content-center partners">
+
+      <div class="col-9">
+
+        <div class="titel">
+          <h2 class="small">ONZE PARTNERS</h2>
+          <div class="titels-underline small grey"></div>
+        </div>
+
+
+
+        <div class="row justify-content-betweens">
+
+          <div class="col">
+            <a href="#"><img src="/img/partners/deviantart.png" alt="Deviantart logo"></a>
+          </div>
+
+          <div class="col">
+            <a href="#"><img src="/img/partners/lensonline.png" alt="Lensonline logo"></a>
+          </div>
+
+          <div class="col">
+            <a href="#"><img src="/img/partners/arda-wigs.png" alt="Arda wigs logo"></a>
+          </div>
+
+          <div class="col">
+              <a href="#"><img src="/img/partners/facts.png" alt="Facts logo"></a>
+          </div>
+
+        </div>
+
+
+
+        <div class="row justify-content-betweens">
+
+          <div class="col">
+              <a href="#"><img src="/img/partners/amazon.png" alt="Amazon logo"></a>
+          </div>
+
+          <div class="col">
+            <a href="#"><img src="/img/partners/wif.png" alt="Wig is fashion logo"></a>
+          </div>
+
+          <div class="col">
+            <a href="#"><img src="/img/partners/modecoupon.png" alt="Modecoupon logo"></a>
+          </div>
+
+          <div class="col">
+            <a href="#"><img src="/img/partners/kamui-cosplay.png" alt="Kamui Cosplay logo"></a>
+          </div>
 
         </div>
 

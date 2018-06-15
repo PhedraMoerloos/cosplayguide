@@ -160,6 +160,7 @@ body {
   color: $donker-secondary-color;
 }
 
+
 .titels-underline {
   width: 35%;
   background-color: $bijna-zwart;
@@ -183,6 +184,10 @@ body {
 
 .titels-underline.purple {
   background-color: $donker-secondary-color;
+}
+
+.titels-underline.grey {
+  background-color: $licht-grijs;
 }
 
 

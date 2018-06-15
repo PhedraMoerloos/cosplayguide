@@ -3,6 +3,14 @@
   margin-bottom: 10rem;
 }
 
+.home .row:last-child {
+  margin-bottom: 4rem;
+}
+
+.partners .row {
+  margin-bottom: 2.5rem;
+}
+
 
 /* HEADER */
 
@@ -219,6 +227,25 @@
 
 
 .testimonials .col-6 {
+  position: relative;
+
+  .telefoon {
+    position: absolute;
+    top: 0;
+  }
+
+  .telefoon.links {
+    left: -70%;
+  }
+
+  .telefoon.rechts {
+    left: 120%;
+  }
+
+
+}
+
+.testimonials .col-6, .partners .col-9 {
   text-align: center;
 
   .titel {
@@ -228,6 +255,8 @@
 }
 
 
+
+/* slider*/
 #carouselTestimonials {
 
   .stars  {
@@ -296,7 +325,7 @@
   }
 
   .carousel-control-next {
-    left: 120%;
+    left: 113%;
     margin-left: 0;
 
     .carousel-control-next-icon {
@@ -308,6 +337,13 @@
 }
 
 
+
+
+/* PARTNERS */
+.partners .titel .small {
+  color: $medium-licht-grijs;
+  font-size: 1.3em;
+}
 
 
 

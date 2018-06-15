@@ -1550,6 +1550,12 @@ label[for=thumbnail_url] {
 .home .row {
   margin-bottom: 10rem; }
 
+.home .row:last-child {
+  margin-bottom: 4rem; }
+
+.partners .row {
+  margin-bottom: 2.5rem; }
+
 /* HEADER */
 .home-header-top {
   border-bottom: 1px solid #e5e5e5; }
@@ -1675,11 +1681,22 @@ label[for=thumbnail_url] {
 
 /* TESTIMONIALS */
 .testimonials .col-6 {
+  position: relative; }
+  .testimonials .col-6 .telefoon {
+    position: absolute;
+    top: 0; }
+  .testimonials .col-6 .telefoon.links {
+    left: -70%; }
+  .testimonials .col-6 .telefoon.rechts {
+    left: 120%; }
+
+.testimonials .col-6, .partners .col-9 {
   text-align: center; }
-  .testimonials .col-6 .titel {
+  .testimonials .col-6 .titel, .partners .col-9 .titel {
     display: inline-block;
     margin-bottom: 2rem; }
 
+/* slider*/
 #carouselTestimonials .stars {
   margin-bottom: 2rem; }
   #carouselTestimonials .stars img {
@@ -1717,10 +1734,15 @@ label[for=thumbnail_url] {
   #carouselTestimonials .carousel-control-prev .carousel-control-next-icon {
     background-image: url("/img/iconen/pijltje-rechts-grijs.png"); }
 #carouselTestimonials .carousel-control-next {
-  left: 120%;
+  left: 113%;
   margin-left: 0; }
   #carouselTestimonials .carousel-control-next .carousel-control-next-icon {
     background-image: url("/img/iconen/pijltje-rechts-grijs.png"); }
+
+/* PARTNERS */
+.partners .titel .small {
+  color: #adacac;
+  font-size: 1.3em; }
 
 /* MEDIA QUERIES */
 @media (max-width: 992px) {
@@ -1909,6 +1931,9 @@ body {
 
 .titels-underline.purple {
   background-color: #3e297b; }
+
+.titels-underline.grey {
+  background-color: #bcbbbb; }
 
 /* ALGEMEEN */
 .padding-top-3em {
