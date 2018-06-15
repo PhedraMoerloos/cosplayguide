@@ -27,7 +27,7 @@
 
         </div>
 
-        <p class="bold">Bekijk nog meer inspirerende cosplays op:</p>
+        <p class="bold">Bekijk <span>nog meer </span>inspirerende cosplays op:</p>
         <img class="more-inspiration" src="/img/deviantart.png" alt="Deviantart website logo">
 
       </div>

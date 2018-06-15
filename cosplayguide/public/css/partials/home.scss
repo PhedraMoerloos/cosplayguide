@@ -184,6 +184,8 @@
 }
 
 
+
+
 @media(max-width: 768px) {
 
   #carouselHome {
@@ -244,5 +246,51 @@
     margin-top: 2.5rem;
   }
 
+
+}
+
+
+
+@media(max-width: 720px) {
+
+  #carouselHome .carousel-item .carousel-caption {
+    left: 92px;
+  }
+
+  #carouselHome .carousel-item .carousel-caption a {
+    font-size: 0.9em;
+  }
+}
+
+
+
+@media(max-width: 670px) {
+
+  #carouselHome .carousel-item .carousel-caption a {
+    font-size: 1.1em;
+  }
+
+  .home .home-header .col-4 {
+    margin-right: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+
+    p span {
+      display: none;
+    }
+  }
+
+  .home .home-header .col-7 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .home .titels-underline.purple {
+    display: none;
+  }
 
 }
