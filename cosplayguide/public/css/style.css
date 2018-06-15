@@ -1562,15 +1562,12 @@ label[for=thumbnail_url] {
 .home .header .col-4 {
   margin-right: 8%; }
   .home .header .col-4 p {
-    margin-top: 4rem; }
-
-.home .titel h1 {
-  margin-top: 1.5rem; }
+    margin-top: 2rem; }
 
 .join-knop {
   font-weight: 700;
   font-family: 'Titillium Web', sans-serif;
-  margin-top: 2.75rem;
+  margin-top: 1.75rem;
   margin-bottom: 2.75rem; }
   .join-knop a {
     text-decoration: none;
@@ -1589,8 +1586,42 @@ label[for=thumbnail_url] {
     margin-left: 12px; }
 
 /* Rechterkant met slider */
-.home .header .col-7 img {
-  margin-top: -175px; }
+#carouselHome {
+  margin-top: -175px;
+  width: 750px;
+  height: 675px; }
+  #carouselHome .carousel-item {
+    background-color: rgba(0, 0, 0, 0); }
+    #carouselHome .carousel-item img {
+      height: auto; }
+    #carouselHome .carousel-item .carousel-caption {
+      bottom: 25px;
+      right: auto;
+      left: 100px;
+      font-weight: 600; }
+      #carouselHome .carousel-item .carousel-caption p {
+        display: inline;
+        color: white; }
+      #carouselHome .carousel-item .carousel-caption a {
+        margin-left: 70px;
+        text-decoration: none;
+        color: white;
+        font-family: 'Titilium Web', sans-serif; }
+  #carouselHome .carousel-control-prev, #carouselHome .carousel-control-next {
+    top: 610px;
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 18px 5px rgba(0, 0, 0, 0.15);
+    opacity: 0.75; }
+    #carouselHome .carousel-control-prev:hover, #carouselHome .carousel-control-next:hover {
+      opacity: 1; }
+  #carouselHome .carousel-control-prev {
+    left: 50px; }
+    #carouselHome .carousel-control-prev .carousel-control-prev-icon {
+      background-image: url("/img/iconen/pijltje-links-wit.png"); }
+  #carouselHome .carousel-control-next {
+    left: 95px; }
+    #carouselHome .carousel-control-next .carousel-control-next-icon {
+      background-image: url("/img/iconen/pijltje-rechts-wit.png"); }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -1778,7 +1809,7 @@ a.profile-link {
 .footer-background, .footer-background-earth {
   width: 100%;
   position: relative;
-  z-index: -1;
+  z-index: -2;
   margin-top: -100px;
   background-color: #302e2f; }
 
