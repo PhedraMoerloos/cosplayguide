@@ -1,0 +1,72 @@
+/* HEADER */
+
+.home-header-top {
+  border-bottom: 1px solid $heel-licht-grijs;
+}
+
+.home p {
+  color: $medium-licht-grijs;
+  font-size: $font-medium-small;
+}
+
+.home p.bold {
+  font-weight: 600;
+}
+
+
+/* Linkerkant met tekst */
+
+.home .header .col-4 {
+  margin-right: 8%;
+
+  p {
+    margin-top: 4rem;
+  }
+}
+
+.home .titel h1 {
+  margin-top: 1.5rem;
+}
+
+
+.join-knop  {
+  font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
+
+
+  a {
+    text-decoration: none;
+    color: $bijna-zwart;
+    font-size: 1.3em;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    &:hover img {
+      background-color: $primary-color-light;
+    }
+  }
+
+
+  p, img {
+    display: inline-block;
+  }
+
+  img {
+    width: 50px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    margin-left: 12px;
+  }
+
+
+}
+
+
+/* Rechterkant met slider */
+.home .header .col-7 img {
+  margin-top: -175px;
+}

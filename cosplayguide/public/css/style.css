@@ -1547,6 +1547,51 @@ label[for=thumbnail_url] {
 
   .button-yellow.planner {
     margin-top: 2rem; } }
+/* HEADER */
+.home-header-top {
+  border-bottom: 1px solid #e5e5e5; }
+
+.home p {
+  color: #adacac;
+  font-size: 0.75em; }
+
+.home p.bold {
+  font-weight: 600; }
+
+/* Linkerkant met tekst */
+.home .header .col-4 {
+  margin-right: 8%; }
+  .home .header .col-4 p {
+    margin-top: 4rem; }
+
+.home .titel h1 {
+  margin-top: 1.5rem; }
+
+.join-knop {
+  font-weight: 700;
+  font-family: 'Titillium Web', sans-serif;
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem; }
+  .join-knop a {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 1.3em; }
+    .join-knop a:hover {
+      color: #ffad01; }
+    .join-knop a:hover img {
+      background-color: #ffb824; }
+  .join-knop p, .join-knop img {
+    display: inline-block; }
+  .join-knop img {
+    width: 50px;
+    background-color: #ffad01;
+    border-radius: 50%;
+    margin-left: 12px; }
+
+/* Rechterkant met slider */
+.home .header .col-7 img {
+  margin-top: -175px; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e;
