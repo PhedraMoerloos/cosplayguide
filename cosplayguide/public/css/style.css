@@ -1456,7 +1456,7 @@ label[for=thumbnail_url] {
   left: 140px; }
 
 .beginner-tips .button-yellow {
-  margin-right: 75px;
+  margin-right: 100px;
   margin-top: 4rem; }
 
 /* COSPLAY PLANNER */
@@ -1465,7 +1465,8 @@ label[for=thumbnail_url] {
   margin-left: -25%; }
 
 .worbla-img-compass {
-  width: 90%; }
+  width: 85%;
+  margin-left: -5%; }
 
 .worbla-img-planner {
   width: 80%; }
@@ -1511,7 +1512,16 @@ label[for=thumbnail_url] {
     margin-left: 10%; }
 
   .button-yellow.planner {
-    margin-left: -15%; } }
+    margin-left: -15%; }
+
+  .beginner-tips .button-yellow {
+    margin-right: 50px; }
+
+  .worbla-img-compass {
+    margin-left: 15%; }
+
+  .beginner-tips .button-yellow {
+    margin-right: 20px; } }
 @media (max-width: 670px) {
   .scissors {
     left: -32%; } }
@@ -1524,6 +1534,9 @@ label[for=thumbnail_url] {
 
   .tips-overzicht .row .col-6:first-child, .tips-overzicht .row .col-5, .tips-overzicht .row .col-8 {
     padding-left: 15px; } }
+@media (max-width: 500px) {
+  .beginner-tips .button-yellow {
+    margin-right: 0; } }
 @media (max-width: 473px) {
   .tips-overzicht .buttons-linethrough {
     width: 100px;
