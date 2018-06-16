@@ -1949,6 +1949,58 @@ label[for=thumbnail_url] {
   .home .create-inspire .titel .large {
     margin-left: 0;
     text-align: center; } }
+.about .row {
+  margin-bottom: 13rem; }
+
+.about .row:last-child {
+  margin-bottom: 5rem; }
+
+.about .header .col-3 {
+  flex: 0 0 27%;
+  max-width: 27%; }
+
+.about .header .col-5 .header-tekst {
+  text-align: center;
+  top: 0; }
+
+.about .header-tekst img {
+  height: 357px;
+  width: 325px; }
+
+.about .header .col-5 .header-tekst .titel {
+  display: inline-block;
+  margin-bottom: 3rem; }
+
+.about .header-tekst {
+  text-align: left; }
+
+.about .header .col-3:first-child p {
+  margin-top: 70%;
+  margin-bottom: 0;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #5a5959; }
+
+.about .header .col-3:last-child {
+  position: relative; }
+  .about .header .col-3:last-child .button-yellow {
+    position: absolute;
+    bottom: 0;
+    left: 50%; }
+
+.about .meer-info .button-yellow {
+  margin-top: 2rem;
+  margin-left: 75px; }
+
+.about .join-knop {
+  margin-top: 2.5rem; }
+
+.about .meer-info p {
+  color: white; }
+
+@media (max-width: 992px) {
+  .about .header-tekst .titel h1 {
+    font-size: 2em; } }
 body {
   font-family: 'Open Sans', sans-serif;
   color: #2e2e2e;
