@@ -45,28 +45,28 @@ class CosplayController extends Controller
         //0
         if ( $number_of_completed_cosplays == 0) {
 
-            $user->level = "YOUNGLING";
+            $user->level = "youngling";
 
         }
 
         //1 en 2
         else if ( $number_of_completed_cosplays > 0 && $number_of_completed_cosplays <= 2) {
 
-            $user->level = "PADAWAN";
+            $user->level = "padawan";
 
         }
 
         //3 en 4
         else if( $number_of_completed_cosplays == 3 || $number_of_completed_cosplays == 4) {
 
-            $user->level = "KNIGHT";
+            $user->level = "knight";
 
         }
 
         //vanaf 5
         else if( $number_of_completed_cosplays >= 5) {
 
-            $user->level = "MASTER";
+            $user->level = "master";
 
         }
 

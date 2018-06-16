@@ -38,7 +38,7 @@
                   </label>
 
                   <div>
-                      <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" placeholder="Jouw gebruikersnaam" required autofocus>
+                      <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" placeholder="Jouw naam" required autofocus>
 
                       @if ($errors->has('username'))
                           <span class="invalid-feedback">

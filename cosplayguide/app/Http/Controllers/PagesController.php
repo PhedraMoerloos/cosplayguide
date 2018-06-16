@@ -74,7 +74,7 @@ class PagesController extends Controller
     public function sendEmail(Requests\ContactRequest $request)
     {
 
-        //Mail::to('info@cosplayguide.be')->send(new Contact($request));
+        Mail::to('info@cosplayguide.be')->send(new Contact($request));
 
         return back()->with('sent', 'true');
     }

@@ -77,7 +77,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: 600; }
+    font-weight: 600;
+    text-transform: uppercase; }
 
 /* COSPLAYS OVERZICHT */
 .cosplay-profiel .col-9 {
@@ -1137,6 +1138,10 @@ label[for=thumbnail_url] {
   font-size: 0.85em; }
 
 /* HEADER */
+.pruik .button-yellow.back-profiel {
+  margin-bottom: 1rem;
+  margin-left: -15px; }
+
 .header, .header img {
   position: relative; }
 

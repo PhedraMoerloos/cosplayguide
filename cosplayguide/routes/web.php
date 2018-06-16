@@ -23,6 +23,7 @@ Route::get('/tips-en-tricks/worbla-en-foam', 'PagesController@worbla');
 Route::get('/tips-en-tricks/10-beginner-tips', 'PagesController@beginnertips');
 Route::get('/tips-en-tricks/cosplayplanner', 'PagesController@cosplayplanner');
 Route::get('/contact', 'PagesController@contact');
+Route::get('/contact/sendmail', 'PagesController@contact');
 Route::post('/contact/sendmail', 'PagesController@sendEmail')->name('send_mail');
 
 Route::get('/profiel', 'CosplayController@index');

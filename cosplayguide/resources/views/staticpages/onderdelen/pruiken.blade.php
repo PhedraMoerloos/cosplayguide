@@ -9,6 +9,10 @@
 
 <div class="onderdeel pruik">
 
+    <a class="button-yellow back-profiel" href="javascript:history.back()">
+      <img class="arrow left" src="/img/iconen/kort-pijltje-links-wit.png" alt="wit pijltje links">
+      <p class="left">OVERZICHT</p>
+    </a>
 
     <div class="row header">
       <img id="header-achtergrond-pruik" src="/img/pruik-achtergrond.jpg" alt="Cosplay met pruik">

@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:600,700" rel="stylesheet">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('public/img/favicon.png') }}"/>
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
