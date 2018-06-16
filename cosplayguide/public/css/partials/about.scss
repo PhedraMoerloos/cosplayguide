@@ -1,9 +1,13 @@
 .about .row {
-  margin-bottom: 13rem;
+  margin-bottom: 15rem;
 }
 
 .about .row:last-child {
   margin-bottom: 5rem;
+}
+
+.about .row:first-child {
+  margin-bottom: 12rem;
 }
 
 
@@ -75,11 +79,66 @@
     font-size: 2em;
   }
 
+  .about .buttons-linethrough {
+    display: block;
+  }
+
 }
 
 
 @media(max-width: 768px) {
 
-  
+  .about .header .col-3 {
+    flex: 0 0 29%;
+    max-width: 29%;
+  }
 
+  .about .header img {
+    margin-left: -20px;
+  }
+
+  .about .col-5 {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+
+  .about .header .col-3:last-child {
+
+    padding-left: 40%;
+  }
+
+
+
+
+}
+
+
+@media(max-width: 540px) {
+  .about .row {
+    margin-bottom: 6rem;
+  }
+
+  .about .row:last-child {
+    margin-bottom: 3rem;
+  }
+
+  .about .meer-info img {
+    display: none;
+  }
+
+  .about .meer-info .join-knop img {
+    display: inline-block;
+  }
+
+  .about .meer-info .col-6  {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+@media(max-width: 486px) {
+  .about .col-3 p span {
+    display: none;
+  }
 }

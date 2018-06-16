@@ -1,5 +1,9 @@
 @extends('master')
 
+@section('title')
+  <title>Over Coplay</title>
+@endsection
+
 
 @section('content')
 
@@ -10,7 +14,7 @@
   <div class="row header">
 
     <div class="col-3">
-      <p>Een cosplay maken is geen simpele opdracht. En hoewel elke cosplay uniek is in zijn creatie, begeleiden we je bij elke stap. En hoewel elke cosplay uniek is in zijn creatie, begeleiden we je bij elke stap.</p>
+      <p>Een cosplay maken is geen simpele opdracht. En hoewel elke cosplay uniek is in zijn creatie, begeleiden we je bij elke stap. <span>En hoewel elke cosplay uniek is in zijn creatie, begeleiden we je bij elke stap.</span></p>
     </div>
 
     <div class="col-5">
