@@ -21,9 +21,16 @@
         <div class="form contact">
 
 
-          <form method="POST" action="{{ route('login') }}">
+          <form method="POST" action="{{ route('send_mail') }}">
+
               @csrf
 
+              @if (session('sent'))
+                <div class="alert alert-success">
+                  Je bericht is verstuurd!
+                </div>
+
+              @else
 
               <div class="form-group contact row">
                   <label for="username" class="col-form-label text-md-right">
@@ -81,6 +88,11 @@
                   </div>
 
               </div>
+
+
+
+              @endif
+
 
           </form>
         </div>

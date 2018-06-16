@@ -31,7 +31,7 @@
     </div>
 
     <div class="col-3">
-      <a class="button-yellow" href="#">
+      <a class="button-yellow button-meer-info" href="#">
         <div class="buttons-linethrough"></div>
         <p>LEER HOE</p>
       </a>
@@ -54,7 +54,7 @@
         <p class="dark">Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
   gebruikt.</p>
 
-        <a class="button-yellow" href="#">
+        <a class="button-yellow naar-stap-twee" href="#">
           <div class="buttons-linethrough"></div>
           <p>WAT HIERNA?</p>
         </a>
@@ -71,7 +71,7 @@
 
 
 
-    <div class="row meer-info">
+    <div class="row meer-info stap-twee">
 
       <div class="col-6">
         <img class="large" src="/img/worbla-wapen-geel-links.png" alt="Worbla">
@@ -87,7 +87,7 @@
         <p class="dark">Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
     gebruikt.</p>
 
-        <a class="button-yellow right" href="#">
+        <a class="button-yellow naar-stap-drie" href="#">
           <div class="buttons-linethrough"></div>
           <p>WAT HIERNA?</p>
         </a>
@@ -99,7 +99,7 @@
 
 
 
-    <div class="row meer-info">
+    <div class="row meer-info stap-drie">
       <div class="col-6 tekst">
 
         <div class="titel">

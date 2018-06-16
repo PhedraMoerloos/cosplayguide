@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use \App\Http\Requests;
+
+use Illuminate\Support\Facades\Mail;
+use App\Mail\Contact;
 
 class PagesController extends Controller
 {
@@ -63,6 +67,16 @@ class PagesController extends Controller
     public function contact()
     {
       return view('staticpages.contact');
+    }
+
+
+
+    public function sendEmail(Requests\ContactRequest $request)
+    {
+
+        //Mail::to('info@cosplayguide.be')->send(new Contact($request));
+
+        return back()->with('sent', 'true');
     }
 
 

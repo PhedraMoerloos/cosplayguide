@@ -1040,6 +1040,10 @@ label[for=thumbnail_url] {
   .col-6.astronaut img {
     margin-left: -10%; }
 
+.alert-success {
+  margin-top: -60%;
+  border: none; }
+
 @media (max-width: 1199px) {
   .titel.login {
     margin-bottom: 2.5rem; }

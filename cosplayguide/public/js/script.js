@@ -100,6 +100,24 @@ $( document ).ready(function() {
       });
 
 
+      /* STAPPEN ABOUT SCROLL */
+      $('.naar-stap-twee').click(function(e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+          scrollTop: $('.stap-twee').offset().top
+        }, 500);
+      });
+
+
+      $('.naar-stap-drie').click(function(e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+          scrollTop: $('.stap-drie').offset().top
+        }, 500);
+      });
+
 
       /**** IMAGE CHANGE OP KLEIN FORMAAT ****/
 
