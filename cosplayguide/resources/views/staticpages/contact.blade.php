@@ -38,7 +38,8 @@
                   </label>
 
                   <div>
-                      <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" placeholder="Jouw naam" required autofocus>
+
+                      <input id="username" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ Auth::check() ? (Auth::user()->username) : old('username') }}" placeholder="Jouw naam" required autofocus>
 
                       @if ($errors->has('username'))
                           <span class="invalid-feedback">
@@ -55,7 +56,7 @@
                   </label>
 
                   <div>
-                      <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="Jouw emailadres" required>
+                      <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ Auth::check() ? (Auth::user()->email) : old('email') }}" placeholder="Jouw emailadres" required>
 
                       @if ($errors->has('email'))
                           <span class="invalid-feedback">

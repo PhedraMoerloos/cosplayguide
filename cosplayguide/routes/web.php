@@ -26,7 +26,7 @@ Route::get('/contact', 'PagesController@contact');
 Route::get('/contact/sendmail', 'PagesController@contact');
 Route::post('/contact/sendmail', 'PagesController@sendEmail')->name('send_mail');
 
-Route::get('/profiel', 'CosplayController@index');
+Route::get('/profiel', 'CosplayController@index')->name('profile');
 Route::get('/profiel/edit', 'UserController@edit');
 Route::post('/profiel', 'UserController@update');
 
@@ -49,6 +49,6 @@ Route::get('/profiel/delete/{id}', 'CosplayphotoController@delete');
 
 Route::get('/profiel/cosplay-info/{id}/{slug?}', 'CosplayController@edit')->name('cosplay_edit');
 Route::post('/profiel/cosplay-info/update/{id}', 'CosplayController@update');
-Route::get('/cosplays/{id}/{slug?}', 'CosplayController@show');
+Route::get('/cosplays/{id}/{slug?}', 'CosplayController@show')->name('show_cosplay_outsider');
 Route::get('/profiel/cosplays/delete/{id}', 'CosplayController@destroy');
 Route::get('/profiel/cosplays/{id}/{slug?}', 'CosplayController@show')->name('show_cosplay');

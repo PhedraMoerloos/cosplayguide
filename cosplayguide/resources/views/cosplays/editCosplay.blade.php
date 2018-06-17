@@ -155,7 +155,7 @@
               <div class="form-group">
                   <label for="months_spent">Gespendeerde tijd*</label>
                   <input type="number" class="form-control tijd" id="months_spent" name="months_spent" placeholder=2 value="{{ $cosplay->months_spent }}" required>
-                  <p class="inline months">maanden</p>
+                  <p class="inline months">maand(en)</p>
               </div>
             </div>
 

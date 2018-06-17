@@ -16,7 +16,7 @@
 
         <div class="row justify-content-end">
           <div class="col-3">
-            @if ($user_logged_in)
+            @if ($user_logged_in && $can_edit)
 
               @if ($cosplay->status == "completed")
 
@@ -59,7 +59,7 @@
               <div class="col-6">
 
                 <p>Tijd</p>
-                <p>{{ $cosplay->months_spent }} <span>maanden</span></p>
+                <p>{{ $cosplay->months_spent }} <span>{{ $cosplay->months_spent > 1 ? 'maanden' : 'maand' }}</span></p>
               </div>
 
             </div>

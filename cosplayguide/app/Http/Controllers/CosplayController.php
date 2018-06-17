@@ -171,10 +171,22 @@ class CosplayController extends Controller
      public function show_progress($id, $slug = null)
      {
 
-        $cosplay = Cosplay::findOrFail($id);
-        $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->where('is_shown', 1)->orderBy('id', 'desc')->get();
-        $photo_number = 1;
-        return view('cosplays.cosplayProgress', compact('cosplay', 'cosplayphotos', 'photo_number'));
+       $cosplay = Cosplay::findOrFail($id);
+
+       if(\Auth::user()->id == $cosplay->user_id) {
+
+         $cosplay = Cosplay::findOrFail($id);
+         $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->where('is_shown', 1)->orderBy('id', 'desc')->get();
+         $photo_number = 1;
+         return view('cosplays.cosplayProgress', compact('cosplay', 'cosplayphotos', 'photo_number'));
+
+       }
+
+       else {
+         return back()->withInput();
+       }
+
+
 
      }
 
@@ -208,15 +220,28 @@ class CosplayController extends Controller
      public function show($id, $slug = null)
      {
 
-        $user_logged_in = \Auth::user();
+       $cosplay = Cosplay::findOrFail($id);
 
-        $cosplay = Cosplay::findOrFail($id);
-        $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->where('is_shown', 1)->get();
-        $cosplay_creator_id = $cosplay->user_id;
-        $cosplay_creator = User::findOrFail($cosplay_creator_id);
-        $photo_number = 1;
+        if ($cosplay->status == 'new') {
+          return back()->withInput();
+        }
 
-        return view('cosplays.showCosplay', compact('cosplay', 'cosplay_creator', 'cosplayphotos', 'user_logged_in', 'photo_number'));
+        else {
+
+          $user_logged_in = \Auth::user();
+          $can_edit = false;
+
+          if(\Auth::user()->id == $cosplay->user_id) {
+            $can_edit = true;
+          }
+
+          $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->where('is_shown', 1)->get();
+          $cosplay_creator_id = $cosplay->user_id;
+          $cosplay_creator = User::findOrFail($cosplay_creator_id);
+          $photo_number = 1;
+
+          return view('cosplays.showCosplay', compact('cosplay', 'cosplay_creator', 'cosplayphotos', 'user_logged_in', 'photo_number', 'can_edit'));
+        }
 
      }
 
@@ -233,10 +258,22 @@ class CosplayController extends Controller
     {
 
       $cosplay = Cosplay::findOrFail($id);
-      $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->where('is_shown', 1)->orderBy('id', 'desc')->get();
-      $photo_number = 1;
 
-      return view('cosplays.editCosplay', compact('cosplay', 'cosplayphotos', 'photo_number'));
+      if(\Auth::user()->id == $cosplay->user_id) {
+
+        $cosplay = Cosplay::findOrFail($id);
+        $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->where('is_shown', 1)->orderBy('id', 'desc')->get();
+        $photo_number = 1;
+
+        return view('cosplays.editCosplay', compact('cosplay', 'cosplayphotos', 'photo_number'));
+
+      }
+
+      else {
+        return back()->withInput();
+      }
+
+
 
     }
 
