@@ -28,7 +28,7 @@
         </div>
 
         <p class="bold">Bekijk <span>nog meer </span>inspirerende cosplays op:</p>
-        <img class="more-inspiration" src="/img/deviantart.png" alt="Deviantart website logo">
+        <a href="https://www.deviantart.com/photography/people/cosplay/popular-24-hours/" target="_blank"><img class="more-inspiration" src="/img/deviantart.png" alt="Deviantart website logo"></a>
 
       </div>
 
@@ -46,7 +46,7 @@
               <img class="d-block" src="/img/howling-banshee.jpg" alt="Foto Howling Banshee cosplay door Arga Lifestream">
               <div class="carousel-caption d-none d-md-block">
                 <p>1 of 3</p>
-                <a href="#">HOWLING BANSHEE</a>
+                <a href="https://www.deviantart.com/art/Howling-Banshee-For-vengeance-632099071" target="_blank">HOWLING BANSHEE</a>
               </div>
 
 
@@ -58,7 +58,7 @@
               <img class="d-block" src="/img/night-elf.jpg" alt="Foto Night Elf cosplay door Arga Lifestream">
               <div class="carousel-caption d-none d-md-block">
                 <p>2 of 3</p>
-                <a href="#">NIGHT ELF</a>
+                <a href="https://narga-lifestream.deviantart.com/art/Tyrande-Warriors-of-the-night-Assemble-743113282" target="_blank">NIGHT ELF</a>
               </div>
 
 
@@ -70,7 +70,7 @@
               <img class="d-block" src="/img/wolverine.jpg" alt="Foto Wolverine cosplay">
               <div class="carousel-caption d-none d-md-block">
                 <p>3 of 3</p>
-                <a href="#">WOLVERINE</a>
+                <a href="https://fatalis-polunica.deviantart.com/art/Wolverine-cosplay-6-151569061" target="_blank">WOLVERINE</a>
               </div>
 
 
@@ -108,8 +108,8 @@
           <div class="titels-underline small purple"></div>
         </div>
 
-        <p class="bold">Een cosplay maken is een geweldig avontuur maar kan overweldigend zijn om mee te starten. Daarom besloten .</p>
-        <p class="subtext">begeleiding en externe links bij elke stap van het cosplay proces.<br> brothers in arms doen namelijk niets liever dan jou verder <br> te helpen.</p>
+        <p class="bold">Een cosplay maken is een geweldig avontuur maar kan overweldigend zijn om mee te starten. Vandaar onze begeleiding in het proces.</p>
+        <p class="subtext">We voorzien how to's en externe links bij elke stap van het <br>cosplayproces. Geïnteresseerd hoe dat proces in elkaar zit?</p>
 
         <a class="button-yellow" href="/over-cosplay">
           <p>HET COSPLAY PROCES</p>
@@ -132,7 +132,7 @@
         <p class="subtext">Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
 gebruikt.</p>
 
-        <a class="button-yellow" href="/over-cosplay">
+        <a class="button-yellow" href="/tips-en-tricks/worbla-en-foam">
           <p>ONTDEK NU</p>
           <div class="buttons-linethrough right"></div>
         </a>
@@ -183,7 +183,7 @@ gebruikt.</p>
                   <img src="/img/iconen/star.svg" alt="ster leeg">
                 </div>
 
-                <p class="testimonial">Na jaren van conventies bezoeken en andere en andersmans cosplay te bewonderen besloot ik het roer in eigen handen te nemen. Cosplayguide zorgde ervoor dat ik steeds op het juiste pad bleef en zonder al te veel problemen mijn cosplay af kreeg!</p>
+                <p class="testimonial">Na jaren van conventies bezoeken en andere en andersmans cosplay te bewonderen besloot ik het roer in eigen handen te nemen. Cosplay Guide zorgde ervoor dat ik steeds op het juiste pad bleef en zonder al te veel problemen mijn cosplay af kreeg!</p>
 
                 <div class="join-knop">
                   <a href="/register">START JOUW COSPLAY</a>
@@ -214,7 +214,7 @@ gebruikt.</p>
                   <img src="/img/iconen/star-full.svg" alt="ster gevuld">
                 </div>
 
-                <p class="testimonial">Na jaren van conventies bezoeken en andere en andersmans cosplay te bewonderen besloot ik het roer in eigen handen te nemen. Cosplayguide zorgde ervoor dat ik steeds op het juiste pad bleef en zonder al te veel problemen mijn cosplay af kreeg!</p>
+                <p class="testimonial">Ik ben geen handig persoon. Dit hield me dan ook steeds tegen in het maken van mijn eigen cosplays. Ik had al enkele keren een halve poging gedaan maar raakte steeds ontmoedigd. Toen ik dan Cosplay Guide ontdekte zag ik alles meteen veel beter zitten!</p>
 
                 <div class="join-knop">
                   <a href="/register">START JOUW COSPLAY</a>
@@ -241,11 +241,11 @@ gebruikt.</p>
                   <img src="/img/iconen/star-full.svg" alt="ster gevuld">
                   <img src="/img/iconen/star-full.svg" alt="ster gevuld">
                   <img src="/img/iconen/star-full.svg" alt="ster gevuld">
-                  <img src="/img/iconen/star.svg" alt="ster leeg">
+                  <img src="/img/iconen/star-full.svg" alt="ster gevuld">
                   <img src="/img/iconen/star.svg" alt="ster leeg">
                 </div>
 
-                <p class="testimonial">Na jaren van conventies bezoeken en andere en andersmans cosplay te bewonderen besloot ik het roer in eigen handen te nemen. Cosplayguide zorgde ervoor dat ik steeds op het juiste pad bleef en zonder al te veel problemen mijn cosplay af kreeg!</p>
+                <p class="testimonial">Ik ging al jaren naar FACTS in Gent. Steeds een geweldig weekend! Vaak stond ik voor al die standjes en twijfelde maar er is geen overzicht.. zoveel chaos. "Hoe begin ik hier aan" dacht ik dan. Cosplay Guide bied echt een mooi overzicht.</p>
 
                 <div class="join-knop">
                   <a href="/register">START JOUW COSPLAY</a>
@@ -300,19 +300,19 @@ gebruikt.</p>
         <div class="row justify-content-betweens">
 
           <div class="col">
-            <a href="#"><img src="/img/partners/deviantart.png" alt="Deviantart logo"></a>
+            <a href="https://www.deviantart.com/" target="_blank"><img src="/img/partners/deviantart.png" alt="Deviantart logo"></a>
           </div>
 
           <div class="col">
-            <a href="#"><img src="/img/partners/lensonline.png" alt="Lensonline logo"></a>
+            <a href="https://www.lensonline.be/nl/?gclid=EAIaIQobChMIv6vrtLHb2wIVwojVCh33UA2TEAAYASAAEgJq_fD_BwE" target="_blank"><img src="/img/partners/lensonline.png" alt="Lensonline logo"></a>
           </div>
 
           <div class="col">
-            <a href="#"><img src="/img/partners/arda-wigs.png" alt="Arda wigs logo"></a>
+            <a href="https://www.arda-wigs.com/" target="_blank"><img src="/img/partners/arda-wigs.png" alt="Arda wigs logo"></a>
           </div>
 
           <div class="col">
-              <a href="#"><img src="/img/partners/facts.png" alt="Facts logo"></a>
+              <a href="https://facts.be/nl/" target="_blank"><img src="/img/partners/facts.png" alt="Facts logo"></a>
           </div>
 
         </div>
@@ -322,19 +322,19 @@ gebruikt.</p>
         <div class="row justify-content-betweens">
 
           <div class="col">
-              <a href="#"><img src="/img/partners/amazon.png" alt="Amazon logo"></a>
+              <a href="https://www.amazon.co.uk/" target="_blank"><img src="/img/partners/amazon.png" alt="Amazon logo"></a>
           </div>
 
           <div class="col">
-            <a href="#"><img src="/img/partners/wif.png" alt="Wig is fashion logo"></a>
+            <a href="https://www.wigisfashion.de/" target="_blank"><img src="/img/partners/wif.png" alt="Wig is fashion logo"></a>
           </div>
 
           <div class="col">
-            <a href="#"><img src="/img/partners/modecoupon.png" alt="Modecoupon logo"></a>
+            <a href="https://www.modecoupon-stniklaas.be/" target="_blank"><img src="/img/partners/modecoupon.png" alt="Modecoupon logo"></a>
           </div>
 
           <div class="col">
-            <a href="#"><img src="/img/partners/kamui-cosplay.png" alt="Kamui Cosplay logo"></a>
+            <a href="https://www.kamuicosplay.com/" target="_blank"><img src="/img/partners/kamui-cosplay.png" alt="Kamui Cosplay logo"></a>
           </div>
 
         </div>

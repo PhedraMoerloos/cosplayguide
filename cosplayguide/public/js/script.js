@@ -143,6 +143,7 @@ $( document ).ready(function() {
 
         $(".links-image-rechts img").attr('src', '/img/pruik-links-medium.jpg');
         $(".worbla .links-image-rechts img").attr('src', '/img/worbla-arm-rechts-medium.png');
+        $(".beginnertips-foto-rechts").attr('src', '/img/beginnertips-links-medium.jpg');
 
       }
 
@@ -150,6 +151,7 @@ $( document ).ready(function() {
 
         $(".links-image-rechts img").attr('src', '/img/pruik-links-small.jpg');
         $(".worbla .links-image-rechts img").attr('src', '/img/worbla-arm-rechts-small.png');
+        $(".beginnertips-foto-rechts").attr('src', '/img/beginnertips-links-small.jpg');
 
       }
 
