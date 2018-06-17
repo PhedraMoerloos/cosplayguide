@@ -21,7 +21,7 @@
               <div class="titels-underline medium purple"></div>
             </div>
 
-            <p class="dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu fermentum elit. Suspendisse purus enim, tristique eget aliquet eget, luctus</p>
+            <p class="dark">Worbla en foam zijn materialen die gebruikt worden in cosplay om voorwerpen te creëeren. Wil je graag weten hoe je ze best gebruikt?</p>
 
             <a class="button-yellow button-meer-info" href="#">
               <div class="buttons-linethrough"></div>
@@ -47,8 +47,7 @@
             <div class="titels-underline medium"></div>
           </div>
 
-          <p class="dark">Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-    gebruikt.</p>
+          <p class="dark">Allereerst ga je van start met het maken van een patroon. Je legt een wit papier of keukenrol vel op de plaats waar het onderdeel zich zal bevinden, bijvoorbeeld op je arm als je armbescherming maakt. Hier schets je je voorwerp en knipt het vervolgens uit.</p>
 
           <p class="nummer first">1</p>
 
@@ -56,7 +55,7 @@
 
 
         <div class="col-6">
-          <img class="large" src="/img/worbla-wapen-geel-rechts.png" alt="Worbla">
+          <img class="large" src="/img/worbla/worbla-pattern.png" alt="Worbla pattern getekend">
         </div>
       </div>
 
@@ -65,7 +64,7 @@
       <div class="row meer-info">
 
         <div class="col-6">
-          <img class="large" src="/img/worbla-wapen-geel-links.png" alt="Worbla">
+          <img class="large" src="/img/worbla/worbla-draw.png" alt="Worbla patroon erop getekend">
         </div>
 
         <div class="col-6 tekst">
@@ -75,8 +74,7 @@
             <div class="titels-underline medium"></div>
           </div>
 
-          <p class="dark">Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-      gebruikt.</p>
+          <p class="dark">Hierna teken je je patroon over op je foam en worbla. Foam voor het onderdeel zelf, deze zal zorgen voor je dikte. Bij het overtekenen op Worbla laat je best een beetje extra ruimte om het later rond de foam te vouwen. Bij afgeronde lijnen voorzie je "tandjes" zoals op de foto.</p>
 
           <p class="nummer second">2</p>
 
@@ -93,8 +91,7 @@
             <div class="titels-underline medium"></div>
           </div>
 
-          <p class="dark">Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-    gebruikt.</p>
+          <p class="dark">En dan de laatste en leukste stap. Verhit de foam met je hitteblazer stuk voor stuk. Werk in secties. Vouw dan steeds de worbla rond je foam object en vorm het waar nodig. Hou deze dan in plaats tot hij afgekoeld is. Et voila, je bent klaar!</p>
 
           <p class="nummer third">3</p>
 
@@ -102,7 +99,7 @@
 
 
         <div class="col-6">
-          <img class="large" src="/img/worbla-wapen-geel-rechts.png" alt="Worbla">
+          <img class="large" src="/img/worbla/worbla-shape.png" alt="Worbla">
         </div>
       </div>
 
@@ -128,9 +125,9 @@
 
                 <div class="link">
 
-                    <a href="#"><img src="/img/links/kamui-cosplay.jpg" alt="Kamuicosplay"></a>
+                    <a href="https://www.kamuicosplay.com/" target="_blank"><img src="/img/links/kamui-cosplay.jpg" alt="Kamuicosplay"></a>
 
-                    <a class="tekst" href="#">
+                    <a class="tekst" href="https://www.kamuicosplay.com/" target="_blank">
                       <p>Kamuicosplay</p>
                       <p class="sub-info">Duitsland</p>
                     </a>
@@ -141,9 +138,9 @@
 
                 <div class="link">
 
-                    <a href="#"><img src="/img/links/jak-cosplay.jpg" alt="Jak cosplay tutorials"></a>
+                    <a href="https://www.youtube.com/channel/UCN0PMx39E5LBMSf9gklYhDg/featured" target="_blank"><img src="/img/links/jak-cosplay.jpg" alt="Jak cosplay tutorials"></a>
 
-                    <a class="tekst" href="#">
+                    <a class="tekst" href="https://www.youtube.com/channel/UCN0PMx39E5LBMSf9gklYhDg/featured" target="_blank">
                       <p>Jak Cosplay</p>
                       <p class="sub-info">Duitsland</p>
                     </a>
@@ -165,9 +162,9 @@
 
               <div class="link">
 
-                  <a href="#"><img src="/img/links/cosplaysupplies.jpg" alt="Cosplaysupplies webshop"></a>
+                  <a href="https://www.cosplaysupplies.com/store.php?s=JK6K" target="_blank"><img src="/img/links/cosplaysupplies.jpg" alt="Cosplaysupplies webshop"></a>
 
-                  <a class="tekst" href="#">
+                  <a class="tekst" href="https://www.cosplaysupplies.com/store.php?s=JK6K" target="_blank">
                     <p>Cosplaysupplies</p>
                     <p class="sub-info">USA</p>
                   </a>
@@ -178,9 +175,9 @@
 
               <div class="link">
 
-                  <a href="#"><img src="/img/links/cosplayshop.jpg" alt="Cosplayshop"></a>
+                  <a href="https://cosplayshop.be/en/product-category/thermoplastics/" target="_blank"><img src="/img/links/cosplayshop.jpg" alt="Cosplayshop"></a>
 
-                  <a class="tekst" href="#">
+                  <a class="tekst" href="https://cosplayshop.be/en/product-category/thermoplastics/" target="_blank">
                     <p>Cosplayshop</p>
                     <p class="sub-info">België</p>
                   </a>
