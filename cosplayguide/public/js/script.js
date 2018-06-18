@@ -134,6 +134,7 @@ $( document ).ready(function() {
       if (window.matchMedia("(max-width: 540px)").matches) {
 
         $("#header-achtergrond-pruik").attr('src', '/img/pruik-achtergrond-klein.jpg');
+        $("#header-achtergrond-grime").attr('src', '/img/grime-achtergrond-klein.jpg');
 
       }
 
@@ -144,6 +145,7 @@ $( document ).ready(function() {
         $(".links-image-rechts img").attr('src', '/img/pruik-links-medium.jpg');
         $(".worbla .links-image-rechts img").attr('src', '/img/worbla-arm-rechts-medium.png');
         $(".beginnertips-foto-rechts").attr('src', '/img/beginnertips-links-medium.jpg');
+        $(".grime-foto-rechts").attr('src', '/img/grime-links-medium.png');
 
       }
 
@@ -152,6 +154,7 @@ $( document ).ready(function() {
         $(".links-image-rechts img").attr('src', '/img/pruik-links-small.jpg');
         $(".worbla .links-image-rechts img").attr('src', '/img/worbla-arm-rechts-small.png');
         $(".beginnertips-foto-rechts").attr('src', '/img/beginnertips-links-small.jpg');
+        $(".grime-foto-rechts").attr('src', '/img/grime-links-small.jpg');
 
       }
 

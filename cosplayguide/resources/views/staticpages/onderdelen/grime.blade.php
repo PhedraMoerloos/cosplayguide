@@ -11,23 +11,23 @@
       </a>
 
       <div class="row header">
-        <img id="header-achtergrond-pruik" src="/img/pruik-achtergrond.jpg" alt="Cosplay met pruik">
+        <img id="header-achtergrond-grime" src="/img/grime-achtergrond.jpg" alt="Cosplay met pruik">
         <div class="header-tekst">
 
           <div class="titel">
-            <h1 class="large light">PRUIK</h1>
+            <h1 class="large light">GRIME</h1>
             <div class="titels-underline small light"></div>
           </div>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu fermentum elit. Suspendisse purus enim, tristique eget aliquet eget, luctus</p>
-          <p>amet, ullamcorper scelerisque nunc. Curabitur ullamcorper sem non arcu suscipit cursus corper sem non</p>
+          <p>Of je nu een zombie, alien, enge clown of een menselijk personage cosplayed, grime zal je personage echt tot leven laten komen.</p>
+          <p>Grime laat je namelijk toe een overeenkomend reliëf, huidskleur en gezichtsstructuur te creëren.</p>
 
           <a class="button-yellow button-meer-info" href="#">
             <div class="buttons-linethrough"></div>
             <p>ONTDEK MEER</p>
           </a>
 
-          <p class="link-cosplayer">Bekijk meer van <a class="link" href="#">Narga Lifestream</a></p>
+          <p class="link-cosplayer">Bekijk meer van <a class="link" href="https://alysontabbitha.deviantart.com/" target="_blank">Alyson Tabbitha</a></p>
 
         </div>
       </div>
@@ -38,18 +38,17 @@
         <div class="col-6">
 
           <div class="titel">
-            <h2 class="large">LACEFRONT</h2>
+            <h2 class="large">CONTOURING</h2>
             <div class="titels-underline medium"></div>
           </div>
 
-          <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-    gebruikt.</p>
+          <p>Contouring is de simpelse vorm van grime. Je gebruikt een highlighter en contouring kleur om de schaduwen en highlights van je personage's gezicht na te bootsen. Zo komt je gezichtsstructuur meteen overeen en wordt je één met je personage.</p>
 
         </div>
 
 
         <div class="col-6">
-          <img src="/img/lacefront.png" alt="Lacefront pruik">
+          <img src="/img/contour.png" alt="Too cool for school contouring">
         </div>
       </div>
 
@@ -58,18 +57,17 @@
       <div class="row meer-info">
 
         <div class="col-6">
-          <img class="large" src="/img/kleurrange.png" alt="Kleurrange bij pruiken">
+          <img class="large" src="/img/latex.png" alt="Latex elfen oren">
         </div>
 
         <div class="col-6">
 
           <div class="titel">
-            <h2 class="large">KLEURRANGE</h2>
+            <h2 class="large">PAINT & LATEX</h2>
             <div class="titels-underline medium"></div>
           </div>
 
-          <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-      gebruikt.</p>
+          <p>Het gebruik van gezichtsverf en liquid latex nemen het overnemen van je personage's uiterlijk naar een nieuw level. Je neemt namelijk het reliëf ook over en kan zo allerlei illusies creëren. Hoorns? Geen probleem! Elfenoren, let's go!</p>
 
         </div>
       </div>
@@ -80,18 +78,17 @@
         <div class="col-6">
 
           <div class="titel">
-            <h2 class="large oversize">HITTEBESTENDIG</h2>
+            <h2 class="large oversize">THE EXTRA MILE</h2>
             <div class="titels-underline medium"></div>
           </div>
 
-          <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-    gebruikt.</p>
+          <p>De laatste en meest extreme optie is sculpting. Dit betekend simpel gezegd het creëren van een soort masker in de vorm van jouw gezicht, dat volledig bestaat uit sculpting materiaal. Verbaas zo iedereen met jouw levensechte masker! </p>
 
         </div>
 
 
         <div class="col-6">
-          <img src="/img/hittebestendigheid.png" alt="Stijltang">
+          <img src="/img/sculpt.png" alt="Sculpting materiaal">
         </div>
       </div>
 
@@ -117,11 +114,11 @@
 
                 <div class="link">
 
-                    <a href="#"><img src="/img/links/kamui-cosplay.jpg" alt="Kamuicosplay"></a>
+                    <a href="https://www.youtube.com/channel/UCi1BlZbfl9dUsMGryKjE7Lw" target="_blank"><img src="/img/links/alyson.jpg" alt="Alyson Tabbitha cosplay"></a>
 
-                    <a class="tekst" href="#">
-                      <p>Kamuicosplay</p>
-                      <p class="sub-info">Duitsland</p>
+                    <a class="tekst" href="https://www.youtube.com/channel/UCi1BlZbfl9dUsMGryKjE7Lw" target="_blank">
+                      <p>Alyson Tabbitha</p>
+                      <p class="sub-info">Contouring</p>
                     </a>
 
                 </div>
@@ -130,11 +127,11 @@
 
                 <div class="link">
 
-                    <a href="#"><img src="/img/links/arda-wigs-tutorials.jpg" alt="Arda wigs cosplay"></a>
+                    <a href="https://www.youtube.com/playlist?list=PLga2NiCpkdiWtaW5o1_3JxGlnELZ1-Oc0" target="_blank"><img src="/img/links/jubayna.jpg" alt="Jubayna Cosplay"></a>
 
-                    <a class="tekst" href="#">
-                      <p>Arda Wigs</p>
-                      <p class="sub-info">USA</p>
+                    <a class="tekst" href="https://www.youtube.com/playlist?list=PLga2NiCpkdiWtaW5o1_3JxGlnELZ1-Oc0" target="_blank">
+                      <p>Jubayna Cosplay</p>
+                      <p class="sub-info">Latex</p>
                     </a>
 
                 </div>
@@ -154,11 +151,11 @@
 
               <div class="link">
 
-                  <a href="#"><img src="/img/links/wigisfashion.jpg" alt="Kamuicosplay"></a>
+                  <a href="http://www.liglinister.be/" target="_blank"><img src="/img/links/liglinister.jpg" alt="Kamuicosplay"></a>
 
-                  <a class="tekst" href="#">
-                    <p>Wigisfashion</p>
-                    <p class="sub-info">Klein budget</p>
+                  <a class="tekst" href="http://www.liglinister.be/" target="_blank">
+                    <p>Liglinister</p>
+                    <p class="sub-info">België</p>
                   </a>
 
               </div>
@@ -167,11 +164,11 @@
 
               <div class="link">
 
-                  <a href="#"><img src="/img/links/arda-wigs.jpg" alt="Arda wigs cosplay"></a>
+                  <a href="https://www.amazon.co.uk/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=face+paint" target="_blank"><img src="/img/links/amazon.jpg" alt="Amazon logo"></a>
 
-                  <a class="tekst" href="#">
-                    <p>Arda wigs</p>
-                    <p class="sub-info">Medium budget</p>
+                  <a class="tekst" href="https://www.amazon.co.uk/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=face+paint" target="_blank">
+                    <p>Amazon</p>
+                    <p class="sub-info">Internationaal</p>
                   </a>
 
               </div>
@@ -183,7 +180,7 @@
         </div>
 
         <div class="col-4 links-image-rechts">
-          <img src="/img/pruik-links.jpg" alt="Haar op gele achtergrond">
+          <img class="grime-foto-rechts" src="/img/grime-links.jpg" alt="verf potjes">
         </div>
       </div>
 
