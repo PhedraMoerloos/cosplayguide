@@ -1,6 +1,12 @@
 @extends('master')
 
 
+@section('title')
+
+  <title>Uitleg over grime door Cosplay Guide</title>
+
+@endsection
+
 @section('content')
 
   <div class="onderdeel pruik">

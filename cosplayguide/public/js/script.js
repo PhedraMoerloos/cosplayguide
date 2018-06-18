@@ -146,6 +146,7 @@ $( document ).ready(function() {
         $(".worbla .links-image-rechts img").attr('src', '/img/worbla-arm-rechts-medium.png');
         $(".beginnertips-foto-rechts").attr('src', '/img/beginnertips-links-medium.jpg');
         $(".grime-foto-rechts").attr('src', '/img/grime-links-medium.png');
+        $(".lenzen-foto-rechts").attr('src', '/img/lenzen-links-medium.png');
 
       }
 
@@ -155,6 +156,7 @@ $( document ).ready(function() {
         $(".worbla .links-image-rechts img").attr('src', '/img/worbla-arm-rechts-small.png');
         $(".beginnertips-foto-rechts").attr('src', '/img/beginnertips-links-small.jpg');
         $(".grime-foto-rechts").attr('src', '/img/grime-links-small.jpg');
+        $(".lenzen-foto-rechts").attr('src', '/img/lenzen-links-small.jpg');
 
       }
 

@@ -23,15 +23,15 @@
           <div class="titels-underline small light"></div>
         </div>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu fermentum elit. Suspendisse purus enim, tristique eget aliquet eget, luctus</p>
-        <p>amet, ullamcorper scelerisque nunc. Curabitur ullamcorper sem non arcu suscipit cursus corper sem non</p>
+        <p>Een pruik kan je cosplay doen maken of vallen. Een pruik van goede kwaliteit, die goed blijft zitten en gemakkelijk aan te doen is, is alles.</p>
+        <p>Wat je budget ook is, we geven je een aantal opties om de perfecte pruik voor jouw cosplay te vinden.</p>
 
         <a class="button-yellow button-meer-info" href="#">
           <div class="buttons-linethrough"></div>
           <p>ONTDEK MEER</p>
         </a>
 
-        <p class="link-cosplayer">Bekijk meer van <a class="link" href="#">Narga Lifestream</a></p>
+        <p class="link-cosplayer">Bekijk meer van <a class="link" href="https://narga-lifestream.deviantart.com/" target="_blank">Narga Lifestream</a></p>
 
       </div>
     </div>
@@ -46,8 +46,7 @@
           <div class="titels-underline medium"></div>
         </div>
 
-        <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-  gebruikt.</p>
+        <p>Een pruik met lacefront heeft een soort fijn netje aan de haarlijn dat kan worden bijgeknipt en vastgeplakt word aan het voorhoofd met doorzichtige lijm. Dit soort pruik is meestal duurder maar ziet er ook veel realistischer uit door de nabootsing van de specifieke haarlijn.</p>
 
       </div>
 
@@ -72,8 +71,7 @@
           <div class="titels-underline medium"></div>
         </div>
 
-        <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-    gebruikt.</p>
+        <p>De hoeveelheid kleuren in pruiken een winkel aanbied is belangrijk. Daarnaast is er ook een groot kwaliteitsverschil in uit hoeveel kleuren die haarkleur bestaat. Vaak zitten er namelijk meerdere kleuren in ons haar, wat zorgt voor een realistischere pruik.</p>
 
       </div>
     </div>
@@ -88,8 +86,7 @@
           <div class="titels-underline medium"></div>
         </div>
 
-        <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-  gebruikt.</p>
+        <p>Een pruik heeft meestal een vrij standaard kapsel. Vaak worden de korte stukken vooraan ook iets langer gelaten zodat hier zelf nog aan geknipt kan worden. Of je de pruik ook nog kan aanpassen met een stijl- of krultang maakt een groot verschil. Hiervoor is hittebestendigheid nodig.</p>
 
       </div>
 
@@ -121,9 +118,9 @@
 
               <div class="link">
 
-                  <a href="#"><img src="/img/links/kamui-cosplay.jpg" alt="Kamuicosplay"></a>
+                  <a href="https://www.kamuicosplay.com/" target="_blank"><img src="/img/links/kamui-cosplay.jpg" alt="Kamuicosplay"></a>
 
-                  <a class="tekst" href="#">
+                  <a class="tekst" href="https://www.kamuicosplay.com/0" target="_blank">
                     <p>Kamuicosplay</p>
                     <p class="sub-info">Duitsland</p>
                   </a>
@@ -134,9 +131,9 @@
 
               <div class="link">
 
-                  <a href="#"><img src="/img/links/arda-wigs-tutorials.jpg" alt="Arda wigs cosplay"></a>
+                  <a href="https://www.youtube.com/channel/UC2GHrm3pUEi8iWAe41UWRzA" target="_blank"><img src="/img/links/arda-wigs-tutorials.jpg" alt="Arda wigs cosplay"></a>
 
-                  <a class="tekst" href="#">
+                  <a class="tekst" href="https://www.youtube.com/channel/UC2GHrm3pUEi8iWAe41UWRzA" target="_blank">
                     <p>Arda Wigs</p>
                     <p class="sub-info">USA</p>
                   </a>
@@ -158,9 +155,9 @@
 
             <div class="link">
 
-                <a href="#"><img src="/img/links/wigisfashion.jpg" alt="Kamuicosplay"></a>
+                <a href="https://www.wigisfashion.de/" target="_blank"><img src="/img/links/wigisfashion.jpg" alt="Kamuicosplay"></a>
 
-                <a class="tekst" href="#">
+                <a class="tekst" href="https://www.wigisfashion.de/" target="_blank">
                   <p>Wigisfashion</p>
                   <p class="sub-info">Klein budget</p>
                 </a>
@@ -171,9 +168,9 @@
 
             <div class="link">
 
-                <a href="#"><img src="/img/links/arda-wigs.jpg" alt="Arda wigs cosplay"></a>
+                <a href="https://www.arda-wigs.com/" target="_blank"><img src="/img/links/arda-wigs.jpg" alt="Arda wigs cosplay"></a>
 
-                <a class="tekst" href="#">
+                <a class="tekst" href="https://www.arda-wigs.com/" target="_blank">
                   <p>Arda wigs</p>
                   <p class="sub-info">Medium budget</p>
                 </a>
