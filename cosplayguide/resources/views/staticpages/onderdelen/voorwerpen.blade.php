@@ -11,23 +11,23 @@
       </a>
 
       <div class="row header">
-        <img id="header-achtergrond-pruik" src="/img/pruik-achtergrond.jpg" alt="Cosplay met pruik">
+        <img id="header-achtergrond-voorwerp" src="/img/voorwerp-achtergrond.jpg" alt="Cosplay met boog">
         <div class="header-tekst">
 
           <div class="titel">
-            <h1 class="large light">PRUIK</h1>
+            <h1 class="large light">VOORWERP</h1>
             <div class="titels-underline small light"></div>
           </div>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu fermentum elit. Suspendisse purus enim, tristique eget aliquet eget, luctus</p>
-          <p>amet, ullamcorper scelerisque nunc. Curabitur ullamcorper sem non arcu suscipit cursus corper sem non</p>
+          <p>Of je personage nu een wapen als een boog of zwaard bezit of accessoires draagt zoals een riem of bril, ze zijn meestal het makkelijkst te vinden.</p>
+          <p>Of je ze nu liever kant en klaar wilt kopen of ze liever zelf wilt maken, we zetten je op weg.</p>
 
           <a class="button-yellow button-meer-info" href="#">
             <div class="buttons-linethrough"></div>
             <p>ONTDEK MEER</p>
           </a>
 
-          <p class="link-cosplayer">Bekijk meer van <a class="link" href="#">Narga Lifestream</a></p>
+          <p class="link-cosplayer">Bekijk meer van <a class="link" href="https://www.kamuicosplay.com/" target="_blank">Kamui Cosplay</a></p>
 
         </div>
       </div>
@@ -38,18 +38,17 @@
         <div class="col-6">
 
           <div class="titel">
-            <h2 class="large">LACEFRONT</h2>
+            <h2 class="large">CONVENTIES</h2>
             <div class="titels-underline medium"></div>
           </div>
 
-          <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-    gebruikt.</p>
+          <p>Conventies zijn vaak de beste plaats om je voorraad van voorwerpen en accesoires op te slagen. Allerlei winkels gespecialiseerd in de verkoop van deze wapens en voorwerpen bevinden zich op één plaats met mensen aanwezig om je verder te helpen.</p>
 
         </div>
 
 
         <div class="col-6">
-          <img src="/img/lacefront.png" alt="Lacefront pruik">
+          <img class="large" src="/img/conventions.png" alt="Cosplay conventie groepsfoto">
         </div>
       </div>
 
@@ -58,40 +57,18 @@
       <div class="row meer-info">
 
         <div class="col-6">
-          <img class="large" src="/img/kleurrange.png" alt="Kleurrange bij pruiken">
+          <img class="large" src="/img/worbla-shape-purple.png" alt="Worbla met heat gun">
         </div>
 
         <div class="col-6">
 
           <div class="titel">
-            <h2 class="large">KLEURRANGE</h2>
+            <h2 class="large">WORBLA & FOAM</h2>
             <div class="titels-underline medium"></div>
           </div>
 
-          <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-      gebruikt.</p>
+          <p>Net zoals bij je armor kan je jezelf de vraag stellen of je je voorwerp niet liever zelf maakt. Geen probleem! Zelfs al ben je een beginner, dan nog kan je met behulp van de cosplay materialen Worbla en Foam vrij gemakkelijk je eigen bepantsering creëren. Bekijk zeker onze blog hierrond.</p>
 
-        </div>
-      </div>
-
-
-
-      <div class="row meer-info">
-        <div class="col-6">
-
-          <div class="titel">
-            <h2 class="large oversize">HITTEBESTENDIG</h2>
-            <div class="titels-underline medium"></div>
-          </div>
-
-          <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-    gebruikt.</p>
-
-        </div>
-
-
-        <div class="col-6">
-          <img src="/img/hittebestendigheid.png" alt="Stijltang">
         </div>
       </div>
 
@@ -111,17 +88,17 @@
             <div class="col-6">
 
               <div class="titel">
-                <h2 class="small">TUTORIALS</h2>
+                <h2 class="small">WEBSHOPS</h2>
               </div>
 
 
                 <div class="link">
 
-                    <a href="#"><img src="/img/links/kamui-cosplay.jpg" alt="Kamuicosplay"></a>
+                    <a href="https://www.fabion.nl/" target="_blank"><img src="/img/links/fabion.jpg" alt="Dolken van Fabion"></a>
 
-                    <a class="tekst" href="#">
-                      <p>Kamuicosplay</p>
-                      <p class="sub-info">Duitsland</p>
+                    <a class="tekst" href="https://www.fabion.nl/" target="_blank">
+                      <p>Fabion</p>
+                      <p class="sub-info">Zwaarden</p>
                     </a>
 
                 </div>
@@ -130,11 +107,11 @@
 
                 <div class="link">
 
-                    <a href="#"><img src="/img/links/arda-wigs-tutorials.jpg" alt="Arda wigs cosplay"></a>
+                    <a href="https://www.celticwebmerchant.com/nl/" target="_blank"><img src="/img/links/celtic-voorwerp.jpg" alt="Bijl"></a>
 
-                    <a class="tekst" href="#">
-                      <p>Arda Wigs</p>
-                      <p class="sub-info">USA</p>
+                    <a class="tekst" href="https://www.celticwebmerchant.com/nl/" target="_blank">
+                      <p>Celtic</p>
+                      <p class="sub-info">Keltische voorwerpen</p>
                     </a>
 
                 </div>
@@ -148,17 +125,17 @@
             <div class="col-6">
 
               <div class="titel">
-                <h2 class="small">WEBSHOPS</h2>
+                <h2 class="small">WORBLA</h2>
               </div>
 
 
               <div class="link">
 
-                  <a href="#"><img src="/img/links/wigisfashion.jpg" alt="Kamuicosplay"></a>
+                  <a href="https://www.cosplaysupplies.com/store.php?s=JK6K" target="_blank"><img src="/img/links/cosplaysupplies.jpg" alt="Cosplaysupplies webshop"></a>
 
-                  <a class="tekst" href="#">
-                    <p>Wigisfashion</p>
-                    <p class="sub-info">Klein budget</p>
+                  <a class="tekst" href="https://www.cosplaysupplies.com/store.php?s=JK6K" target="_blank">
+                    <p>Cosplaysupplies</p>
+                    <p class="sub-info">USA</p>
                   </a>
 
               </div>
@@ -167,11 +144,11 @@
 
               <div class="link">
 
-                  <a href="#"><img src="/img/links/arda-wigs.jpg" alt="Arda wigs cosplay"></a>
+                  <a href="https://cosplayshop.be/en/product-category/thermoplastics/" target="_blank"><img src="/img/links/cosplayshop.jpg" alt="Cosplayshop"></a>
 
-                  <a class="tekst" href="#">
-                    <p>Arda wigs</p>
-                    <p class="sub-info">Medium budget</p>
+                  <a class="tekst" href="https://cosplayshop.be/en/product-category/thermoplastics/" target="_blank">
+                    <p>Cosplayshop</p>
+                    <p class="sub-info">België</p>
                   </a>
 
               </div>
@@ -183,7 +160,7 @@
         </div>
 
         <div class="col-4 links-image-rechts">
-          <img src="/img/pruik-links.jpg" alt="Haar op gele achtergrond">
+          <img src="/img/voorwerp-links.jpg" alt="fototoetstel uit de oorlog">
         </div>
       </div>
 
