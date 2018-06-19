@@ -20,7 +20,7 @@
           </div>
 
           <p>Het deel dat iedereen afschrikt: stof, stikken, naaien. Gelukkig zijn er tal van manieren om iedereen een geweldig kostuum te laten maken.</p>
-          <p>amet, ullamcorper scelerisque nunc. Curabitur ullamcorper sem non arcu suscipit cursus corper sem non</p>
+          <p>De belangrijkste boodschap die we je alvast meegeven is dat je niet alles from scratch hoeft te doen!</p>
 
           <a class="button-yellow button-meer-info" href="#">
             <div class="buttons-linethrough"></div>
@@ -38,18 +38,17 @@
         <div class="col-6">
 
           <div class="titel">
-            <h2 class="large">LACEFRONT</h2>
+            <h2 class="large">BASICS</h2>
             <div class="titels-underline medium"></div>
           </div>
 
-          <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-    gebruikt.</p>
+          <p>Koop je basis onderdelen! Koop een eenvoudige broek, t-shirt,.. die als basis kunnen dienen voor jouw kostuum. Werk hier dan verder op met je eigen stoffen die je koopt. Ze zijn goedkoop en zo elimineer je meteen het moeilijkste onderdeel van een kostuum maken.</p>
 
         </div>
 
 
         <div class="col-6">
-          <img src="/img/lacefront.png" alt="Lacefront pruik">
+          <img class="large" src="/img/basic.png" alt="H&M basic zwart tank topje">
         </div>
       </div>
 
@@ -58,18 +57,17 @@
       <div class="row meer-info">
 
         <div class="col-6">
-          <img class="large" src="/img/kleurrange.png" alt="Kleurrange bij pruiken">
+          <img class="large" src="/img/stoffen.png" alt="Soorten stoffen met naam">
         </div>
 
         <div class="col-6">
 
           <div class="titel">
-            <h2 class="large">KLEURRANGE</h2>
+            <h2 class="large">STOFFEN</h2>
             <div class="titels-underline medium"></div>
           </div>
 
-          <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-      gebruikt.</p>
+          <p>Hiernaast heb je een overzichtje van een aantal van de bekendste stoffen en hoe ze eruit zien. Als je voor de meest simpele stof wilt gaan, is de greige/onbewerkte stof je beste vriend. Ga langs in een stoffenwinkel en toon hen je personage. Ze helpen je ook zeker verder!</p>
 
         </div>
       </div>
@@ -80,18 +78,17 @@
         <div class="col-6">
 
           <div class="titel">
-            <h2 class="large oversize">HITTEBESTENDIG</h2>
+            <h2 class="large oversize">STIKKEN</h2>
             <div class="titels-underline medium"></div>
           </div>
 
-          <p>Worbla en foam zijn 2 van de meest gebruikte materialen bij cosplay. Daarnaast zijn ze relatief beginner friendly en tillen ze je cosplay meteen naar en hoger niveau. In onze blog geven je alvast een idee van wat Worbla is en hoe je het
-    gebruikt.</p>
+          <p>Het gevreesde machine. Ben je toe aan de uitdaging? Bekijk enkele tutorials op Youtube of neem een aantal basis stiklessen in je lokale kunstacademie. Daarnaast kan je het ook houden op naaien met naald en draad of een kleermaakster inschakelen.</p>
 
         </div>
 
 
         <div class="col-6">
-          <img src="/img/hittebestendigheid.png" alt="Stijltang">
+          <img class="large" src="/img/naaimachine.png" alt="Naaimachine">
         </div>
       </div>
 
@@ -117,11 +114,11 @@
 
                 <div class="link">
 
-                    <a href="#"><img src="/img/links/kamui-cosplay.jpg" alt="Kamuicosplay"></a>
+                    <a href="https://www.youtube.com/watch?v=xdHnrlrQ6RE" target="_blank"><img src="/img/links/crafty-amy.jpg" alt="Profielfoto Crafty Amy"></a>
 
-                    <a class="tekst" href="#">
-                      <p>Kamuicosplay</p>
-                      <p class="sub-info">Duitsland</p>
+                    <a class="tekst" href="https://www.youtube.com/watch?v=xdHnrlrQ6RE" target="_blank">
+                      <p>Crafty Amy</p>
+                      <p class="sub-info">Naaimachine</p>
                     </a>
 
                 </div>
@@ -130,11 +127,11 @@
 
                 <div class="link">
 
-                    <a href="#"><img src="/img/links/arda-wigs-tutorials.jpg" alt="Arda wigs cosplay"></a>
+                    <a href="https://www.youtube.com/channel/UCndGQlzTcnrFNIXGF119cKQ" target="_blank"><img src="/img/links/online-fabric-store.jpg" alt="Stoffen van online fabric store"></a>
 
-                    <a class="tekst" href="#">
-                      <p>Arda Wigs</p>
-                      <p class="sub-info">USA</p>
+                    <a class="tekst" href="https://www.youtube.com/channel/UCndGQlzTcnrFNIXGF119cKQ" target="_blank">
+                      <p>Online Fabric Store</p>
+                      <p class="sub-info">Algemeen</p>
                     </a>
 
                 </div>
@@ -154,11 +151,11 @@
 
               <div class="link">
 
-                  <a href="#"><img src="/img/links/wigisfashion.jpg" alt="Kamuicosplay"></a>
+                  <a href="https://www.modecoupon-stniklaas.be/" target="_blank"><img src="/img/links/modecoupon.jpg" alt="Modecoupon winkel"></a>
 
-                  <a class="tekst" href="#">
-                    <p>Wigisfashion</p>
-                    <p class="sub-info">Klein budget</p>
+                  <a class="tekst" href="https://www.modecoupon-stniklaas.be/" target="_blank">
+                    <p>Modecoupon</p>
+                    <p class="sub-info">Sint-Niklaas</p>
                   </a>
 
               </div>
