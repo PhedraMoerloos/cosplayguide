@@ -141,6 +141,15 @@ $( document ).ready(function() {
 
 
       /* links image */
+
+      if (window.matchMedia("(min-width: 1348px)").matches) {
+
+        $(".worbla .links-image-rechts img").attr('src', '/img/worbla-arm-rechts-groot.png');
+        $(".beginnertips-foto-rechts").attr('src', '/img/beginnertips-links-groot.jpg');
+
+      }
+
+
       if (window.matchMedia("(max-width: 960px)").matches) {
 
         $(".links-image-rechts img").attr('src', '/img/pruik-links-medium.jpg');

@@ -1764,6 +1764,18 @@ label[for=thumbnail_url] {
   color: #adacac;
   font-size: 1.3em; }
 
+@media (min-width: 1348px) {
+  .testimonials .col-6 .telefoon.links {
+    left: -90%; }
+
+  .testimonials .col-6 .telefoon.rechts {
+    left: 138%; }
+
+  .scissors {
+    left: -40%; }
+
+  .onderdelen.left, .onderdelen.right {
+    margin-top: 2rem; } }
 /* MEDIA QUERIES */
 @media (max-width: 1199px) {
   .create-inspire .col-8 img {

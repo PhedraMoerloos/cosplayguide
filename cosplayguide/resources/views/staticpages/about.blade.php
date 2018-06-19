@@ -3,7 +3,7 @@
 
 
 @section('title')
-  <title>Over Coplay</title>
+  <title>Over Cosplay</title>
 @endsection
 
 
