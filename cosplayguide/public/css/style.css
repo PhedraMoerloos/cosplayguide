@@ -309,11 +309,11 @@
   /*Pinterest*/
   /*Twitter*/
   /*Facebook*/ }
-  .social-footer.social-cosplay li a img.social-pinterest {
-    background: url("/img/iconen/pinterest-social.svg") no-repeat;
+  .social-footer.social-cosplay li a img.social-google {
+    background: url("/img/iconen/google-plus.svg") no-repeat;
     background-size: contain; }
-    .social-footer.social-cosplay li a img.social-pinterest:hover {
-      background: url("/img/iconen/pinterest-social-full.svg") no-repeat;
+    .social-footer.social-cosplay li a img.social-google:hover {
+      background: url("/img/iconen/google-plus-full.svg") no-repeat;
       background-size: contain; }
   .social-footer.social-cosplay li a img.social-twitter {
     background: url("/img/iconen/twitter-social.svg") no-repeat;

@@ -90,10 +90,13 @@
             <h2 class="share">Share</h2>
 
             <ul class="social-footer social-cosplay">
-              <li><a href="https://www.facebook.com/cosplayguide/" target="_blank"><img class="social-facebook" src="/img/social-icon.png" alt="Facebook icoon"></a></li>
-              <li><a href="#" target="_blank"><img class="social-twitter" src="/img/social-icon.png" alt="Twitter icoon"></a></li>
-              <li><a href="#" target="_blank"><img class="social-pinterest" src="/img/social-icon.png" alt="Pinterest icoon"></a></li>
+              <li><a href="https://www.facebook.com/sharer/sharer.php?u={{$url}}" class="social-button" target="_blank"><img class="social-facebook" src="/img/social-icon.png" alt="Facebook icoon"></a></li>
+              <li><a href="https://twitter.com/intent/tweet?text=Mijn+laatste+cosplay:&url={{$url}}" class="social-button" target="_blank"><img class="social-twitter" src="/img/social-icon.png" alt="Twitter icoon"></a></li>
+              <li><a href="https://plus.google.com/share?url={{$url}}" class="social-button" target="_blank"><img class="social-google" src="/img/social-icon.png" alt="Google Plus icoon"></a></li>
             </ul>
+
+
+
 
           </div>
 

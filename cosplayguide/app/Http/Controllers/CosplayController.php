@@ -215,9 +215,15 @@ class CosplayController extends Controller
      }
 
 
+     public function strreplace($str,$strreplace,$strreplaceby){
+             $str_array=explode($strreplace,$str);
+             $newstr=implode($strreplaceby,$str_array);
+             return $newstr;
+     }
 
 
-     public function show($id, $slug = null)
+
+     public function show(Request $request, $id, $slug = null)
      {
 
        $cosplay = Cosplay::findOrFail($id);
@@ -231,16 +237,27 @@ class CosplayController extends Controller
           $user_logged_in = \Auth::user();
           $can_edit = false;
 
-          if(\Auth::user()->id == $cosplay->user_id) {
-            $can_edit = true;
+          if ($user_logged_in) {
+            if(\Auth::user()->id == $cosplay->user_id) {
+              $can_edit = true;
+            }
           }
+
+
 
           $cosplayphotos = Cosplayphoto::where('cosplay_id', $id)->where('is_shown', 1)->get();
           $cosplay_creator_id = $cosplay->user_id;
           $cosplay_creator = User::findOrFail($cosplay_creator_id);
           $photo_number = 1;
 
-          return view('cosplays.showCosplay', compact('cosplay', 'cosplay_creator', 'cosplayphotos', 'user_logged_in', 'photo_number', 'can_edit'));
+          /* share knoppen*/
+          $url_old = $request->getRequestUri();
+          $url_new = $this->strreplace($url_old,'/profiel','');
+
+          $url = 'https://cosplayguide.be'.$url_new;
+
+
+          return view('cosplays.showCosplay', compact('cosplay', 'cosplay_creator', 'cosplayphotos', 'user_logged_in', 'photo_number', 'can_edit', 'url'));
         }
 
      }

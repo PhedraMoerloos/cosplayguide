@@ -11,15 +11,15 @@
       </a>
 
       <div class="row header">
-        <img id="header-achtergrond-pruik" src="/img/pruik-achtergrond.jpg" alt="Cosplay met pruik">
+        <img id="header-achtergrond-pruik" src="/img/stoffen-achtergrond.jpg" alt="Frozen Else cosplay">
         <div class="header-tekst">
 
           <div class="titel">
-            <h1 class="large light">PRUIK</h1>
+            <h1 class="large light">STOFFEN</h1>
             <div class="titels-underline small light"></div>
           </div>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu fermentum elit. Suspendisse purus enim, tristique eget aliquet eget, luctus</p>
+          <p>Het deel dat iedereen afschrikt: stof, stikken, naaien. Gelukkig zijn er tal van manieren om iedereen een geweldig kostuum te laten maken.</p>
           <p>amet, ullamcorper scelerisque nunc. Curabitur ullamcorper sem non arcu suscipit cursus corper sem non</p>
 
           <a class="button-yellow button-meer-info" href="#">
@@ -27,7 +27,7 @@
             <p>ONTDEK MEER</p>
           </a>
 
-          <p class="link-cosplayer">Bekijk meer van <a class="link" href="#">Narga Lifestream</a></p>
+          <p class="link-cosplayer">Bekijk meer van <a class="link" href="https://kikolondon.deviantart.com/" target="_blank">KikoLondon</a></p>
 
         </div>
       </div>
