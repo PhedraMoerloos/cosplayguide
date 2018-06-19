@@ -1,9 +1,12 @@
 @extends('master')
 
+
 @section('title')
-
   <title>Welke lenzen kies jij?</title>
+@endsection
 
+@section('follow')
+  <meta name="robots" content="noindex, nofollow" />
 @endsection
 
 

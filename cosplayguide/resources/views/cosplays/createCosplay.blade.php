@@ -1,7 +1,12 @@
 @extends('master')
 
+
 @section('title')
   <title>Nieuwe cosplay</title>
+@endsection
+
+@section('follow')
+  <meta name="robots" content="noindex, nofollow" />
 @endsection
 
 
@@ -49,8 +54,7 @@
 
 
             <button class="button-yellow create" type="submit" name="create">
-              <span>CREËR</span>
-              <!--<img class="arrow right" src="/img/iconen/kort-pijltje-rechts-wit.png" alt="wit pijltje links">-->
+              <h1>CREËR</h1>
             </button>
 
 

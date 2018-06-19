@@ -1,9 +1,21 @@
 @extends('master')
 
 
+
 @section('title')
-  <title>Tip Worbla & Foam</title>
+  <title>De basics van Worbla & Foam</title>
 @endsection
+
+
+@section('description')
+  <meta name="description" content="Heb je al een idee van wat Worbla en Foam zijn? We geven je hier een duidelijk beeld van hoe deze cosplay materialen gebruikt worden en waar je ze terug vindt.">
+@endsection
+
+
+@section('follow')
+  <meta name="robots" content="index, follow">
+@endsection
+
 
 
 @section('content')

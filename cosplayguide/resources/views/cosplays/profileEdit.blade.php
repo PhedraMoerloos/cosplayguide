@@ -1,7 +1,12 @@
 @extends('master')
 
+
 @section('title')
   <title>Bewerk profiel</title>
+@endsection
+
+@section('follow')
+  <meta name="robots" content="noindex, nofollow" />
 @endsection
 
 

@@ -1,9 +1,12 @@
 @extends('master')
 
+
 @section('title')
-
   <title>Armor info door Cosplay Guide</title>
+@endsection
 
+@section('follow')
+  <meta name="robots" content="noindex, nofollow" />
 @endsection
 
 

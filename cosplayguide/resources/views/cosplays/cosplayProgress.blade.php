@@ -5,6 +5,10 @@
   <title>Progress cosplay {{ $cosplay->name }}</title>
 @endsection
 
+@section('follow')
+  <meta name="robots" content="noindex, nofollow" />
+@endsection
+
 
 @section('content')
 
@@ -118,7 +122,7 @@
 
 
       <div class="cosplay-name">
-        <h2>{{ $cosplay->name }}</h2>
+        <h1>{{ $cosplay->name }}</h1>
       </div>
 
 

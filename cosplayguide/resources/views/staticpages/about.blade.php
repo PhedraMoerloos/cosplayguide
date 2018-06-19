@@ -1,8 +1,21 @@
 @extends('master')
 
+
+
 @section('title')
   <title>Over Coplay</title>
 @endsection
+
+
+@section('description')
+  <meta name="description" content="Wil je meer weten over het cosplay leven? We gaan samen met jou door het proces dat alle cosplays gemeenschappelijk hebben om je een duidelijker beeld te geven.">
+@endsection
+
+
+@section('follow')
+  <meta name="robots" content="index, follow">
+@endsection
+
 
 
 @section('content')

@@ -1,9 +1,19 @@
 @extends('master')
 
 
+
 @section('title')
   <title>Cosplay {{ $cosplay->name }} door {{ $cosplay_creator->username }}</title>
 @endsection
+
+@section('description')
+  <meta name='description' content='Bekijk hier de cosplay van personage {{ $cosplay->name }} gemaakt door Cosplay Guide lid {{ $cosplay_creator->username }}: "{{ $cosplay->project_description }}"'>
+@endsection
+
+@section('follow')
+  <meta name="robots" content="index, follow">
+@endsection
+
 
 
 @section('content')
@@ -36,10 +46,10 @@
 
 
         <img class="profile-picture-large" src="{{ asset('/storage/images/' . $cosplay_creator->profile_picture_url) }}" alt="profile picture {{ $cosplay_creator->username }}">
-        <h1 class="small-grey-italic username-cosplay">{{ $cosplay_creator->username }}</h1>
+        <h2 class="small-grey-italic username-cosplay">{{ $cosplay_creator->username }}</h2>
 
         <div class="cosplay-names">
-          <h2>{{ $cosplay->name }}</h2>
+          <h1>{{ $cosplay->name }}</h1>
           <p>From: {{ $cosplay->name_serie }}</p>
         </div>
 

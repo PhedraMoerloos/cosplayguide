@@ -2,10 +2,13 @@
 
 
 @section('title')
-
   <title>Uitleg over grime door Cosplay Guide</title>
-
 @endsection
+
+@section('follow')
+  <meta name="robots" content="noindex, nofollow" />
+@endsection
+
 
 @section('content')
 

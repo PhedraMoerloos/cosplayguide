@@ -1,6 +1,15 @@
 @extends('master')
 
 
+@section('title')
+  <title>Stoffen tips en tricks door Cosplay Guide</title>
+@endsection
+
+@section('follow')
+  <meta name="robots" content="noindex, nofollow" />
+@endsection
+
+
 @section('content')
 
   <div class="onderdeel pruik">

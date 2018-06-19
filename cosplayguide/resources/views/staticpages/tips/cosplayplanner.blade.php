@@ -1,9 +1,21 @@
 @extends('master')
 
 
+
 @section('title')
-  <title>Cosplayplanner tool</title>
+  <title>Cosplayplanner</title>
 @endsection
+
+
+@section('description')
+  <meta name="description" content="We tonen je het nut van een Cosplayplanner als jouw assistent. Je cosplay maken is namelijk leuk maar zonder goede voorbereiding zal je met veel hindernissen en ergernissen te maken krijgen.">
+@endsection
+
+
+@section('follow')
+  <meta name="robots" content="index, follow">
+@endsection
+
 
 
 @section('content')

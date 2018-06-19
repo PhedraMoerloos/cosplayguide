@@ -5,6 +5,11 @@
   <title>Kies je pruik</title>
 @endsection
 
+@section('follow')
+  <meta name="robots" content="noindex, nofollow" />
+@endsection
+
+
 @section('content')
 
 <div class="onderdeel pruik">

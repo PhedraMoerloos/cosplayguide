@@ -1,6 +1,15 @@
 @extends('master')
 
 
+@section('title')
+  <title>Cosplay voorwerpen</title>
+@endsection
+
+@section('follow')
+  <meta name="robots" content="noindex, nofollow" />
+@endsection
+
+
 @section('content')
 
   <div class="onderdeel pruik">

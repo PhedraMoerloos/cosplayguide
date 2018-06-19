@@ -254,7 +254,7 @@
 .cosplay-names {
   margin-top: 1.25rem;
   padding-bottom: 1rem; }
-  .cosplay-names h2 {
+  .cosplay-names h1 {
     text-transform: uppercase;
     font-size: 1.2em;
     color: #3e297b;
@@ -465,6 +465,10 @@ button.button-yellow.create {
   margin-top: 2rem; }
   button.button-yellow.create:hover {
     background-color: #4a3192; }
+  button.button-yellow.create h1 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 0; }
 
 .button-yellow.back-profiel {
   background-color: #bcbbbb; }
@@ -662,7 +666,7 @@ h1.edit-profile-title {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 4.5rem; }
-  .cosplay-progress .col-5 .cosplay-name h2 {
+  .cosplay-progress .col-5 .cosplay-name h1 {
     font-size: 1.2em;
     text-transform: uppercase;
     color: #f6f6f6; }

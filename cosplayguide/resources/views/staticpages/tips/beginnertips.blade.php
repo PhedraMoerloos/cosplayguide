@@ -1,7 +1,19 @@
 @extends('master')
 
+
+
 @section('title')
   <title>10 beginner tips van Cosplay Guide</title>
+@endsection
+
+
+@section('description')
+  <meta name="description" content="De 10 tips die het meest worden uitgedeeld aan beginner cosplayers. Samen met een blik op de geweldige cosplay gemeenschap waar je in terecht zal komen.">
+@endsection
+
+
+@section('follow')
+  <meta name="robots" content="index, follow">
 @endsection
 
 

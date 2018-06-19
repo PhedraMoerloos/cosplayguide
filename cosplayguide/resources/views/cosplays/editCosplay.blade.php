@@ -5,6 +5,10 @@
   <title>Info {{ $cosplay->name }}</title>
 @endsection
 
+@section('follow')
+  <meta name="robots" content="noindex, nofollow" />
+@endsection
+
 
 @section('content')
 

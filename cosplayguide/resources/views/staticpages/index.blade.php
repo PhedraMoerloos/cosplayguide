@@ -1,8 +1,22 @@
 @extends('master')
 
+
+
 @section('title')
-  <title>Wordt jouw favoriete personage bij Cosplay Guide</title>
+  <title>Wordt jouw favoriete personage via Cosplay Guide</title>
 @endsection
+
+
+@section('description')
+  <meta name="description" content="Jouw gids bij het creëren van je eerste cosplays. We staan je bij tijdens het hele cosplay proces. Bekijk inspirerende cosplays, testimonials van cosplayers die je voorgingen en onze partners.">
+@endsection
+
+
+@section('follow')
+  <meta name="robots" content="index, follow">
+@endsection
+
+
 
 @section('content')
 

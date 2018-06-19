@@ -1,9 +1,22 @@
 @extends('master')
 
 
+
 @section('title')
   <title>Contacteer Cosplay Guide</title>
 @endsection
+
+
+@section('description')
+  <meta name="description" content="Voel je je wat verdwaald in de cosplaywereld? Heb je vragen die te maken hebben met cosplay? Stel ze gerust en we beantwoorden ze zo snel en accuraat mogelijk.">
+@endsection
+
+
+@section('follow')
+  <meta name="robots" content="index, follow">
+@endsection
+
+
 
 @section('content')
 
