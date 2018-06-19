@@ -27,10 +27,10 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <!-- JS DEFER -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="{{ asset('js/script.js') }}" defer></script>
-    <script src="{{ asset('js/share.js') }}"></script>
+    <script src="{{ asset('js/share.js') }}" defer></script>
 
   </head>
 
