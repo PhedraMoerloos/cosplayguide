@@ -135,6 +135,7 @@ $( document ).ready(function() {
 
         $("#header-achtergrond-pruik").attr('src', '/img/pruik-achtergrond-klein.jpg');
         $("#header-achtergrond-grime").attr('src', '/img/grime-achtergrond-klein.jpg');
+        $("#header-achtergrond-stoffen").attr('src', '/img/stoffen-achtergrond-klein.jpg');
 
       }
 
@@ -147,6 +148,7 @@ $( document ).ready(function() {
         $(".beginnertips-foto-rechts").attr('src', '/img/beginnertips-links-medium.jpg');
         $(".grime-foto-rechts").attr('src', '/img/grime-links-medium.png');
         $(".lenzen-foto-rechts").attr('src', '/img/lenzen-links-medium.png');
+        $(".stoffen-foto-rechts").attr('src', '/img/stoffen-links-medium.png');
 
       }
 
@@ -157,6 +159,7 @@ $( document ).ready(function() {
         $(".beginnertips-foto-rechts").attr('src', '/img/beginnertips-links-small.jpg');
         $(".grime-foto-rechts").attr('src', '/img/grime-links-small.jpg');
         $(".lenzen-foto-rechts").attr('src', '/img/lenzen-links-small.jpg');
+        $(".stoffen-foto-rechts").attr('src', '/img/stoffen-links-small.jpg');
 
       }
 

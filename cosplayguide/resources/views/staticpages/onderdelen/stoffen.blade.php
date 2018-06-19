@@ -11,7 +11,7 @@
       </a>
 
       <div class="row header">
-        <img id="header-achtergrond-pruik" src="/img/stoffen-achtergrond.jpg" alt="Frozen Else cosplay">
+        <img id="header-achtergrond-stoffen" src="/img/stoffen-achtergrond.jpg" alt="Frozen Else cosplay">
         <div class="header-tekst">
 
           <div class="titel">
@@ -155,7 +155,7 @@
 
                   <a class="tekst" href="https://www.modecoupon-stniklaas.be/" target="_blank">
                     <p>Modecoupon</p>
-                    <p class="sub-info">Sint-Niklaas</p>
+                    <p class="sub-info">Stoffenwinkel</p>
                   </a>
 
               </div>
@@ -164,11 +164,11 @@
 
               <div class="link">
 
-                  <a href="#"><img src="/img/links/arda-wigs.jpg" alt="Arda wigs cosplay"></a>
+                  <a href="https://www.dekringwinkel.be/" target="_blank"><img src="/img/links/kringwinkel.jpg" alt="Kringwinkel buitenkant"></a>
 
-                  <a class="tekst" href="#">
-                    <p>Arda wigs</p>
-                    <p class="sub-info">Medium budget</p>
+                  <a class="tekst" href="https://www.dekringwinkel.be/" target="_blank">
+                    <p>Kringwinkel</p>
+                    <p class="sub-info">Tweedehandswinkel</p>
                   </a>
 
               </div>
@@ -180,7 +180,7 @@
         </div>
 
         <div class="col-4 links-image-rechts">
-          <img src="/img/pruik-links.jpg" alt="Haar op gele achtergrond">
+          <img class="stoffen-foto-rechts" src="/img/stoffen-links.jpg" alt="Naald met rode draad">
         </div>
       </div>
 
