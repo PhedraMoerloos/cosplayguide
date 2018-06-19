@@ -144,8 +144,15 @@ $( document ).ready(function() {
 
       if (window.matchMedia("(min-width: 1348px)").matches) {
 
+        $(".links-image-rechts img").attr('src', '/img/pruik-links-groot.jpg');
         $(".worbla .links-image-rechts img").attr('src', '/img/worbla-arm-rechts-groot.png');
         $(".beginnertips-foto-rechts").attr('src', '/img/beginnertips-links-groot.jpg');
+        $(".lenzen-foto-rechts").attr('src', '/img/lenzen-links-groot.jpg');
+        $(".grime-foto-rechts").attr('src', '/img/grime-links-groot.jpg');
+        $(".armor-foto-rechts").attr('src', '/img/armor-links-groot.jpg');
+        $(".voorwerp-foto-rechts").attr('src', '/img/voorwerp-links-groot.jpg');
+        $(".stoffen-foto-rechts").attr('src', '/img/stoffen-links-groot.jpg');
+
 
       }
 

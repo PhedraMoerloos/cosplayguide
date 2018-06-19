@@ -169,7 +169,7 @@
         </div>
 
         <div class="col-4 links-image-rechts">
-          <img src="/img/voorwerp-links.jpg" alt="fototoetstel uit de oorlog">
+          <img class="voorwerp-foto-rechts" src="/img/voorwerp-links.jpg" alt="fototoetstel uit de oorlog">
         </div>
       </div>
 

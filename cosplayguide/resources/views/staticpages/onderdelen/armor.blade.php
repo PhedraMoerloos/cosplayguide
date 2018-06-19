@@ -169,7 +169,7 @@
         </div>
 
         <div class="col-4 links-image-rechts">
-          <img src="/img/armor-links.jpg" alt="Bepantsering">
+          <img class="armor-foto-rechts" src="/img/armor-links.jpg" alt="Bepantsering">
         </div>
       </div>
 
