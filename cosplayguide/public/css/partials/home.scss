@@ -357,14 +357,15 @@
 
 
 
+
 @media(min-width: 1348px) {
 
   .testimonials .col-6 .telefoon.links {
-    left: -90%;
+    left: -80%;
   }
 
   .testimonials .col-6 .telefoon.rechts {
-    left: 138%;
+    left: 130%;
   }
 
   .scissors {
@@ -386,8 +387,19 @@
 }
 
 
-
 /* MEDIA QUERIES */
+
+@media(min-width: 1370px) {
+  .testimonials .col-6 .telefoon.rechts {
+    left: 138%;
+  }
+
+  .testimonials .col-6 .telefoon.links {
+    left: -90%;
+  }
+}
+
+
 @media(max-width: 1199px) {
 
   .create-inspire .col-8 img {
