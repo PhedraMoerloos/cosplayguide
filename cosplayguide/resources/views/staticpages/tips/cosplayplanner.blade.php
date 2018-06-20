@@ -17,6 +17,12 @@
 @endsection
 
 
+@section('og')
+  <meta property="og:title"         content="Waarom een cosplayplanner je beste vriend is" />
+  <meta property="og:description"   content="We tonen je het nut van een Cosplayplanner als jouw assistent. Je cosplay maken is namelijk leuk maar zonder goede voorbereiding zal je met veel hindernissen en ergernissen te maken krijgen." />
+@endsection
+
+
 
 @section('content')
 

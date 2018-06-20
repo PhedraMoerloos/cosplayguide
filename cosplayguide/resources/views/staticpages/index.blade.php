@@ -17,6 +17,12 @@
 @endsection
 
 
+@section('og')
+  <meta property="og:title"         content="Wordt jouw favoriete personage via Cosplay Guide" />
+  <meta property="og:description"   content="Jouw gids bij het creëren van je eerste cosplays. We staan je bij tijdens het hele cosplay proces. Bekijk inspirerende cosplays, testimonials van cosplayers die je voorgingen en onze partners." />
+@endsection
+
+
 
 @section('content')
 

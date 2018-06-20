@@ -17,6 +17,12 @@
 @endsection
 
 
+@section('og')
+  <meta property="og:title"         content="Tips & Tricks voor beginnende cosplayers" />
+  <meta property="og:description"   content="We verzamelen hier enkele tips die cosplayers steeds aanbieden aan beginners en een groot verschil zullen maken in jouw cosplay game." />
+@endsection
+
+
 
 @section('content')
 

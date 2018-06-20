@@ -17,6 +17,12 @@
 @endsection
 
 
+@section('og')
+  <meta property="og:title"         content="Stel al je cosplay vragen aan Cosplay Guide" />
+  <meta property="og:description"   content="Voel je je wat verdwaald in de cosplaywereld? Heb je vragen die te maken hebben met cosplay? Stel ze gerust en we beantwoorden ze zo snel en accuraat mogelijk." />
+@endsection
+
+
 
 @section('content')
 

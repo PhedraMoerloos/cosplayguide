@@ -17,6 +17,12 @@
 @endsection
 
 
+@section('og')
+  <meta property="og:title"         content="Hoe Worbla en Foam je cosplay naar the next level brengen" />
+  <meta property="og:description"   content="Heb je al een idee van wat Worbla en Foam zijn? We geven je hier een duidelijk beeld van hoe deze cosplay materialen gebruikt worden en waar je ze terug vindt." />
+@endsection
+
+
 
 @section('content')
 

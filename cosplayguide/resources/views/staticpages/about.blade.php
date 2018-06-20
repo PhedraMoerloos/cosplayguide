@@ -17,6 +17,12 @@
 @endsection
 
 
+@section('og')
+  <meta property="og:title"         content="Wat is Cosplay?" />
+  <meta property="og:description"   content="Wil je meer weten over het cosplay leven? We gaan samen met jou door het proces dat alle cosplays gemeenschappelijk hebben om je een duidelijker beeld te geven." />
+@endsection
+
+
 
 @section('content')
 
