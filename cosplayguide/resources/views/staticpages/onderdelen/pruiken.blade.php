@@ -28,7 +28,7 @@
           <div class="titels-underline small light"></div>
         </div>
 
-        <p>Een pruik kan je cosplay doen maken of vallen. Een pruik van goede kwaliteit, die goed blijft zitten en gemakkelijk aan te doen is, is alles.</p>
+        <p>Een pruik kan je cosplay afmaken of afbreken. Een pruik van goede kwaliteit, die goed blijft zitten en gemakkelijk aan te doen is, is alles.</p>
         <p>Wat je budget ook is, we geven je een aantal opties om de perfecte pruik voor jouw cosplay te vinden.</p>
 
         <a class="button-yellow button-meer-info" href="#">

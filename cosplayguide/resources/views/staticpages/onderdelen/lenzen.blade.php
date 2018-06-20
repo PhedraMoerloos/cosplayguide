@@ -92,7 +92,7 @@
             <div class="titels-underline medium"></div>
           </div>
 
-          <p>Draag je normaal een bril of lenzen? Geen zorgen, je kan steeds winkels vinden met lenzen op sterkte. Ze zijn iets moeilijker te vinden maar we helpen je alvast op weg! Lenzen nemen zonder sterkte is namelijk geen optie voor jouw.</p>
+          <p>Draag je normaal een bril of lenzen? Geen zorgen, je kan steeds winkels vinden met lenzen op sterkte. Ze zijn iets moeilijker te vinden maar we helpen je alvast op weg! Lenzen nemen zonder sterkte is namelijk geen optie voor jou.</p>
 
         </div>
 
